@@ -22,6 +22,8 @@ class Food extends Model
         'description',
         'order_number',
         'status',
+        'is_best_seller',
+        'best_seller_banner',
     ];
 
     protected static function boot()

@@ -23,6 +23,11 @@ class AlbumResource extends Resource
     protected static ?string $pluralModelLabel = 'Album';
     protected static ?string $navigationGroup = 'Quản lý nội dung';
 
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+
     public static function form(Form $form): Form
     {
         return $form

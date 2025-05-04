@@ -23,6 +23,11 @@ class CategoryResource extends Resource
     protected static ?string $pluralModelLabel = 'Danh mục';
     protected static ?string $navigationGroup = 'Quản lý món ăn';
 
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+
     public static function form(Form $form): Form
     {
         return $form

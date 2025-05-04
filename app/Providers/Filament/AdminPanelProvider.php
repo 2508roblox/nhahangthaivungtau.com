@@ -3,6 +3,9 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Resources\DashboardResource\Widgets\DashboardStatsOverview;
+use App\Filament\Widgets\FoodCategoryChart;
+use App\Filament\Widgets\FoodSubCategoryChart;
+use App\Filament\Widgets\RecentReservations;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -40,6 +43,9 @@ class AdminPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
                 DashboardStatsOverview::class,
+                FoodCategoryChart::class,
+                FoodSubCategoryChart::class,
+                RecentReservations::class,
             ])
             ->middleware([
                 EncryptCookies::class,

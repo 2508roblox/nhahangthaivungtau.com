@@ -34,4 +34,9 @@ class Category extends Model
     {
         return $this->hasMany(SubCategory::class);
     }
+
+    public function foods()
+    {
+        return $this->hasMany(\App\Models\Food::class);
+    }
 }

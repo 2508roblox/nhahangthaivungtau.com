@@ -6,6 +6,7 @@ use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use App\Models\Visitor;
 use App\Models\OnlineUser;
+use App\Models\Reservation;
 use Filament\Widgets\StatsOverviewWidget\Card;
 
 class DashboardStatsOverview extends BaseWidget
@@ -18,6 +19,7 @@ class DashboardStatsOverview extends BaseWidget
             $this->createVisitorTodayCard(),
             $this->createTotalVisitorCard(),
             $this->createOnlineUsersCard(),
+            $this->createReservationCard(),
         ];
     }
 
@@ -68,6 +70,22 @@ class DashboardStatsOverview extends BaseWidget
             ->chart([$previousCount, $onlineCount]);
     }
 
+    private function createReservationCard()
+    {
+        $totalCount = Reservation::count();
+        $currentMonthCount = Reservation::whereMonth('created_at', now()->month)->count();
+        $previousMonthCount = Reservation::whereMonth('created_at', now()->subMonth()->month)->count();
+
+        $percentageChange = $this->calculatePercentageChange($currentMonthCount, $previousMonthCount);
+
+        return Card::make('Tổng số đặt bàn', $totalCount)
+            ->icon('heroicon-o-calendar')
+            ->color('warning')
+            ->description("Tháng này: {$currentMonthCount} ({$percentageChange})")
+            ->descriptionIcon($percentageChange > 0 ? 'heroicon-o-arrow-trending-up' : 'heroicon-o-arrow-trending-down')
+            ->chart([$previousMonthCount, $currentMonthCount]);
+    }
+
     private function calculatePercentageChange($current, $previous)
     {
         if ($previous == 0) {
@@ -77,4 +95,4 @@ class DashboardStatsOverview extends BaseWidget
         $change = (($current - $previous) / $previous) * 100;
         return round($change) . '%';
     }
-} 
+}

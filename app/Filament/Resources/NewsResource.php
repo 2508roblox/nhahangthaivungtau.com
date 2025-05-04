@@ -22,9 +22,14 @@ class NewsResource extends Resource
     protected static ?string $modelLabel = 'Tin tức';
     protected static ?string $pluralModelLabel = 'Tin tức';
     protected static ?string $navigationGroup = 'Quản lý nội dung';
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
 
     public static function form(Form $form): Form
     {
+        
         return $form
             ->schema([
                 Forms\Components\Section::make('Thông tin tin tức')
@@ -79,9 +84,9 @@ class NewsResource extends Resource
             ->columns([
                 Tables\Columns\ImageColumn::make('thumb_img')
                     ->label('Ảnh')
-                    ->circular()
-                    ->height(50)
-                    ->width(50),
+                    ->square()
+                    ->height(100)
+                    ->width(100),
                 Tables\Columns\TextColumn::make('title')
                     ->label('Tiêu đề')
                     ->searchable()

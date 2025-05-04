@@ -23,89 +23,118 @@ class FoodResource extends Resource
     protected static ?string $pluralModelLabel = 'Món ăn';
     protected static ?string $navigationGroup = 'Quản lý món ăn';
 
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\Section::make('Thông tin món ăn')
-                    ->description('Nhập thông tin cơ bản của món ăn')
-                    ->schema([
-                        Forms\Components\Grid::make(2)
+                Forms\Components\Tabs::make('food_tabs')
+                    ->tabs([
+                        Forms\Components\Tabs\Tab::make('Thông tin món ăn')
                             ->schema([
-                                Forms\Components\Select::make('category_id')
-                                    ->label('Danh mục')
-                                    ->relationship('category', 'name')
-                                    ->required()
-                                    ->searchable()
-                                    ->preload()
-                                    ->live()
-                                    ->afterStateUpdated(function (Forms\Set $set) {
-                                        $set('sub_category_id', null);
-                                    }),
-                                Forms\Components\Select::make('sub_category_id')
-                                    ->label('Danh mục con')
-                                    ->relationship('subCategory', 'name')
-                                    ->searchable()
-                                    ->preload()
-                                    ->options(function (Forms\Get $get) {
-                                        $categoryId = $get('category_id');
-                                        if (!$categoryId) {
-                                            return [];
-                                        }
-                                        return \App\Models\SubCategory::where('category_id', $categoryId)
-                                            ->pluck('name', 'id');
-                                    }),
+                                Forms\Components\Section::make('Thông tin món ăn')
+                                    ->description('Nhập thông tin cơ bản của món ăn')
+                                    ->schema([
+                                        Forms\Components\Grid::make(2)
+                                            ->schema([
+                                                Forms\Components\Select::make('category_id')
+                                                    ->label('Danh mục')
+                                                    ->relationship('category', 'name')
+                                                    ->required()
+                                                    ->searchable()
+                                                    ->preload()
+                                                    ->live()
+                                                    ->afterStateUpdated(function (Forms\Set $set) {
+                                                        $set('sub_category_id', null);
+                                                    }),
+                                                Forms\Components\Select::make('sub_category_id')
+                                                    ->label('Danh mục con')
+                                                    ->relationship('subCategory', 'name')
+                                                    ->searchable()
+                                                    ->preload()
+                                                    ->options(function (Forms\Get $get) {
+                                                        $categoryId = $get('category_id');
+                                                        if (!$categoryId) {
+                                                            return [];
+                                                        }
+                                                        return \App\Models\SubCategory::where('category_id', $categoryId)
+                                                            ->pluck('name', 'id');
+                                                    }),
+                                            ]),
+                                        Forms\Components\Grid::make(2)
+                                            ->schema([
+                                                Forms\Components\TextInput::make('name')
+                                                    ->label('Tên món ăn')
+                                                    ->required()
+                                                    ->maxLength(255)
+                                                    ->live(onBlur: true)
+                                                    ->afterStateUpdated(function (string $operation, $state, Forms\Set $set) {
+                                                        if ($operation === 'create') {
+                                                            $set('slug', \Illuminate\Support\Str::slug($state));
+                                                        }
+                                                    }),
+                                                Forms\Components\TextInput::make('slug')
+                                                    ->label('Slug')
+                                                    ->required()
+                                                    ->maxLength(255)
+                                                    ->unique(ignoreRecord: true),
+                                            ]),
+                                        Forms\Components\Grid::make(2)
+                                            ->schema([
+                                                Forms\Components\TextInput::make('price')
+                                                    ->label('Giá')
+                                                    ->required()
+                                                    ->numeric()
+                                                    ->prefix('₫'),
+                                                Forms\Components\TextInput::make('discount_price')
+                                                    ->label('Giá khuyến mãi')
+                                                    ->numeric()
+                                                    ->prefix('₫'),
+                                            ]),
+                                        Forms\Components\Grid::make(2)
+                                            ->schema([
+                                                Forms\Components\FileUpload::make('thumb_img')
+                                                    ->label('Ảnh thumbnail')
+                                                    ->directory('foods/thumb')
+                                                    ->image()
+                                                    ->required(),
+                                                Forms\Components\FileUpload::make('img')
+                                                    ->label('Ảnh chính')
+                                                    ->directory('foods')
+                                                    ->image()
+                                                    ->required(),
+                                            ]),
+                                        Forms\Components\RichEditor::make('description')
+                                            ->label('Mô tả')
+                                            ->columnSpanFull(),
+                                        Forms\Components\Toggle::make('status')
+                                            ->label('Trạng thái')
+                                            ->default(true),
+                                    ]),
                             ]),
-                        Forms\Components\Grid::make(2)
+                        Forms\Components\Tabs\Tab::make('Best Seller')
                             ->schema([
-                                Forms\Components\TextInput::make('name')
-                                    ->label('Tên món ăn')
-                                    ->required()
-                                    ->maxLength(255)
-                                    ->live(onBlur: true)
-                                    ->afterStateUpdated(function (string $operation, $state, Forms\Set $set) {
-                                        if ($operation === 'create') {
-                                            $set('slug', \Illuminate\Support\Str::slug($state));
-                                        }
-                                    }),
-                                Forms\Components\TextInput::make('slug')
-                                    ->label('Slug')
-                                    ->required()
-                                    ->maxLength(255)
-                                    ->unique(ignoreRecord: true),
-                            ]),
-                        Forms\Components\Grid::make(2)
-                            ->schema([
-                                Forms\Components\TextInput::make('price')
-                                    ->label('Giá')
-                                    ->required()
-                                    ->numeric()
-                                    ->prefix('₫'),
-                                Forms\Components\TextInput::make('discount_price')
-                                    ->label('Giá khuyến mãi')
-                                    ->numeric()
-                                    ->prefix('₫'),
-                            ]),
-                        Forms\Components\Grid::make(2)
-                            ->schema([
-                                Forms\Components\FileUpload::make('thumb_img')
-                                    ->label('Ảnh thumbnail')
-                                    ->directory('foods/thumb')
-                                    ->image()
-                                    ->required(),
-                                Forms\Components\FileUpload::make('img')
-                                    ->label('Ảnh chính')
-                                    ->directory('foods')
-                                    ->image()
-                                    ->required(),
-                            ]),
-                        Forms\Components\RichEditor::make('description')
-                            ->label('Mô tả')
-                            ->columnSpanFull(),
-                        Forms\Components\Toggle::make('status')
-                            ->label('Trạng thái')
-                            ->default(true),
-                    ]),
+                                Forms\Components\Section::make('Best Seller')
+                                    ->description('Thiết lập trạng thái và banner cho món ăn bán chạy')
+                                    ->schema([
+                                        Forms\Components\Toggle::make('is_best_seller')
+                                            ->label('Là món bán chạy')
+                                            ->default(false),
+                                        Forms\Components\FileUpload::make('best_seller_banner')
+                                            ->label('Banner Best Seller')
+                                            ->directory('foods/best_seller')
+                                            ->image()
+                                            ->imagePreviewHeight('120')
+                                            ->openable()
+                                            ->downloadable(),
+                                    ]),
+                            ])->columnSpanFull(),
+                    ])
+                    ->columnSpanFull(),
             ]);
     }
 
@@ -115,7 +144,10 @@ class FoodResource extends Resource
             ->columns([
                 Tables\Columns\ImageColumn::make('thumb_img')
                     ->label('Ảnh')
-                    ->circular(),
+                    ->url(fn ($record) => asset('storage/' . $record->thumb_img))
+                    ->square()
+                    ->height(100)
+                    ->width(100),
                 Tables\Columns\TextColumn::make('name')
                     ->label('Tên món ăn')
                     ->searchable()
@@ -141,6 +173,12 @@ class FoodResource extends Resource
                     ->sortable(),
                 Tables\Columns\ToggleColumn::make('status')
                     ->label('Trạng thái')
+                    ->sortable(),
+                Tables\Columns\IconColumn::make('is_best_seller')
+                    ->label('Bán chạy')
+                    ->boolean()
+                    ->trueIcon('heroicon-o-star')
+                    ->falseIcon('heroicon-o-x-circle')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->label('Ngày tạo')
