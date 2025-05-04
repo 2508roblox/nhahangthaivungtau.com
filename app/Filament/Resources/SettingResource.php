@@ -63,7 +63,7 @@ class SettingResource extends Resource
                                     ->label('Hotline'),
                                 Forms\Components\TextInput::make('fax')
                                     ->label('Fax'),
-                                Forms\Components\RichEditor::make('address')
+                                Forms\Components\TextInput::make('address')
                                     ->label('Địa chỉ'),
                                 Forms\Components\TextInput::make('fanpage')
                                     ->label('Fanpage'),
