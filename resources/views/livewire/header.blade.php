@@ -42,8 +42,8 @@
             </div>
             <div class="   d-flex align-items-center">
                 <a href="{{ route('home') }}">
-                    <img onerror="this.src='thumbs/148x60x2/assets/images/noimage.png';" 
-                         src="{{ asset('storage/'.$settings->logo) }}" 
+                    <img onerror="this.src='/thumbs/148x60x2/assets/images/noimage.png';"
+                         src="{{ asset('storage/'.$settings->logo) }}"
                          alt="{{ $settings->website_name }}"
                          style="width: 270px;   object-fit: contain;" />
                 </a>
@@ -64,7 +64,7 @@
                     <li>
                         <a class="transition {{ request()->routeIs('news.list') ? 'active' : '' }}" href="{{ route('news.list') }}" title="Cẩm nang" style="color: #fff;">Cẩm nang</a>
                     </li>
-                   
+
                 </ul>
             </div>
         </div>

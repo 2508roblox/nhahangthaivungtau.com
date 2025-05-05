@@ -1,72 +1,13 @@
 <div>
-    <!DOCTYPE html>
-    <html lang="vi|en">
 
     <head>
-        <!-- Basehref -->
-        <base href="/" />
-
-        <!-- UTF-8 -->
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-        <!-- Title, Keywords, Description -->
-        <title>Khám phá Đảo Ngọc</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
-
-        <!-- Robots -->
-        <meta name="robots" content="index,follow" />
-
-        <!-- Favicon -->
-        <link href="upload/photo/logoft-4363-5953.png" rel="shortcut icon" type="image/x-icon" />
-
-        <!-- Webmaster Tool -->
-
-        <!-- Security Policy -->
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
-        <!-- GEO -->
-        <meta name="geo.region" content="VN" />
-        <meta name="geo.placename" content="Hồ Chí Minh" />
-        <meta name="geo.position" content="10.823099;106.629664" />
-        <meta name="ICBM" content="10.823099, 106.629664" />
-
-        <!-- Author - Copyright -->
-        <meta name='revisit-after' content='1 days' />
-        <meta name="author" content="Ẩm Thực Đảo Ngọc" />
-        <meta name="copyright" content="Ẩm Thực Đảo Ngọc - [nhahangthaivungtau@gmail.com]" />
-
-        <!-- Facebook -->
-        <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="Ẩm Thực Đảo Ngọc" />
-        <meta property="og:title" content="Khám phá Đảo Ngọc" />
-        <meta property="og:description" content="" />
-        <meta property="og:url" content="https://nhahangthaivungtau.com/bai-viet-2" />
-        <meta property="og:image"
-            content="https://nhahangthaivungtau.com/thumbs/1365x600x2/upload/news/slider-9732.jpg" />
-        <meta property="og:image:alt" content="Khám phá Đảo Ngọc" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="1365" />
-        <meta property="og:image:height" content="600" />
-
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="nhahangthaivungtau@gmail.com" />
-        <meta name="twitter:creator" content="Ẩm Thực Đảo Ngọc" />
-        <meta property="og:url" content="https://nhahangthaivungtau.com/bai-viet-2" />
-        <meta property="og:title" content="Khám phá Đảo Ngọc" />
-        <meta property="og:description" content="" />
-        <meta property="og:image"
-            content="https://nhahangthaivungtau.com/thumbs/1365x600x2/upload/news/slider-9732.jpg" />
-
-        <!-- Canonical -->
-        <link rel="canonical" href="https://nhahangthaivungtau.com/bai-viet-2" />
-
-        <!-- Chống đổi màu trên IOS -->
-        <meta name="format-detection" content="telephone=no">
-
-        <!-- Viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>{{ $news->title }}</title>
+        <meta property="og:image" content="{{ url(Storage::url($news->thumb_img)) }}">
+        <meta name="description" content="{{ $news->short_desc }}">
+        <meta property="og:url" content="{{ url('/tin-tuc/' . $news->slug) }}">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="{{ $news->title }}">
+        <meta property="og:description" content="{{ $news->short_desc }}">
         <!-- Css Files -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link href="{{ asset('assets/css/animate.min.css?v=ZXPNU7W6bW') }}" rel="stylesheet">
@@ -111,22 +52,21 @@
         <div class="breadCrumbs">
             <div class="center">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-decoration-none"
-                            href="https://nhahangthaivungtau.com/"><span>Trang chủ</span></a></li>
-                    <li class="breadcrumb-item "><a class="text-decoration-none"
-                            href="https://nhahangthaivungtau.com/cach-thuong-thuc"><span>Cách thưởng thức</span></a>
+                    <li class="breadcrumb-item"><a class="text-decoration-none" href="/"><span>Trang chủ</span></a></li>
+                    <li class="breadcrumb-item "><a class="text-decoration-none" href="/tin-tuc"><span>Cẩm
+                                nang</span></a>
                     </li>
                     <li class="breadcrumb-item active"><a class="text-decoration-none"
-                            href="https://nhahangthaivungtau.com/bai-viet-2"><span>Khám phá Đảo Ngọc</span></a></li>
+                            href="/tin-tuc"><span>{{ $news->title }}</span></a></li>
                 </ol>
-                <script type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type":"ListItem","position":1,"name":"C\u00e1ch th\u01b0\u1edfng th\u1ee9c","item":"https:\/\/nhahangthaivungtau.com\/cach-thuong-thuc"},{"@type":"ListItem","position":2,"name":"Kh\u00e1m ph\u00e1 \u0110\u1ea3o Ng\u1ecdc","item":"https:\/\/nhahangthaivungtau.com\/bai-viet-2"}]}</script>
             </div>
         </div>
         <div id="container" class="center w-clear">
             <div class="title-detail">
-                <h1>Khám phá Đảo Ngọc</h1>
+                <h1>{{ $news->title }}</h1>
             </div>
-            <div class="time-detail"><i class="fas fa-calendar-week"></i><span>Ngày đăng: 26/02/2024 03:47 PM</span>
+            <div class="time-detail"><i class="fas fa-calendar-week"></i><span>Ngày đăng:
+                    {{ $news->created_at->format('d/m/Y') }} {{ $news->created_at->format('H:i') }}</span>
             </div>
             <div class="meta-toc">
                 <div class="box-readmore">
@@ -134,91 +74,27 @@
                 </div>
             </div>
             <div class="content w-clear" id="toc-content">
-                <h2 data-sourcepos="1:1-1:57">Khám phá Đảo Ngọc - Nơi mang đến tinh hoa ẩm thực Việt</h2>
-
-                <p data-sourcepos="3:1-3:165"><strong>Đảo Ngọc</strong> tọa lạc tại địa chỉ <strong>89 Nguyễn Thị Búp,
-                        Quận 12</strong>, hứa hẹn mang đến cho bạn trải nghiệm ẩm thực Việt Nam <strong>đậm đà hương
-                        vị</strong> và <strong>chuẩn mực phục vụ</strong>.</p>
-
-                <p data-sourcepos="5:1-5:25"><strong>Tại đây, bạn sẽ được:</strong></p>
-
-                <ul data-sourcepos="7:1-16:0">
-                    <li data-sourcepos="7:1-9:120"><strong>Thưởng thức:</strong>
-
-                        <ul data-sourcepos="8:5-9:120">
-                            <li data-sourcepos="8:5-8:118">Các món ăn <strong>nổi tiếng khắp Sài Gòn</strong> được chế
-                                biến từ nguyên liệu tươi ngon,<em loopnumber="648156525" match="đảm bảo"> đảm
-                                    bảo </em>vệ sinh an toàn thực phẩm.</li>
-                            <li data-sourcepos="9:5-9:120">Hương vị <strong>đậm đà, chuẩn vị Việt</strong>, mang đến
-                                cho bạn cảm giác như đang lạc bước vào thế giới ẩm thực truyền thống.</li>
-                        </ul>
-                    </li>
-                    <li data-sourcepos="10:1-12:77"><strong>Trải nghiệm:</strong>
-                        <ul data-sourcepos="11:5-12:77">
-                            <li data-sourcepos="11:5-11:92"><strong>Phong cách phục vụ chuyên nghiệp, chu đáo</strong>,
-                                mang đến cho bạn sự hài lòng tuyệt đối.</li>
-                            <li data-sourcepos="12:5-12:77"><strong>Không gian ấm cúng, gần gũi</strong>, tạo cảm giác
-                                thoải mái như đang ở nhà.</li>
-                        </ul>
-                    </li>
-                    <li data-sourcepos="13:1-16:0"><strong>Thích thú:</strong>
-                        <ul data-sourcepos="14:5-16:0">
-                            <li data-sourcepos="14:5-14:97"><strong>Đa dạng các món ăn kèm</strong> được phục vụ miễn
-                                phí, cho bạn thỏa sức lựa chọn và thưởng thức.</li>
-                            <li data-sourcepos="15:5-16:0"><strong>Mức giá hợp lý</strong>, phù hợp với mọi đối tượng
-                                khách hàng.</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <p data-sourcepos="17:1-17:52"><strong>Đảo Ngọc</strong> là điểm đến lý tưởng cho những ai muốn:</p>
-
-                <ul data-sourcepos="19:1-23:0">
-                    <li data-sourcepos="19:1-19:43">Tìm kiếm <strong>món ngon Việt Nam</strong> đúng điệu.</li>
-                    <li data-sourcepos="20:1-20:51">Trải nghiệm <strong>phong cách phục vụ chuyên nghiệp</strong>.</li>
-                    <li data-sourcepos="21:1-21:41">Thưởng thức <strong>đa dạng các món ăn kèm</strong>.</li>
-                    <li data-sourcepos="22:1-23:0">Có những giây phút <strong>vui vẻ, thoải mái</strong> bên gia đình
-                        và bạn bè.</li>
-                </ul>
-
-                <p data-sourcepos="24:1-24:28"><strong>Hãy đến với Đảo Ngọc để:</strong></p>
-
-                <ul data-sourcepos="26:1-29:0">
-                    <li data-sourcepos="26:1-26:37">Khám phá <strong>tinh hoa ẩm thực Việt</strong>.</li>
-                    <li data-sourcepos="27:1-27:33">Tận hưởng <strong>dịch vụ hoàn hảo</strong>.</li>
-                    <li data-sourcepos="28:1-29:0">Tạo dựng những kỷ niệm đẹp đẽ.</li>
-                </ul>
-
-                <p data-sourcepos="30:1-30:20"><strong>Liên hệ đặt bàn:</strong></p>
-
-                <ul data-sourcepos="32:1-34:0">
-                    <li data-sourcepos="32:1-32:50"><strong>Địa chỉ:</strong> 89 Nguyễn Thị Búp, Quận 12, Vietnam</li>
-                    <li data-sourcepos="33:1-34:0"><strong>Điện thoại:</strong> 0918 606 032</li>
-                </ul>
-
-                <p data-sourcepos="35:1-35:59"><strong>Đảo Ngọc - Nơi mang đến sự hài lòng cho mọi thực khách!</strong>
-                </p>
+                {!! $news->desc !!}
             </div>
             <div class="share">
                 <b>Chia sẻ:</b>
                 <div class="social-plugin w-clear">
                     <div>
-                        <a href="https://www.addtoany.com/share#url=https://nhahangthaivungtau.com/bai-viet-2&amp;title=share"
+                        <a href="https://www.addtoany.com/share#url={{ url('/tin-tuc/' . $news->slug) }}&amp;title=share"
                             target="_blank"><img src="{{ asset('https://static.addtoany.com/buttons/a2a.svg') }}"
                                 width="32" height="32" style="background-color:royalblue"></a>
-                        <a href="https://www.addtoany.com/add_to/facebook?linkurl=https://nhahangthaivungtau.com/bai-viet-2&amp;linkname=share"
-                            target="_blank"><img
-                                src="{{ asset('https://static.addtoany.com/buttons/facebook.svg') }}" width="32"
-                                height="32" style="background-color:royalblue"></a>
-                        <a href="https://www.addtoany.com/add_to/twitter?linkurl=https://nhahangthaivungtau.com/bai-viet-2&amp;linkname=share"
+                        <a href="https://www.addtoany.com/add_to/facebook?linkurl={{ url('/tin-tuc/' . $news->slug) }}&amp;linkname=share"
+                            target="_blank"><img src="{{ asset('https://static.addtoany.com/buttons/facebook.svg') }}"
+                                width="32" height="32" style="background-color:royalblue"></a>
+                        <a href="https://www.addtoany.com/add_to/twitter?linkurl={{ url('/tin-tuc/' . $news->slug) }}&amp;linkname=share"
                             target="_blank"><img src="{{ asset('https://static.addtoany.com/buttons/twitter.svg') }}"
                                 width="32" height="32" style="background-color:royalblue"></a>
-                        <a href="https://www.addtoany.com/add_to/email?linkurl=https://nhahangthaivungtau.com/bai-viet-2&amp;linkname=share"
+                        <a href="https://www.addtoany.com/add_to/email?linkurl={{ url('/tin-tuc/' . $news->slug) }}&amp;linkname=share"
                             target="_blank"><img src="{{ asset('https://static.addtoany.com/buttons/email.svg') }}"
                                 width="32" height="32" style="background-color:royalblue"></a>
                     </div>
                     <!-- AddToAny END -->
-                    <div class="zalo-share-button" data-href="https://nhahangthaivungtau.com/bai-viet-2"
+                    <div class="zalo-share-button" data-href="{{ url('/tin-tuc/' . $news->slug) }}"
                         data-oaid="579745863508352884" data-layout="1" data-color="blue" data-customize=false></div>
                 </div>
             </div>
@@ -288,21 +164,25 @@
         <script type="text/javascript" src="{{ asset('assets/bootstrap/bootstrap.js?v=wqRy9n5jjw') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/wow.min.js?v=SI2SSmfLZL') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/mmenu/mmenu.js?v=4QlN3ywOL3') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/simplyscroll/jquery.simplyscroll.js?v=ll7H22nnvG') }}"></script>
+        <script type="text/javascript"
+            src="{{ asset('assets/simplyscroll/jquery.simplyscroll.js?v=ll7H22nnvG') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/fotorama/fotorama.js?v=QFc1OklAKF') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/owlcarousel2/owl.carousel.js?v=TRud2zE6mS') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/magiczoomplus/magiczoomplus.js?v=zgUItoiOct') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/slick/slick.js?v=aR0hJAvgwD') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/fancybox3/jquery.fancybox.js?v=8DEUt5uw8G') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/photobox/photobox.js?v=kRUWY9S66w') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/datetimepicker/php-date-formatter.min.js?v=Epy1zt4LBv') }}">
-        </script>
-        <script type="text/javascript" src="{{ asset('assets/datetimepicker/jquery.mousewheel.js?v=3drWm4IZan') }}"></script>
+        <script type="text/javascript"
+            src="{{ asset('assets/datetimepicker/php-date-formatter.min.js?v=Epy1zt4LBv') }}">
+            </script>
+        <script type="text/javascript"
+            src="{{ asset('assets/datetimepicker/jquery.mousewheel.js?v=3drWm4IZan') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/datetimepicker/jquery.datetimepicker.js?v=MHcSClC1Ho') }}">
         </script>
         <script type="text/javascript" src="{{ asset('assets/toc/toc.js?v=cXdxQJ6Tmc') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/functions.js?v=3zTJxAQW1w') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/js/jquery.pixelentity.shiner.min.js?v=SxiPeQgZ40') }}"></script>
+        <script type="text/javascript"
+            src="{{ asset('assets/js/jquery.pixelentity.shiner.min.js?v=SxiPeQgZ40') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/swiperjs/swiper-bundle.min.js?v=HdWwAJaw0n') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/apps.js?v=vlhvuCbcnS') }}"></script>
 
@@ -348,18 +228,18 @@
         <!-- Js Addons -->
         <div id="script-main"></div>
         <script type="text/javascript">
-            $(function() {
+            $(function () {
                 var a = !1;
-                $(window).scroll(function() {
+                $(window).scroll(function () {
                     $(window).scrollTop() > 10 && !a && ($("#messages-facebook").load(
                         "ajax/ajax_addons.php?type=messages-facebook"), a = !0)
                 })
             });
         </script>
         <script type="text/javascript">
-            $(function() {
+            $(function () {
                 var a = !1;
-                $(window).scroll(function() {
+                $(window).scroll(function () {
                     $(window).scrollTop() > 0.5 && !a && ($("#script-main").load(
                         "ajax/ajax_addons.php?type=script-main"), a = !0)
                 })
@@ -372,6 +252,4 @@
             </svg>
         </div>
     </body>
-
-    </html>
 </div>

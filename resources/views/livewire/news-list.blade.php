@@ -1,70 +1,8 @@
 <div>
-    <!DOCTYPE html>
-    <html lang="vi|en">
 
     <head>
-        <!-- Basehref -->
-        <base href="/" />
 
-        <!-- UTF-8 -->
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-        <!-- Title, Keywords, Description -->
         <title>Cách thưởng thức</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
-
-        <!-- Robots -->
-        <meta name="robots" content="index,follow" />
-
-        <!-- Favicon -->
-        <link href="upload/photo/logoft-4363-5953.png" rel="shortcut icon" type="image/x-icon" />
-
-        <!-- Webmaster Tool -->
-
-        <!-- Security Policy -->
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
-        <!-- GEO -->
-        <meta name="geo.region" content="VN" />
-        <meta name="geo.placename" content="Hồ Chí Minh" />
-        <meta name="geo.position" content="10.823099;106.629664" />
-        <meta name="ICBM" content="10.823099, 106.629664" />
-
-        <!-- Author - Copyright -->
-        <meta name='revisit-after' content='1 days' />
-        <meta name="author" content="Ẩm Thực Đảo Ngọc" />
-        <meta name="copyright" content="Ẩm Thực Đảo Ngọc - [nhahangthaivungtau@gmail.com]" />
-
-        <!-- Facebook -->
-        <meta property="og:type" content="object" />
-        <meta property="og:site_name" content="Ẩm Thực Đảo Ngọc" />
-        <meta property="og:title" content="Cách thưởng thức" />
-        <meta property="og:description" content="" />
-        <meta property="og:url" content="https://nhahangthaivungtau.com/cach-thuong-thuc" />
-        <meta property="og:image" content="" />
-        <meta property="og:image:alt" content="Cách thưởng thức" />
-        <meta property="og:image:type" content="" />
-        <meta property="og:image:width" content="" />
-        <meta property="og:image:height" content="" />
-
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="nhahangthaivungtau@gmail.com" />
-        <meta name="twitter:creator" content="Ẩm Thực Đảo Ngọc" />
-        <meta property="og:url" content="https://nhahangthaivungtau.com/cach-thuong-thuc" />
-        <meta property="og:title" content="Cách thưởng thức" />
-        <meta property="og:description" content="" />
-        <meta property="og:image" content="" />
-
-        <!-- Canonical -->
-        <link rel="canonical" href="https://nhahangthaivungtau.com/cach-thuong-thuc" />
-
-        <!-- Chống đổi màu trên IOS -->
-        <meta name="format-detection" content="telephone=no">
-
-        <!-- Viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <!-- Css Files -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link href="{{ asset('assets/css/animate.min.css?v=PH2iw4glF') }}" rel="stylesheet">
@@ -106,7 +44,7 @@
             <li><a class="u-url ul" href="https://nhahangthaivungtau.com/">https://nhahangthaivungtau.com/</a></li>
         </ul>
         @livewire('header')
-     
+
         <div class="breadCrumbs">
             <div class="center">
                 <ol class="breadcrumb">
@@ -116,15 +54,37 @@
                             href="https://nhahangthaivungtau.com/cach-thuong-thuc"><span>Cách thưởng thức</span></a>
                     </li>
                 </ol>
-                <script type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type":"ListItem","position":1,"name":"C\u00e1ch th\u01b0\u1edfng th\u1ee9c","item":"https:\/\/nhahangthaivungtau.com\/cach-thuong-thuc"}]}</script>
+                <script
+                    type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type":"ListItem","position":1,"name":"C\u00e1ch th\u01b0\u1edfng th\u1ee9c","item":"https:\/\/nhahangthaivungtau.com\/cach-thuong-thuc"}]}</script>
             </div>
         </div>
         <div id="container" class="center w-clear">
             <div class="title-main">
                 <h1>Cách thưởng thức</h1>
             </div>
-            <div class="loading-news" data-show=10 data-type ='cach-thuong-thuc' data-title="Cách thưởng thức">
-
+            <div class="loading-news" data-show="10" data-type="cach-thuong-thuc" data-title="Cách thưởng thức">
+                @foreach ($news as $item)
+                <div class="box-hot-news animate__ animate__zoomIn wow animated"
+                    style="visibility: visible; animation-name: zoomIn;">
+                    <div class="pic-hot-news">
+                        <a class="text-decoration-none scale-img" href="/tin-tuc/{{ $item->slug }}" title="{{ $item->title }}">
+                            <img onerror="this.src='thumbs/480x320x2/assets/images/noimage.png';"
+                                src="{{ Storage::url($item->thumb_img) }}" alt="{{ $item->title }}">
+                        </a>
+                    </div>
+                    <div class="desc-hot-news">
+                        <h3 class="name-hot-news">
+                            <a class="text-decoration-none scale-img" href="/tin-tuc/{{ $item->slug }}" title="{{ $item->title }}">
+                                {{ $item->title }} </a>
+                        </h3>
+                        <div class="time-hot-news">Đăng ngày: {{ $item->created_at->format('d/m/Y') }} </div>
+                        <p class="info-hot-news text-split">{{ $item->short_desc }}</p>
+                        <a href="/tin-tuc/{{ $item->slug }}" class="btn-hot-news">Đọc tin.</a>
+                    </div>
+                </div>
+                @endforeach
+                <div class="news-total-container">
+                </div>
             </div>
         </div>
         @livewire('footer')
@@ -185,21 +145,25 @@
         <script type="text/javascript" src="{{ asset('assets/bootstrap/bootstrap.js?v=ai31Fd9tbF') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/wow.min.js?v=xann7EmY56') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/mmenu/mmenu.js?v=PiatBW6gOa') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/simplyscroll/jquery.simplyscroll.js?v=LKFzRPeUql') }}"></script>
+        <script type="text/javascript"
+            src="{{ asset('assets/simplyscroll/jquery.simplyscroll.js?v=LKFzRPeUql') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/fotorama/fotorama.js?v=wBAxQzH0i6') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/owlcarousel2/owl.carousel.js?v=pvNQ48ESSV') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/magiczoomplus/magiczoomplus.js?v=JUeTJxrkEN') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/slick/slick.js?v=ubMfN1wI6e') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/fancybox3/jquery.fancybox.js?v=cHW4uAAF1D') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/photobox/photobox.js?v=Loyw4jOys3') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/datetimepicker/php-date-formatter.min.js?v=c41Ce1Ljl9') }}">
-        </script>
-        <script type="text/javascript" src="{{ asset('assets/datetimepicker/jquery.mousewheel.js?v=ktYjxhgPNO') }}"></script>
+        <script type="text/javascript"
+            src="{{ asset('assets/datetimepicker/php-date-formatter.min.js?v=c41Ce1Ljl9') }}">
+            </script>
+        <script type="text/javascript"
+            src="{{ asset('assets/datetimepicker/jquery.mousewheel.js?v=ktYjxhgPNO') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/datetimepicker/jquery.datetimepicker.js?v=vsJkgYlMMd') }}">
         </script>
         <script type="text/javascript" src="{{ asset('assets/toc/toc.js?v=VXjYrgQ6sG') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/functions.js?v=l7tWLVfQCr') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/js/jquery.pixelentity.shiner.min.js?v=W3wz6b8Gzn') }}"></script>
+        <script type="text/javascript"
+            src="{{ asset('assets/js/jquery.pixelentity.shiner.min.js?v=W3wz6b8Gzn') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/swiperjs/swiper-bundle.min.js?v=qHCmBKF0VL') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/apps.js?v=kzEYM6g1RW') }}"></script>
 
@@ -230,18 +194,18 @@
         <!-- Js Addons -->
         <div id="script-main"></div>
         <script type="text/javascript">
-            $(function() {
+            $(function () {
                 var a = !1;
-                $(window).scroll(function() {
+                $(window).scroll(function () {
                     $(window).scrollTop() > 10 && !a && ($("#messages-facebook").load(
                         "ajax/ajax_addons.php?type=messages-facebook"), a = !0)
                 })
             });
         </script>
         <script type="text/javascript">
-            $(function() {
+            $(function () {
                 var a = !1;
-                $(window).scroll(function() {
+                $(window).scroll(function () {
                     $(window).scrollTop() > 0.5 && !a && ($("#script-main").load(
                         "ajax/ajax_addons.php?type=script-main"), a = !0)
                 })
@@ -255,5 +219,4 @@
         </div>
     </body>
 
-    </html>
 </div>

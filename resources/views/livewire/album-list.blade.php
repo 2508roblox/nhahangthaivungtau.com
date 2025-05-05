@@ -119,21 +119,61 @@
         </div>
         <div id="container" class="center w-clear">
             <div class="title-main">
-                <h1>Video</h1>
-                <p></p>
-            </div>
-            <div class="w-clear">
-                <div class="box-video text-decoration-none" data-fancybox="video"
-                    data-src="https://www.youtube.com/watch?v=GNeYb8JxTls" title="">
-                    <div class="pic-video scale-img"><img
-                            onerror="this.src='thumbs/480x360x2/assets/images/noimage.png';"
-                            src="{{ asset('https://img.youtube.com/vi/GNeYb8JxTls/0.jpg') }}" alt="" /></div>
-                    <h3 class="name-video text-split"></h3>
+    <h1>Không gian quán</h1>
+    <p></p>
+</div>
+<div class="w-clear">
+                        <div class="box-album">
+                <div class="pic-album">
+                    <a class="text-decoration-none scale-img" href="album-6" title="Album 6">
+                        <img onerror="this.src='thumbs/540x540x2/assets/images/noimage.png';" src="thumbs/540x540x1/upload/product/4211956044597280436414846659908515408414651n-4945.jpg" alt="Album 6">
+                    </a>
                 </div>
-                <div class="clear"></div>
-                <div class="pagination-home"></div>
+                <h3 class="name-album text-split">Album 6</h3>
             </div>
-        </div>
+                    <div class="box-album">
+                <div class="pic-album">
+                    <a class="text-decoration-none scale-img" href="album-5" title="Album 5">
+                        <img onerror="this.src='thumbs/540x540x2/assets/images/noimage.png';" src="thumbs/540x540x1/upload/product/4187389924534268209382736966552340802858549n-2584.jpg" alt="Album 5">
+                    </a>
+                </div>
+                <h3 class="name-album text-split">Album 5</h3>
+            </div>
+                    <div class="box-album">
+                <div class="pic-album">
+                    <a class="text-decoration-none scale-img" href="album-4" title="Album 4">
+                        <img onerror="this.src='thumbs/540x540x2/assets/images/noimage.png';" src="thumbs/540x540x1/upload/product/imgalbum1-2916.jpg" alt="Album 4">
+                    </a>
+                </div>
+                <h3 class="name-album text-split">Album 4</h3>
+            </div>
+                    <div class="box-album">
+                <div class="pic-album">
+                    <a class="text-decoration-none scale-img" href="album-3" title="Album 3">
+                        <img onerror="this.src='thumbs/540x540x2/assets/images/noimage.png';" src="thumbs/540x540x1/upload/product/4187328404534270642715821957851210359025432n-7109.jpg" alt="Album 3">
+                    </a>
+                </div>
+                <h3 class="name-album text-split">Album 3</h3>
+            </div>
+                    <div class="box-album">
+                <div class="pic-album">
+                    <a class="text-decoration-none scale-img" href="album-2" title="Album 2">
+                        <img onerror="this.src='thumbs/540x540x2/assets/images/noimage.png';" src="thumbs/540x540x1/upload/product/4296692314848019811340903938413084471332823n-4901.jpg" alt="Album 2">
+                    </a>
+                </div>
+                <h3 class="name-album text-split">Album 2</h3>
+            </div>
+                    <div class="box-album">
+                <div class="pic-album">
+                    <a class="text-decoration-none scale-img" href="album-1" title="Album 1">
+                        <img onerror="this.src='thumbs/540x540x2/assets/images/noimage.png';" src="thumbs/540x540x1/upload/product/4296902674848016378007917854878830773590064n-1917.jpg" alt="Album 1">
+                    </a>
+                </div>
+                <h3 class="name-album text-split">Album 1</h3>
+            </div>
+                <div class="clear"></div>
+    <div class="pagination-home"></div>
+</div>        </div>
         @livewire('footer')
 
         <!-- Modal notify -->
