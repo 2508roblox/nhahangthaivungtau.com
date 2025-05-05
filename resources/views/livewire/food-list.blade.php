@@ -1,70 +1,8 @@
 <div>
-    <!DOCTYPE html>
-    <html lang="vi|en">
-
     <head>
-        <!-- Basehref -->
-        <base href="/" />
-
-        <!-- UTF-8 -->
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
         <!-- Title, Keywords, Description -->
-        <title>Menu</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
-
-        <!-- Robots -->
-        <meta name="robots" content="index,follow" />
-
-        <!-- Favicon -->
-        <link href="upload/photo/logoft-4363-5953.png" rel="shortcut icon" type="image/x-icon" />
-
-        <!-- Webmaster Tool -->
-
-        <!-- Security Policy -->
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
-        <!-- GEO -->
-        <meta name="geo.region" content="VN" />
-        <meta name="geo.placename" content="Hồ Chí Minh" />
-        <meta name="geo.position" content="10.823099;106.629664" />
-        <meta name="ICBM" content="10.823099, 106.629664" />
-
-        <!-- Author - Copyright -->
-        <meta name='revisit-after' content='1 days' />
-        <meta name="author" content="Ẩm Thực Đảo Ngọc" />
-        <meta name="copyright" content="Ẩm Thực Đảo Ngọc - [nhahangthaivungtau@gmail.com]" />
-
-        <!-- Facebook -->
-        <meta property="og:type" content="object" />
-        <meta property="og:site_name" content="Ẩm Thực Đảo Ngọc" />
-        <meta property="og:title" content="Menu" />
-        <meta property="og:description" content="" />
-        <meta property="og:url" content="https://nhahangthaivungtau.com/menu" />
-        <meta property="og:image" content="" />
-        <meta property="og:image:alt" content="Menu" />
-        <meta property="og:image:type" content="" />
-        <meta property="og:image:width" content="" />
-        <meta property="og:image:height" content="" />
-
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="nhahangthaivungtau@gmail.com" />
-        <meta name="twitter:creator" content="Ẩm Thực Đảo Ngọc" />
-        <meta property="og:url" content="https://nhahangthaivungtau.com/menu" />
-        <meta property="og:title" content="Menu" />
-        <meta property="og:description" content="" />
-        <meta property="og:image" content="" />
-
-        <!-- Canonical -->
-        <link rel="canonical" href="https://nhahangthaivungtau.com/menu" />
-
-        <!-- Chống đổi màu trên IOS -->
-        <meta name="format-detection" content="telephone=no">
-
-        <!-- Viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Món ăn - {{ $setting->web_name }}</title>
         <!-- Css Files -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link href="{{ asset('assets/css/animate.min.css?v=fpyPnG26N7') }}" rel="stylesheet">
@@ -99,22 +37,24 @@
     </head>
 
     <body>
-        <ul class="h-card hidden">
-            <li class="h-fn fn">Ẩm Thực Đảo Ngọc</li>
-            <li class="h-org org">Ẩm Thực Đảo Ngọc</li>
-            <li class="h-tel tel">0918606032</li>
-            <li><a class="u-url ul" href="https://nhahangthaivungtau.com/">https://nhahangthaivungtau.com/</a></li>
-        </ul>
+
         @livewire('header')
         <div class="breadCrumbs">
             <div class="center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-decoration-none"
-                            href="https://nhahangthaivungtau.com/"><span>Trang chủ</span></a></li>
-                    <li class="breadcrumb-item active"><a class="text-decoration-none"
-                            href="https://nhahangthaivungtau.com/menu"><span>Menu</span></a></li>
+                            href="{{ route('home') }}"><span>Trang chủ</span></a></li>
+                    <li class="breadcrumb-item "><a class="text-decoration-none"
+                            href="{{ route('food.list') }}"><span>Món ăn</span></a></li>
+                            @if ($category)
+                                <li class="breadcrumb-item "><a class="text-decoration-none"
+                                    href="{{ route('food.list', ['category' => $category->id]) }}"><span>{{ $category->name }}</span></a></li>
+                            @endif
+                            @if ($subCategory)
+                                <li class="breadcrumb-item "><a class="text-decoration-none"
+                                    href="{{ route('food.list', ['category' => $category->id, 'subcategory' => $subCategory->id]) }}"><span>{{ $subCategory->name }}</span></a></li>
+                            @endif
                 </ol>
-                <script type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type":"ListItem","position":1,"name":"Menu","item":"https:\/\/nhahangthaivungtau.com\/menu"}]}</script>
             </div>
         </div>
         <div id="container" class="center w-clear">
@@ -124,82 +64,20 @@
             </div>
             <div class="w-clear">
                 <div class="div-product">
+                    @foreach ($foods as $food)
                     <div class="product-item">
-                        <div class="product-image"><a class="scale-img" href="heo-sua-quay-lu"
-                                title="Heo sữa quay lu_Đảo ngọc"><img
+                        <div class="product-image"><a class="scale-img" href="{{ route('food.detail', $food->slug) }}"
+                                title="{{ $food->name }}"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('/thumbs/540x540x1/upload/product/4286330914808387348637483471338278497491559n-4095.jpg') }}"
-                                    alt="Heo sữa quay lu_Đảo ngọc"></a></div>
+                                    src="{{ Storage::url($food->thumb_img) }}"
+                                    alt="{{ $food->name }}"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
-                                    href="heo-sua-quay-lu" title="Heo sữa quay lu_Đảo ngọc">Heo sữa quay lu_Đảo
-                                    ngọc</a></h3>
+                                    href="{{ route('food.detail', $food->slug) }}" title="{{ $food->name }}">{{ $food->name }}</a></h3>
                             <p class="price-box"><span class="price-new">Liên hệ</span></p>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <div class="product-image"><a class="scale-img" href="tom-hung-alaskadao-ngoc"
-                                title="Tôm hùng alaska_Đảo Ngọc"><img
-                                    onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('/thumbs/540x540x1/upload/product/3867175943977839298358961412330629269003547n-1555.jpg') }}"
-                                    alt="Tôm hùng alaska_Đảo Ngọc"></a></div>
-                        <div class="product-desc">
-                            <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
-                                    href="tom-hung-alaskadao-ngoc" title="Tôm hùng alaska_Đảo Ngọc">Tôm hùng
-                                    alaska_Đảo Ngọc</a></h3>
-                            <p class="price-box"><span class="price-new">Liên hệ</span></p>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image"><a class="scale-img" href="cua-gach-sot-hoang-kimdao-ngoc"
-                                title="Cua gạch sốt hoàng kim_Đảo Ngọc"><img
-                                    onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('/thumbs/540x540x1/upload/product/3735970903781264151349816828652451922535504n-3937.jpg') }}"
-                                    alt="Cua gạch sốt hoàng kim_Đảo Ngọc"></a></div>
-                        <div class="product-desc">
-                            <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
-                                    href="cua-gach-sot-hoang-kimdao-ngoc" title="Cua gạch sốt hoàng kim_Đảo Ngọc">Cua
-                                    gạch sốt hoàng kim_Đảo Ngọc</a></h3>
-                            <p class="price-box"><span class="price-new">Liên hệ</span></p>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image"><a class="scale-img" href="oc-huong-dao-ngoc"
-                                title="Ốc hương_Đảo Ngọc"><img
-                                    onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('/thumbs/540x540x1/upload/product/3754652943781261451350082847489614264125173n-6914.jpg') }}"
-                                    alt="Ốc hương_Đảo Ngọc"></a></div>
-                        <div class="product-desc">
-                            <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
-                                    href="oc-huong-dao-ngoc" title="Ốc hương_Đảo Ngọc">Ốc hương_Đảo Ngọc</a></h3>
-                            <p class="price-box"><span class="price-new">Liên hệ</span></p>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image"><a class="scale-img" href="ca-hu-hap-dao-ngoc"
-                                title="Cá hú hấp_Đảo Ngọc"><img
-                                    onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('/thumbs/540x540x1/upload/product/3736470583781264284683132984145346152003333n-9651.jpg') }}"
-                                    alt="Cá hú hấp_Đảo Ngọc"></a></div>
-                        <div class="product-desc">
-                            <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
-                                    href="ca-hu-hap-dao-ngoc" title="Cá hú hấp_Đảo Ngọc">Cá hú hấp_Đảo Ngọc</a></h3>
-                            <p class="price-box"><span class="price-new">Liên hệ</span></p>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image"><a class="scale-img" href="tom-nuong-pho-maidao-ngoc"
-                                title="Tôm nướng phô mai_Đảo Ngọc"><img
-                                    onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('/thumbs/540x540x1/upload/product/imgmenu-5692.jpg') }}"
-                                    alt="Tôm nướng phô mai_Đảo Ngọc"></a></div>
-                        <div class="product-desc">
-                            <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
-                                    href="tom-nuong-pho-maidao-ngoc" title="Tôm nướng phô mai_Đảo Ngọc">Tôm nướng phô
-                                    mai_Đảo Ngọc</a></h3>
-                            <p class="price-box"><span class="price-new">Liên hệ</span></p>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 <div class="clear"></div>
                 <div class="pagination-home mgt-25"></div>
@@ -333,6 +211,4 @@
             </svg>
         </div>
     </body>
-
-    </html>
 </div>

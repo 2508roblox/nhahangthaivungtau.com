@@ -47,24 +47,14 @@
         <div class="slideshow">
             <p class="control-slideshow prev-slideshow transition"><i class="fas fa-chevron-left"></i></p>
             <div class="owl-carousel owl-theme owl-slideshow">
+                @foreach($slides as $slide)
                 <div>
                     <a href="" target="_blank" title="Slideshow 1"><img
                             onerror="this.src='/thumbs/1366x600x2/assets/images/noimage.png';"
-                            src="{{ asset('/thumbs/1366x600x1/upload/photo/slider-1810.jpg') }}" alt="Slideshow 1"
+                            src="{{ Storage::url($slide->image_link) }}" alt="Slideshow 1"
                             title="Slideshow 1" /></a>
                 </div>
-                <div>
-                    <a href="" target="_blank" title="Slideshow 2"><img
-                            onerror="this.src='/thumbs/1366x600x2/assets/images/noimage.png';"
-                            src="{{ asset('/thumbs/1366x600x1/upload/photo/4211956044597280436414846659908515408414651n-7307.jpg') }}"
-                            alt="Slideshow 2" title="Slideshow 2" /></a>
-                </div>
-                <div>
-                    <a href="" target="_blank" title="Slideshow 3"><img
-                            onerror="this.src='/thumbs/1366x600x2/assets/images/noimage.png';"
-                            src="{{ asset('/thumbs/1366x600x1/upload/photo/4298206084848015811341303574031463615875274n-2899.jpg') }}"
-                            alt="Slideshow 3" title="Slideshow 3" /></a>
-                </div>
+                @endforeach
             </div>
             <p class="control-slideshow next-slideshow transition"><i class="fas fa-chevron-right"></i></p>
         </div>

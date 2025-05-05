@@ -13,19 +13,19 @@
         <title>{{ $setting->home_title }}</title>
         <meta name="description" content="{{ $setting->home_description }}" />
         <meta name="keywords" content="{{ $setting->home_keywork }}" />
-             <meta property="og:image" content="{{ url(Storage::url(App\Models\Setting::first()->home_image)) }}">
+             <meta property="og:image" content="{{ url(Storage::url(App\Models\Setting::first()->home_banner)) }}">
 
 
     @endif
-    <link rel="icon" type="image/png" href="{{Storage::url($setting->web_icon)}}">
-    {!! App\Models\Setting::first()->script_header !!}
+    <link rel="icon" type="image/png" href="{{Storage::url($setting->web_favicon)}}">
+    {!! $setting->script_header !!}
     @livewireStyles
 </head>
 
 <body>
     {{ $slot }}
     @livewireScripts
-    {!! App\Models\Setting::first()->script_footer !!}
+    {!! $setting->script_footer !!}
 </body>
 <style>
 .elementor-kit-998 {

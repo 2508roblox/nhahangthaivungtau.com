@@ -1,35 +1,43 @@
 <div>
-    <div class="top-header" style="background: #002418; color: #fff; padding: 5px 0;">
+    <div class="top-header" style="background: {{ $settings->consulting_color }}; color: #fff; padding: 5px 0;">
         <div class="center d-flex align-items-center justify-content-between">
             <div class="left">
                 <i class="fas fa-map-marker-alt"></i> {{ $settings->address }}
             </div>
             <div class="right">
-                <i class="fas fa-phone"></i> Hotline: {{ $settings->hotline }} | <i class="far fa-envelope"></i> Email: {{ $settings->email }}
+                <i class="fas fa-phone"></i> Hotline: {{ $settings->hotline }} | <i class="far fa-envelope"></i> Email:
+                {{ $settings->email }}
             </div>
         </div>
     </div>
-    <div id="menu" style="background: #003D26;">
+    <div id="menu" style="background: #003D26; padding: 0;">
         <div class="center d-flex align-items-center justify-content-between">
             <div class="left-menu">
                 <ul class="d-flex align-items-center justify-content-start" style="color: #fff;">
                     <li>
-                        <a class="transition {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}" title="Trang chủ" style="color: #fff;">Trang chủ</a>
+                        <a class="transition {{ request()->routeIs('home') ? 'active' : '' }}"
+                            href="{{ route('home') }}" title="Trang chủ" style="color: #fff;">Trang chủ</a>
                     </li>
                     <li>
-                        <a class="transition {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}" title="Giới thiệu" style="color: #fff;">Giới thiệu</a>
+                        <a class="transition {{ request()->routeIs('about') ? 'active' : '' }}"
+                            href="{{ route('about') }}" title="Giới thiệu" style="color: #fff;">Giới thiệu</a>
                     </li>
                     <li class="menu-item-has-children">
-                        <a class="transition {{ request()->routeIs('food.*') ? 'active' : '' }}" href="{{ route('food.list') }}" title="Món ăn" style="color: #fff;">Món ăn</a>
+                        <a class="transition {{ request()->routeIs('food.*') ? 'active' : '' }}"
+                            href="{{ route('food.list') }}" title="Món ăn" style="color: #fff;">Món ăn</a>
                         <ul class="sub-menu">
                             @foreach($categories as $category)
                                 <li class="menu-item-has-children">
-                                    <a href="{{ route('food.list', ['category' => $category->slug]) }}" title="{{ $category->name }}" style="color: #fff;">{{ $category->name }}</a>
+                                    <a style="color: #000000;"
+                                        href="{{ route('food.list', ['category' => $category->id]) }}"
+                                        title="{{ $category->name }}">{{ $category->name }}</a>
                                     @if($category->subCategories->count() > 0)
                                         <ul class="sub-menu">
                                             @foreach($category->subCategories as $subCategory)
                                                 <li>
-                                                    <a href="{{ route('food.list', ['category' => $category->slug, 'subcategory' => $subCategory->slug]) }}" title="{{ $subCategory->name }}" style="color: #fff;">{{ $subCategory->name }}</a>
+                                                    <a style="color: #000000;"
+                                                        href="{{ route('food.list', ['category' => $category->id, 'subcategory' => $subCategory->id]) }}"
+                                                        title="{{ $subCategory->name }}">{{ $subCategory->name }}</a>
                                                 </li>
                                             @endforeach
                                         </ul>
@@ -43,26 +51,36 @@
             <div class="   d-flex align-items-center">
                 <a href="{{ route('home') }}">
                     <img onerror="this.src='/thumbs/148x60x2/assets/images/noimage.png';"
-                         src="{{ asset('storage/'.$settings->logo) }}"
-                         alt="{{ $settings->website_name }}"
-                         style="width: 270px;   object-fit: contain;" />
+                        src="{{ Storage::url($settings->web_logo) }}" alt="{{ $settings->web_name }}"
+                        style="width: initial;object-fit: contain;max-height: 150px;" />
                 </a>
             </div>
             <style>
                 #menu .center {
-    max-width: 1200px;
-}
+                    max-width: 1200px;
+                }
+
+                #menu ul li ul li a {
+                    text-align: left;
+                    border-bottom: 1px solid rgb(0 0 0 / 20%);
+                    padding: 10px;
+                    border-radius: 0;
+                }
             </style>
             <div class="right-menu">
                 <ul class="d-flex align-items-center justify-content-start">
                     <li>
-                        <a class="transition {{ request()->routeIs('video.list') ? 'active' : '' }}" href="{{ route('video.list') }}" title="Review ẩm thực" style="color: #fff;">Review ẩm thực</a>
+                        <a class="transition {{ request()->routeIs('video.list') ? 'active' : '' }}"
+                            href="{{ route('video.list') }}" title="Review ẩm thực" style="color: #fff;">Review ẩm
+                            thực</a>
                     </li>
                     <li>
-                        <a class="transition {{ request()->routeIs('album.list') ? 'active' : '' }}" href="{{ route('album.list') }}" title="Album ảnh" style="color: #fff;">Album ảnh</a>
+                        <a class="transition {{ request()->routeIs('album.list') ? 'active' : '' }}"
+                            href="{{ route('album.list') }}" title="Album ảnh" style="color: #fff;">Album ảnh</a>
                     </li>
                     <li>
-                        <a class="transition {{ request()->routeIs('news.list') ? 'active' : '' }}" href="{{ route('news.list') }}" title="Cẩm nang" style="color: #fff;">Cẩm nang</a>
+                        <a class="transition {{ request()->routeIs('news.list') ? 'active' : '' }}"
+                            href="{{ route('news.list') }}" title="Cẩm nang" style="color: #fff;">Cẩm nang</a>
                     </li>
 
                 </ul>
@@ -82,22 +100,22 @@
             <ul>
                 <li class="heading">Chuyên mục</li>
                 <li>
-                    <a class="transition active" href="" title="Trang chủ">Trang chủ</a>
+                    <a class="transition active" href="{{ route('home') }}" title="Trang chủ">Trang chủ</a>
                 </li>
                 <li>
-                    <a class="transition " href="gioi-thieu" title="Giới thiệu">Giới thiệu</a>
+                    <a class="transition " href="{{ route('about') }}" title="Giới thiệu">Giới thiệu</a>
                 </li>
                 <li>
-                    <a class="transition " href="menu" title="Menu">Menu</a>
+                    <a class="transition " href="{{ route('food.list') }}" title="Món ăn">Món ăn</a>
                 </li>
                 <li>
-                    <a class="transition " href="video" title="Video">Video</a>
+                    <a class="transition " href="{{ route('video.list') }}" title="Review ẩm thực">Review ẩm thực</a>
                 </li>
                 <li>
-                    <a class="transition " href="cach-thuong-thuc" title="Cách thưởng thức">Cách thưởng thức</a>
+                    <a class="transition " href="{{ route('album.list') }}" title="Album ảnh">Album ảnh</a>
                 </li>
                 <li>
-                    <a class="transition " href="lien-he" title="Liên hệ">Liên hệ</a>
+                    <a class="transition " href="{{ route('news.list') }}" title="Cẩm nang">Cẩm nang</a>
                 </li>
             </ul>
         </nav>
