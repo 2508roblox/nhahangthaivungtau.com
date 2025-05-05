@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 05, 2025 at 01:35 PM
+-- Generation Time: May 05, 2025 at 01:40 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -176,7 +176,8 @@ CREATE TABLE `foods` (
 --
 
 INSERT INTO `foods` (`id`, `category_id`, `sub_category_id`, `name`, `slug`, `thumb_img`, `img`, `price`, `discount_price`, `description`, `order_number`, `status`, `is_best_seller`, `best_seller_banner`, `created_at`, `updated_at`) VALUES
-(1, 1, 3, 'Menu Buffet Lẩu Thái', 'menu-buffet-lau-thai', 'foods/thumb/01JTB28TSJYTS35WZX33EWYJE8.png', 'foods/01JTB28TSNP3ZB9HM3G3E3MGRK.png', '195000.00', '165000.00', '<p>test</p>', 0, 1, 1, 'foods/best_seller/01JTCGVA4TYN5KPYR459KQX31M.png', '2025-05-03 05:34:51', '2025-05-03 19:10:00');
+(1, 1, 3, 'Menu Buffet Lẩu Thái', 'menu-buffet-lau-thai', 'foods/thumb/01JTB28TSJYTS35WZX33EWYJE8.png', 'foods/01JTB28TSNP3ZB9HM3G3E3MGRK.png', '195000.00', '165000.00', '<p>test</p>', 0, 1, 1, 'foods/best_seller/01JTCGVA4TYN5KPYR459KQX31M.png', '2025-05-03 05:34:51', '2025-05-03 19:10:00'),
+(3, 1, 3, 'Menu Buffet Lẩu Thái', 'menu-buffet-lau-thai1', 'foods/thumb/01JTB28TSJYTS35WZX33EWYJE8.png', 'foods/01JTB28TSNP3ZB9HM3G3E3MGRK.png', '195000.00', '165000.00', '<p>test</p>', 0, 1, 1, 'foods/best_seller/01JTCGVA4TYN5KPYR459KQX31M.png', '2025-05-03 05:34:51', '2025-05-03 19:10:00');
 
 -- --------------------------------------------------------
 
@@ -322,7 +323,7 @@ CREATE TABLE `online_users` (
 --
 
 INSERT INTO `online_users` (`id`, `ip_address`, `last_activity`, `created_at`, `updated_at`) VALUES
-(15, '127.0.0.1', '2025-05-05 06:32:59', '2025-05-05 06:07:31', '2025-05-05 06:32:59');
+(15, '127.0.0.1', '2025-05-05 06:40:12', '2025-05-05 06:07:31', '2025-05-05 06:40:12');
 
 -- --------------------------------------------------------
 
@@ -412,7 +413,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('yXvPx3w2SPmWMZjLCO1o0AUe8KFFe64yjo53yKUo', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiU1FxNGZSSnhhNVVXN0JERUpMQUFvMDVJRGZtNnFTYmRlTDliZnFsaCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9tb24tYW4iO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1746451978);
+('yXvPx3w2SPmWMZjLCO1o0AUe8KFFe64yjo53yKUo', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiU1FxNGZSSnhhNVVXN0JERUpMQUFvMDVJRGZtNnFTYmRlTDliZnFsaCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC90aW4tdHVjIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJFA2OWNTSk04WlZFWUhESFBsUXFxMi41cWQ0djU3WFh0ZUxtSWtwVFowdVEzbUxoUC5qM3N5IjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1746452411);
 
 -- --------------------------------------------------------
 
@@ -557,7 +558,7 @@ CREATE TABLE `visitors` (
 INSERT INTO `visitors` (`id`, `date`, `count`, `created_at`, `updated_at`) VALUES
 (1, '2025-05-03', 321, '2025-05-03 04:41:49', '2025-05-03 06:45:48'),
 (2, '2025-05-04', 292, '2025-05-03 18:36:19', '2025-05-03 20:08:56'),
-(3, '2025-05-05', 3027, '2025-05-05 03:38:06', '2025-05-05 06:32:59');
+(3, '2025-05-05', 3118, '2025-05-05 03:38:06', '2025-05-05 06:40:12');
 
 --
 -- Indexes for dumped tables
@@ -742,7 +743,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `foods`
 --
 ALTER TABLE `foods`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `jobs`
