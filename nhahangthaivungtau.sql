@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 05, 2025 at 11:44 AM
+-- Generation Time: May 05, 2025 at 12:01 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -63,8 +63,8 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:11;', 1746444813),
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746444813;', 1746444813),
+('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1746446436),
+('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746446436;', 1746446436),
 ('laravel_cache_livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1746441549),
 ('laravel_cache_livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1746441549;', 1746441549);
 
@@ -322,7 +322,7 @@ CREATE TABLE `online_users` (
 --
 
 INSERT INTO `online_users` (`id`, `ip_address`, `last_activity`, `created_at`, `updated_at`) VALUES
-(13, '127.0.0.1', '2025-05-05 04:44:25', '2025-05-05 04:26:38', '2025-05-05 04:44:25');
+(13, '127.0.0.1', '2025-05-05 05:00:47', '2025-05-05 04:26:38', '2025-05-05 05:00:47');
 
 -- --------------------------------------------------------
 
@@ -374,18 +374,23 @@ CREATE TABLE `reviews` (
   `status` tinyint(1) NOT NULL DEFAULT '1',
   `is_featured` tinyint(1) NOT NULL DEFAULT '0',
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `reviews`
 --
 
-INSERT INTO `reviews` (`id`, `video_link`, `title`, `description`, `order_number`, `status`, `is_featured`, `created_at`, `updated_at`) VALUES
-(1, 'https://youtube.com/shorts/lDUu_-75WVc?si=52hKeLKRjOMEGs4Q', 'Lẩu thái', 'Lẩu thái video', 2, 1, 1, '2025-05-03 06:05:52', '2025-05-03 06:07:13'),
-(2, 'https://youtube.com/shorts/lDUu_-75WVc?si=52hKeLKRjOMEGs4Q', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-03 06:07:13'),
-(3, 'https://youtube.com/shorts/lDUu_-75WVc?si=52hKeLKRjOMEGs4Q', 'Lẩu thái', 'Lẩu thái video', 3, 1, 1, '2025-05-03 06:05:52', '2025-05-03 06:07:13'),
-(4, 'https://youtube.com/shorts/lDUu_-75WVc?si=52hKeLKRjOMEGs4Q', 'Lẩu thái', 'Lẩu thái video', 4, 1, 0, '2025-05-03 06:05:52', '2025-05-03 06:07:13');
+INSERT INTO `reviews` (`id`, `video_link`, `title`, `description`, `order_number`, `status`, `is_featured`, `created_at`, `updated_at`, `image`) VALUES
+(2, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
+(5, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
+(6, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
+(7, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
+(8, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
+(9, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
+(10, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
+(11, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png');
 
 -- --------------------------------------------------------
 
@@ -407,7 +412,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('yXvPx3w2SPmWMZjLCO1o0AUe8KFFe64yjo53yKUo', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiU1FxNGZSSnhhNVVXN0JERUpMQUFvMDVJRGZtNnFTYmRlTDliZnFsaCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hbGJ1bS1hbmgva2hvbmctZ2lhbi1uaGEtaGFuZyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRQNjljU0pNOFpWRVlIREhQbFFxcTIuNXFkNHY1N1hYdGVMbUlrcFRaMHVRM21MaFAuajNzeSI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1746445463);
+('yXvPx3w2SPmWMZjLCO1o0AUe8KFFe64yjo53yKUo', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiU1FxNGZSSnhhNVVXN0JERUpMQUFvMDVJRGZtNnFTYmRlTDliZnFsaCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC92aWRlbyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRQNjljU0pNOFpWRVlIREhQbFFxcTIuNXFkNHY1N1hYdGVMbUlrcFRaMHVRM21MaFAuajNzeSI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1746446446);
 
 -- --------------------------------------------------------
 
@@ -545,7 +550,7 @@ CREATE TABLE `visitors` (
 INSERT INTO `visitors` (`id`, `date`, `count`, `created_at`, `updated_at`) VALUES
 (1, '2025-05-03', 321, '2025-05-03 04:41:49', '2025-05-03 06:45:48'),
 (2, '2025-05-04', 292, '2025-05-03 18:36:19', '2025-05-03 20:08:56'),
-(3, '2025-05-05', 2126, '2025-05-05 03:38:06', '2025-05-05 04:44:25');
+(3, '2025-05-05', 2439, '2025-05-05 03:38:06', '2025-05-05 05:00:47');
 
 --
 -- Indexes for dumped tables
@@ -772,7 +777,7 @@ ALTER TABLE `reservations`
 -- AUTO_INCREMENT for table `reviews`
 --
 ALTER TABLE `reviews`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `settings`

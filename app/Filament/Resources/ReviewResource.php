@@ -45,6 +45,11 @@ class ReviewResource extends Resource
                                     ->label('Tiêu đề')
                                     ->required()
                                     ->maxLength(255),
+                                Forms\Components\FileUpload::make('image')
+                                    ->directory('reviews')
+                                    ->label('Hình ảnh')
+                                    ->required(),
+
                             ]),
                         Forms\Components\Textarea::make('description')
                             ->label('Mô tả')

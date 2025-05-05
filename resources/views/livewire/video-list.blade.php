@@ -1,70 +1,9 @@
 <div>
-    <!DOCTYPE html>
-    <html lang="vi|en">
 
     <head>
-        <!-- Basehref -->
-        <base href="/" />
 
-        <!-- UTF-8 -->
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Review ẩm thực</title>
 
-        <!-- Title, Keywords, Description -->
-        <title>Video</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
-
-        <!-- Robots -->
-        <meta name="robots" content="index,follow" />
-
-        <!-- Favicon -->
-        <link href="upload/photo/logoft-4363-5953.png" rel="shortcut icon" type="image/x-icon" />
-
-        <!-- Webmaster Tool -->
-
-        <!-- Security Policy -->
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
-        <!-- GEO -->
-        <meta name="geo.region" content="VN" />
-        <meta name="geo.placename" content="Hồ Chí Minh" />
-        <meta name="geo.position" content="10.823099;106.629664" />
-        <meta name="ICBM" content="10.823099, 106.629664" />
-
-        <!-- Author - Copyright -->
-        <meta name='revisit-after' content='1 days' />
-        <meta name="author" content="Ẩm Thực Đảo Ngọc" />
-        <meta name="copyright" content="Ẩm Thực Đảo Ngọc - [nhahangthaivungtau@gmail.com]" />
-
-        <!-- Facebook -->
-        <meta property="og:type" content="object" />
-        <meta property="og:site_name" content="Ẩm Thực Đảo Ngọc" />
-        <meta property="og:title" content="Video" />
-        <meta property="og:description" content="" />
-        <meta property="og:url" content="https://nhahangthaivungtau.com/video" />
-        <meta property="og:image" content="https://nhahangthaivungtau.com/thumbs/xx2/upload/seopage/" />
-        <meta property="og:image:alt" content="Video" />
-        <meta property="og:image:type" content="" />
-        <meta property="og:image:width" content="" />
-        <meta property="og:image:height" content="" />
-
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="nhahangthaivungtau@gmail.com" />
-        <meta name="twitter:creator" content="Ẩm Thực Đảo Ngọc" />
-        <meta property="og:url" content="https://nhahangthaivungtau.com/video" />
-        <meta property="og:title" content="Video" />
-        <meta property="og:description" content="" />
-        <meta property="og:image" content="https://nhahangthaivungtau.com/thumbs/xx2/upload/seopage/" />
-
-        <!-- Canonical -->
-        <link rel="canonical" href="https://nhahangthaivungtau.com/video" />
-
-        <!-- Chống đổi màu trên IOS -->
-        <meta name="format-detection" content="telephone=no">
-
-        <!-- Viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <!-- Css Files -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link href="{{ asset('assets/css/animate.min.css?v=JotnzvlYzj') }}" rel="stylesheet">
@@ -123,13 +62,15 @@
                 <p></p>
             </div>
             <div class="w-clear">
+                @foreach ($videos as $video)
                 <div class="box-video text-decoration-none" data-fancybox="video"
-                    data-src="https://www.youtube.com/watch?v=GNeYb8JxTls" title="">
+                    data-src="{{ $video->video_link }}" title="">
                     <div class="pic-video scale-img"><img
                             onerror="this.src='/thumbs/480x360x2/assets/images/noimage.png';"
-                            src="{{ asset('https://img.youtube.com/vi/GNeYb8JxTls/0.jpg') }}" alt="" /></div>
+                            src="{{ Storage::url($video->image) }}" alt="" /></div>
                     <h3 class="name-video text-split"></h3>
                 </div>
+                @endforeach
                 <div class="clear"></div>
                 <div class="pagination-home"></div>
             </div>
@@ -262,6 +203,4 @@
             </svg>
         </div>
     </body>
-
-    </html>
 </div>

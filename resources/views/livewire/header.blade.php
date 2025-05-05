@@ -56,7 +56,7 @@
             <div class="right-menu">
                 <ul class="d-flex align-items-center justify-content-start">
                     <li>
-                        <a class="transition {{ request()->routeIs('news.*') ? 'active' : '' }}" href="{{ route('news.list') }}" title="Review ẩm thực" style="color: #fff;">Review ẩm thực</a>
+                        <a class="transition {{ request()->routeIs('video.list') ? 'active' : '' }}" href="{{ route('video.list') }}" title="Review ẩm thực" style="color: #fff;">Review ẩm thực</a>
                     </li>
                     <li>
                         <a class="transition {{ request()->routeIs('album.list') ? 'active' : '' }}" href="{{ route('album.list') }}" title="Album ảnh" style="color: #fff;">Album ảnh</a>

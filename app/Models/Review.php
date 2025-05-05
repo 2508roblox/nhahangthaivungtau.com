@@ -16,6 +16,7 @@ class Review extends Model
         'order_number',
         'status',
         'is_featured',
+        'image',
     ];
 
     protected $casts = [
