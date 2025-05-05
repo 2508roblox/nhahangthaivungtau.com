@@ -8,6 +8,7 @@ use App\Livewire\FoodDetail;
 use App\Livewire\NewsList;
 use App\Livewire\NewsDetail;
 use App\Livewire\AlbumList;
+use App\Livewire\AlbumDetail;
 use App\Livewire\VideoList;
 
 Route::get('/', HomePage::class)->name('home');
@@ -17,4 +18,5 @@ Route::get('/mon-an/{slug}', FoodDetail::class)->name('food.detail');
 Route::get('/tin-tuc', NewsList::class)->name('news.list');
 Route::get('/tin-tuc/{slug}', NewsDetail::class)->name('news.detail');
 Route::get('/album-anh', AlbumList::class)->name('album.list');
+Route::get('/album-anh/{slug}', AlbumDetail::class)->name('album.detail');
 Route::get('/video', VideoList::class)->name('video.list');

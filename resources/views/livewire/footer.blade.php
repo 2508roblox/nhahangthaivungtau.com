@@ -3,24 +3,24 @@
         <div class="wave-container">
             <svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
               <path d="
-                M0,120 
+                M0,120
                 C120,40 240,200 360,120
                 C480,40 600,0 720,120
                 C840,240 960,240 1080,120
                 C1200,0 1320,80 1440,120
-              " 
+              "
               fill="none" stroke="#FFD369" stroke-width="5" />
             </svg>
           </div>
       </div>
     <div id="footer">
-        
+
         <div class="footer-top">
             <div class="center d-flex flex-wrap align-items-start justify-content-between">
                 <div class="footer-1">
                     <div class="logo-ft sss1 d-flex align-items-center justify-content-center">
-                        <a href=""><img onerror="this.src='thumbs/225x90x2/assets/images/noimage.png';"
-                                src="{{ asset('thumbs/225x90x2/upload/photo/logoft-4363.png') }}" /></a>
+                        <a href=""><img onerror="this.src='/thumbs/225x90x2/assets/images/noimage.png';"
+                                src="{{ asset('/thumbs/225x90x2/upload/photo/logoft-4363.png') }}" /></a>
                     </div>
                     <div class="footer-content">
                         <p style="text-align: center;">Địa chỉ: 89 Nguyễn Thị Búp, Quận 12, Thành phố Hồ Chí Minh,
@@ -35,29 +35,29 @@
                     <ul class="mxh footer-mxh">
                         <li>
                             <a href="" target="_blank">
-                                <img onerror="this.src='thumbs/20x20x2/assets/images/noimage.png';"
-                                    src="{{ asset('thumbs/20x20x2/upload/photo/socicalft4-28243.png') }}"
+                                <img onerror="this.src='/thumbs/20x20x2/assets/images/noimage.png';"
+                                    src="{{ asset('/thumbs/20x20x2/upload/photo/socicalft4-28243.png') }}"
                                     alt="4">
                             </a>
                         </li>
                         <li>
                             <a href="" target="_blank">
-                                <img onerror="this.src='thumbs/20x20x2/assets/images/noimage.png';"
-                                    src="{{ asset('thumbs/20x20x2/upload/photo/socicalft3-88092.png') }}"
+                                <img onerror="this.src='/thumbs/20x20x2/assets/images/noimage.png';"
+                                    src="{{ asset('/thumbs/20x20x2/upload/photo/socicalft3-88092.png') }}"
                                     alt="3">
                             </a>
                         </li>
                         <li>
                             <a href="" target="_blank">
-                                <img onerror="this.src='thumbs/20x20x2/assets/images/noimage.png';"
-                                    src="{{ asset('thumbs/20x20x2/upload/photo/socicalft2-68291.png') }}"
+                                <img onerror="this.src='/thumbs/20x20x2/assets/images/noimage.png';"
+                                    src="{{ asset('/thumbs/20x20x2/upload/photo/socicalft2-68291.png') }}"
                                     alt="2">
                             </a>
                         </li>
                         <li>
                             <a href="" target="_blank">
-                                <img onerror="this.src='thumbs/20x20x2/assets/images/noimage.png';"
-                                    src="{{ asset('thumbs/20x20x2/upload/photo/socicalft1-42700.png') }}"
+                                <img onerror="this.src='/thumbs/20x20x2/assets/images/noimage.png';"
+                                    src="{{ asset('/thumbs/20x20x2/upload/photo/socicalft1-42700.png') }}"
                                     alt="1">
                             </a>
                         </li>
@@ -73,7 +73,7 @@
         </div>
 
     </div>
-  
+
     {!! $settings->map_iframe !!}
     <a class="btn-zalo btn-frame text-decoration-none" target="_blank" href="https://zalo.me/0918606032">
         <div class="animated infinite zoomIn kenit-alo-circle"></div>

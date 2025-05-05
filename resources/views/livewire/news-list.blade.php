@@ -68,7 +68,7 @@
                     style="visibility: visible; animation-name: zoomIn;">
                     <div class="pic-hot-news">
                         <a class="text-decoration-none scale-img" href="/tin-tuc/{{ $item->slug }}" title="{{ $item->title }}">
-                            <img onerror="this.src='thumbs/480x320x2/assets/images/noimage.png';"
+                            <img onerror="this.src='/thumbs/480x320x2/assets/images/noimage.png';"
                                 src="{{ Storage::url($item->thumb_img) }}" alt="{{ $item->title }}">
                         </a>
                     </div>

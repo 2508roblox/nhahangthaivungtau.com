@@ -13,7 +13,11 @@ class Album extends Model
         'image_link',
         'title',
         'order_number',
+        'images',
+        'slug',
+        'views',
     ];
-
-    
+    protected $casts = [
+        'images' => 'array',
+    ];
 }

@@ -1,7 +1,7 @@
     <div class="box-hot-news animate__animated animate__zoomIn wow">
         <div class="pic-hot-news">
             <a class="text-decoration-none scale-img" href="bai-viet-2" title="Khám phá Đảo Ngọc">
-                <img onerror="this.src='thumbs/480x320x2/assets/images/noimage.png';" src="thumbs/480x320x1/upload/news/slider-9732.jpg" alt="Khám phá Đảo Ngọc">
+                <img onerror="this.src='/thumbs/480x320x2/assets/images/noimage.png';" src="thumbs/480x320x1/upload/news/slider-9732.jpg" alt="Khám phá Đảo Ngọc">
             </a>
         </div>
         <div class="desc-hot-news">
@@ -16,4 +16,3 @@
     </div>
     <div class="news-total-container">
                 </div>
-        

@@ -41,6 +41,10 @@ class AlbumResource extends Resource
                                     ->label('Tiêu đề')
                                     ->required()
                                     ->maxLength(255),
+                                Forms\Components\TextInput::make('slug')
+                                    ->label('Slug')
+                                    ->required()
+                                    ->maxLength(255),
                                 Forms\Components\TextInput::make('order_number')
                                     ->label('Thứ tự')
                                     ->numeric()
@@ -48,11 +52,25 @@ class AlbumResource extends Resource
                                     ->required(),
                                 Forms\Components\FileUpload::make('image_link')
                                     ->label('Ảnh')
+                                    ->directory('albums_image_link')
                                     ->image()
                                     ->disk('public')
                                     ->columnSpanFull()
-                                    ->required()
-                                 ,
+                                    ->required(),
+                                Forms\Components\FileUpload::make('images')
+                                    ->directory('albums_images')
+                                    ->label('Ảnh')
+                                    ->image()
+                                    ->disk('public')
+                                    ->columnSpanFull()
+                                    ->multiple()
+                                    ->required(),
+                                Forms\Components\TextInput::make('views')
+                                    ->label('Lượt xem')
+                                    ->numeric()
+                                    ->default(0)
+                                    ->required(),
+
                             ]),
                     ]),
             ]);
@@ -74,7 +92,7 @@ class AlbumResource extends Resource
                 Tables\Columns\TextColumn::make('order_number')
                     ->label('Thứ tự')
                     ->sortable(),
-         
+
             ])
             ->filters([
                 //

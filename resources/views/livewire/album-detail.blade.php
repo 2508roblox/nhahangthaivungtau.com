@@ -3,7 +3,7 @@
     <head>
 
         <!-- Title, Keywords, Description -->
-        <title>Không gian quán</title>
+        <title>{{ $album->title }}</title>
 
         <!-- Css Files -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -50,31 +50,75 @@
             <div class="center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-decoration-none" href="/"><span>Trang chủ</span></a></li>
-                    <li class="breadcrumb-item active"><a class="text-decoration-none"
+                    <li class="breadcrumb-item "><a class="text-decoration-none"
                             href="/album-anh"><span>Album</span></a></li>
+                    <li class="breadcrumb-item active"><a class="text-decoration-none"
+                            href="/album-anh/{{ $album->slug }}"><span>{{ $album->title }}</span></a></li>
                 </ol>
             </div>
         </div>
         <div id="container" class="center w-clear">
             <div class="title-main">
-                <h1>Không gian quán</h1>
+                <h1>{{ $album->title }}</h1>
                 <p></p>
             </div>
-            <div class="w-clear">
-                @foreach ($albums as $album)
-                <div class="box-album">
-                    <div class="pic-album">
-                        <a class="text-decoration-none scale-img" href="/album-anh/{{ $album->slug }}" title="{{ $album->title }}">
-                            <img onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png';"
-                                src="{{ Storage::url($album->image_link) }}"
-                                alt="{{ $album->title }}">
+            <div class="content-main album-gallery form-row w-clear">
+                @foreach ($album->images as $image)
+                    <div class="box_albumnb_detail">
+                        <a class="albumsnb_detail d-block text-decoration-none" rel="album-19"
+                            href="{{ Storage::url($image) }}" title="{{ $album->title }}">
+                            <div class="pic_albumsnb_detail scale-img hover_img">
+                                <img class="w-100" src="{{ Storage::url($image) }}" alt="{{ $album->title }}">
+                            </div>
                         </a>
                     </div>
-                    <h3 class="name-album text-split">{{ $album->title }}</h3>
-                </div>
                 @endforeach
-                <div class="clear"></div>
-                <div class="pagination-home"></div>
+                <style>
+                    .box_albumnb_detail:nth-child(3n + 1) {
+                        clear: both;
+                    }
+
+                    .box_albumnb_detail {
+                        float: left;
+                        margin-bottom: 2%;
+                        width: initial;
+                    }
+
+                    @media (max-width: 768px) {
+                        .box_albumnb_detail:nth-child(3n + 1) {
+                            clear: initial;
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        .box_albumnb_detail {
+                            width: 49%;
+                        }
+                    }
+
+                    .content-main.album-gallery.form-row.w-clear {
+                        display: flex;
+                        margin: 0 !important;
+                        flex-wrap: wrap;
+                    }
+
+                    .content-main.album-gallery.form-row.w-clear>* {
+                        width: 100%;
+                    }
+
+                    @media (min-width: 768px) {
+                        .content-main.album-gallery.form-row.w-clear>* {
+                            width: calc(100% / 3 - 10px);
+                            /* 3 cột */
+                            margin-right: 15px;
+                        }
+
+                        .content-main.album-gallery.form-row.w-clear>*:nth-child(3n) {
+                            margin-right: 0;
+                            /* bỏ margin bên phải cột thứ 3 */
+                        }
+                    }
+                </style>
             </div>
         </div>
         @livewire('footer')

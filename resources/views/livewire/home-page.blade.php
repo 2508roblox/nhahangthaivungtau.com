@@ -49,20 +49,20 @@
             <div class="owl-carousel owl-theme owl-slideshow">
                 <div>
                     <a href="" target="_blank" title="Slideshow 1"><img
-                            onerror="this.src='thumbs/1366x600x2/assets/images/noimage.png';"
-                            src="{{ asset('thumbs/1366x600x1/upload/photo/slider-1810.jpg') }}" alt="Slideshow 1"
+                            onerror="this.src='/thumbs/1366x600x2/assets/images/noimage.png';"
+                            src="{{ asset('/thumbs/1366x600x1/upload/photo/slider-1810.jpg') }}" alt="Slideshow 1"
                             title="Slideshow 1" /></a>
                 </div>
                 <div>
                     <a href="" target="_blank" title="Slideshow 2"><img
-                            onerror="this.src='thumbs/1366x600x2/assets/images/noimage.png';"
-                            src="{{ asset('thumbs/1366x600x1/upload/photo/4211956044597280436414846659908515408414651n-7307.jpg') }}"
+                            onerror="this.src='/thumbs/1366x600x2/assets/images/noimage.png';"
+                            src="{{ asset('/thumbs/1366x600x1/upload/photo/4211956044597280436414846659908515408414651n-7307.jpg') }}"
                             alt="Slideshow 2" title="Slideshow 2" /></a>
                 </div>
                 <div>
                     <a href="" target="_blank" title="Slideshow 3"><img
-                            onerror="this.src='thumbs/1366x600x2/assets/images/noimage.png';"
-                            src="{{ asset('thumbs/1366x600x1/upload/photo/4298206084848015811341303574031463615875274n-2899.jpg') }}"
+                            onerror="this.src='/thumbs/1366x600x2/assets/images/noimage.png';"
+                            src="{{ asset('/thumbs/1366x600x1/upload/photo/4298206084848015811341303574031463615875274n-2899.jpg') }}"
                             alt="Slideshow 3" title="Slideshow 3" /></a>
                 </div>
             </div>
@@ -88,17 +88,17 @@
                 </div>
                 <div class="intro-right animate__animated animate__fadeInRight wow">
                     <div class="intro-image intro-image1 scale-img"><img
-                            onerror="this.src='thumbs/331x420x2/assets/images/noimage.png';"
-                            src="{{ asset('thumbs/331x420x1/upload/news/imggioithieu-8480.jpg') }}" /></div>
+                            onerror="this.src='/thumbs/331x420x2/assets/images/noimage.png';"
+                            src="{{ asset('/thumbs/331x420x1/upload/news/imggioithieu-8480.jpg') }}" /></div>
                     <div class="intro-image intro-image2 scale-img"><img
-                            onerror="this.src='thumbs/223x285x2/assets/images/noimage.png';"
-                            src="{{ asset('thumbs/223x285x1/upload/news/imggioithieu2-7949.jpg') }}" /></div>
+                            onerror="this.src='/thumbs/223x285x2/assets/images/noimage.png';"
+                            src="{{ asset('/thumbs/223x285x1/upload/news/imggioithieu2-7949.jpg') }}" /></div>
                 </div>
             </div>
         </div>
         <div id="quangcao" class="animate__animated animate__fadeIn wow">
-            <a onclick="goToByScroll('#video')"><img onerror="this.src='thumbs/1366x330x2/assets/images/noimage.png';"
-                    src="{{ asset('thumbs/1366x330x1/upload/photo/bgqc-3531.jpg') }}" /></a>
+            <a onclick="goToByScroll('#video')"><img onerror="this.src='/thumbs/1366x330x2/assets/images/noimage.png';"
+                    src="{{ asset('/thumbs/1366x330x1/upload/photo/bgqc-3531.jpg') }}" /></a>
         </div>
         <div id="product" class="animate__animated animate__fadeIn wow">
             <div class="center">
@@ -115,7 +115,7 @@
                         <div class="product-image"><a class="scale-img" href="heo-sua-quay-lu"
                                 title="Heo sữa quay lu_Đảo ngọc"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('thumbs/540x540x1/upload/product/4286330914808387348637483471338278497491559n-4095.jpg') }}"
+                                    src="{{ asset('/thumbs/540x540x1/upload/product/4286330914808387348637483471338278497491559n-4095.jpg') }}"
                                     alt="Heo sữa quay lu_Đảo ngọc"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
@@ -128,7 +128,7 @@
                         <div class="product-image"><a class="scale-img" href="tom-hung-alaskadao-ngoc"
                                 title="Tôm hùng alaska_Đảo Ngọc"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('thumbs/540x540x1/upload/product/3867175943977839298358961412330629269003547n-1555.jpg') }}"
+                                    src="{{ asset('/thumbs/540x540x1/upload/product/3867175943977839298358961412330629269003547n-1555.jpg') }}"
                                     alt="Tôm hùng alaska_Đảo Ngọc"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
@@ -141,7 +141,7 @@
                         <div class="product-image"><a class="scale-img" href="cua-gach-sot-hoang-kimdao-ngoc"
                                 title="Cua gạch sốt hoàng kim_Đảo Ngọc"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('thumbs/540x540x1/upload/product/3735970903781264151349816828652451922535504n-3937.jpg') }}"
+                                    src="{{ asset('/thumbs/540x540x1/upload/product/3735970903781264151349816828652451922535504n-3937.jpg') }}"
                                     alt="Cua gạch sốt hoàng kim_Đảo Ngọc"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
@@ -154,7 +154,7 @@
                         <div class="product-image"><a class="scale-img" href="oc-huong-dao-ngoc"
                                 title="Ốc hương_Đảo Ngọc"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('thumbs/540x540x1/upload/product/3754652943781261451350082847489614264125173n-6914.jpg') }}"
+                                    src="{{ asset('/thumbs/540x540x1/upload/product/3754652943781261451350082847489614264125173n-6914.jpg') }}"
                                     alt="Ốc hương_Đảo Ngọc"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
@@ -166,7 +166,7 @@
                         <div class="product-image"><a class="scale-img" href="ca-hu-hap-dao-ngoc"
                                 title="Cá hú hấp_Đảo Ngọc"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('thumbs/540x540x1/upload/product/3736470583781264284683132984145346152003333n-9651.jpg') }}"
+                                    src="{{ asset('/thumbs/540x540x1/upload/product/3736470583781264284683132984145346152003333n-9651.jpg') }}"
                                     alt="Cá hú hấp_Đảo Ngọc"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
@@ -178,7 +178,7 @@
                         <div class="product-image"><a class="scale-img" href="tom-nuong-pho-maidao-ngoc"
                                 title="Tôm nướng phô mai_Đảo Ngọc"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('thumbs/540x540x1/upload/product/imgmenu-5692.jpg') }}"
+                                    src="{{ asset('/thumbs/540x540x1/upload/product/imgmenu-5692.jpg') }}"
                                     alt="Tôm nướng phô mai_Đảo Ngọc"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
@@ -292,8 +292,8 @@
                         <div class="box-khachhang">
                             <div class="text-khachhang">
                                 <div class="img-khachhang">
-                                    <img onerror="this.src='thumbs/162x162x2/assets/images/noimage.png';"
-                                        src="{{ asset('thumbs/162x162x1/upload/news/taoanhdeplamnetanh68237-3052.png') }}" />
+                                    <img onerror="this.src='/thumbs/162x162x2/assets/images/noimage.png';"
+                                        src="{{ asset('/thumbs/162x162x1/upload/news/taoanhdeplamnetanh68237-3052.png') }}" />
                                 </div>
                                 <div class="name-khachhang">
                                     <h3>Trần Văn Nam</h3>
@@ -313,8 +313,8 @@
                         <div class="box-khachhang">
                             <div class="text-khachhang">
                                 <div class="img-khachhang">
-                                    <img onerror="this.src='thumbs/162x162x2/assets/images/noimage.png';"
-                                        src="{{ asset('thumbs/162x162x1/upload/news/taoanhdeplamnetanh40146-6896.png') }}" />
+                                    <img onerror="this.src='/thumbs/162x162x2/assets/images/noimage.png';"
+                                        src="{{ asset('/thumbs/162x162x1/upload/news/taoanhdeplamnetanh40146-6896.png') }}" />
                                 </div>
                                 <div class="name-khachhang">
                                     <h3>Đinh Văn Toàn</h3>
@@ -334,8 +334,8 @@
                         <div class="box-khachhang">
                             <div class="text-khachhang">
                                 <div class="img-khachhang">
-                                    <img onerror="this.src='thumbs/162x162x2/assets/images/noimage.png';"
-                                        src="{{ asset('thumbs/162x162x1/upload/news/imgkhachhang-8401.jpg') }}" />
+                                    <img onerror="this.src='/thumbs/162x162x2/assets/images/noimage.png';"
+                                        src="{{ asset('/thumbs/162x162x1/upload/news/imgkhachhang-8401.jpg') }}" />
                                 </div>
                                 <div class="name-khachhang">
                                     <h3>Hariwon </h3>

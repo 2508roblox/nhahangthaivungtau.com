@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 05, 2025 at 11:15 AM
+-- Generation Time: May 05, 2025 at 11:44 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -33,22 +33,18 @@ CREATE TABLE `albums` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `order_number` int NOT NULL DEFAULT '0'
+  `order_number` int NOT NULL DEFAULT '0',
+  `images` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `views` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `albums`
 --
 
-INSERT INTO `albums` (`id`, `image_link`, `created_at`, `updated_at`, `title`, `order_number`) VALUES
-(1, '01JTB5ZWBHVPCE67HD6GBTWMQP.png', NULL, '2025-05-03 06:40:47', 'Món ăn nổi bật', 3),
-(2, '01JTB5HD6A9WN6TTD61GS7XY1V.png', NULL, '2025-05-03 06:40:47', 'Món ăn nổi bật', 1),
-(3, '01JTB5HD6A9WN6TTD61GS7XY1V.png', NULL, '2025-05-03 06:40:47', 'Món ăn nổi bật', 2),
-(4, '01JTB5HD6A9WN6TTD61GS7XY1V.png', NULL, '2025-05-03 06:40:47', 'Món ăn nổi bật', 4),
-(5, '01JTB5HD6A9WN6TTD61GS7XY1V.png', NULL, '2025-05-03 06:40:47', 'Món ăn nổi bật', 5),
-(6, '01JTB5HD6A9WN6TTD61GS7XY1V.png', NULL, '2025-05-03 06:40:47', 'Món ăn nổi bật', 6),
-(7, '01JTB5HD6A9WN6TTD61GS7XY1V.png', NULL, '2025-05-03 06:40:47', 'Món ăn nổi bật', 7),
-(8, '01JTB5HD6A9WN6TTD61GS7XY1V.png', NULL, '2025-05-03 06:40:47', 'Món ăn nổi bật', 8);
+INSERT INTO `albums` (`id`, `image_link`, `created_at`, `updated_at`, `title`, `order_number`, `images`, `slug`, `views`) VALUES
+(2, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0);
 
 -- --------------------------------------------------------
 
@@ -67,8 +63,8 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1746325994),
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746325994;', 1746325994),
+('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:11;', 1746444813),
+('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746444813;', 1746444813),
 ('laravel_cache_livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1746441549),
 ('laravel_cache_livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1746441549;', 1746441549);
 
@@ -326,7 +322,7 @@ CREATE TABLE `online_users` (
 --
 
 INSERT INTO `online_users` (`id`, `ip_address`, `last_activity`, `created_at`, `updated_at`) VALUES
-(12, '127.0.0.1', '2025-05-05 04:14:43', '2025-05-05 03:53:47', '2025-05-05 04:14:43');
+(13, '127.0.0.1', '2025-05-05 04:44:25', '2025-05-05 04:26:38', '2025-05-05 04:44:25');
 
 -- --------------------------------------------------------
 
@@ -411,7 +407,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('yXvPx3w2SPmWMZjLCO1o0AUe8KFFe64yjo53yKUo', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiU1FxNGZSSnhhNVVXN0JERUpMQUFvMDVJRGZtNnFTYmRlTDliZnFsaCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hbGJ1bS1hbmgiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO30=', 1746443682);
+('yXvPx3w2SPmWMZjLCO1o0AUe8KFFe64yjo53yKUo', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiU1FxNGZSSnhhNVVXN0JERUpMQUFvMDVJRGZtNnFTYmRlTDliZnFsaCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hbGJ1bS1hbmgva2hvbmctZ2lhbi1uaGEtaGFuZyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRQNjljU0pNOFpWRVlIREhQbFFxcTIuNXFkNHY1N1hYdGVMbUlrcFRaMHVRM21MaFAuajNzeSI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1746445463);
 
 -- --------------------------------------------------------
 
@@ -549,7 +545,7 @@ CREATE TABLE `visitors` (
 INSERT INTO `visitors` (`id`, `date`, `count`, `created_at`, `updated_at`) VALUES
 (1, '2025-05-03', 321, '2025-05-03 04:41:49', '2025-05-03 06:45:48'),
 (2, '2025-05-04', 292, '2025-05-03 18:36:19', '2025-05-03 20:08:56'),
-(3, '2025-05-05', 1555, '2025-05-05 03:38:06', '2025-05-05 04:14:43');
+(3, '2025-05-05', 2126, '2025-05-05 03:38:06', '2025-05-05 04:44:25');
 
 --
 -- Indexes for dumped tables
@@ -764,7 +760,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `online_users`
 --
 ALTER TABLE `online_users`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `reservations`

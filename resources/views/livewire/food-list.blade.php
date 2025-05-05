@@ -128,7 +128,7 @@
                         <div class="product-image"><a class="scale-img" href="heo-sua-quay-lu"
                                 title="Heo sữa quay lu_Đảo ngọc"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('thumbs/540x540x1/upload/product/4286330914808387348637483471338278497491559n-4095.jpg') }}"
+                                    src="{{ asset('/thumbs/540x540x1/upload/product/4286330914808387348637483471338278497491559n-4095.jpg') }}"
                                     alt="Heo sữa quay lu_Đảo ngọc"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
@@ -141,7 +141,7 @@
                         <div class="product-image"><a class="scale-img" href="tom-hung-alaskadao-ngoc"
                                 title="Tôm hùng alaska_Đảo Ngọc"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('thumbs/540x540x1/upload/product/3867175943977839298358961412330629269003547n-1555.jpg') }}"
+                                    src="{{ asset('/thumbs/540x540x1/upload/product/3867175943977839298358961412330629269003547n-1555.jpg') }}"
                                     alt="Tôm hùng alaska_Đảo Ngọc"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
@@ -154,7 +154,7 @@
                         <div class="product-image"><a class="scale-img" href="cua-gach-sot-hoang-kimdao-ngoc"
                                 title="Cua gạch sốt hoàng kim_Đảo Ngọc"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('thumbs/540x540x1/upload/product/3735970903781264151349816828652451922535504n-3937.jpg') }}"
+                                    src="{{ asset('/thumbs/540x540x1/upload/product/3735970903781264151349816828652451922535504n-3937.jpg') }}"
                                     alt="Cua gạch sốt hoàng kim_Đảo Ngọc"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
@@ -167,7 +167,7 @@
                         <div class="product-image"><a class="scale-img" href="oc-huong-dao-ngoc"
                                 title="Ốc hương_Đảo Ngọc"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('thumbs/540x540x1/upload/product/3754652943781261451350082847489614264125173n-6914.jpg') }}"
+                                    src="{{ asset('/thumbs/540x540x1/upload/product/3754652943781261451350082847489614264125173n-6914.jpg') }}"
                                     alt="Ốc hương_Đảo Ngọc"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
@@ -179,7 +179,7 @@
                         <div class="product-image"><a class="scale-img" href="ca-hu-hap-dao-ngoc"
                                 title="Cá hú hấp_Đảo Ngọc"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('thumbs/540x540x1/upload/product/3736470583781264284683132984145346152003333n-9651.jpg') }}"
+                                    src="{{ asset('/thumbs/540x540x1/upload/product/3736470583781264284683132984145346152003333n-9651.jpg') }}"
                                     alt="Cá hú hấp_Đảo Ngọc"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"
@@ -191,7 +191,7 @@
                         <div class="product-image"><a class="scale-img" href="tom-nuong-pho-maidao-ngoc"
                                 title="Tôm nướng phô mai_Đảo Ngọc"><img
                                     onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
-                                    src="{{ asset('thumbs/540x540x1/upload/product/imgmenu-5692.jpg') }}"
+                                    src="{{ asset('/thumbs/540x540x1/upload/product/imgmenu-5692.jpg') }}"
                                     alt="Tôm nướng phô mai_Đảo Ngọc"></a></div>
                         <div class="product-desc">
                             <h3 class="product-name"><a class="text-decoration-none text-split text-split-2"

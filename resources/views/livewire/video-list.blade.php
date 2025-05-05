@@ -126,7 +126,7 @@
                 <div class="box-video text-decoration-none" data-fancybox="video"
                     data-src="https://www.youtube.com/watch?v=GNeYb8JxTls" title="">
                     <div class="pic-video scale-img"><img
-                            onerror="this.src='thumbs/480x360x2/assets/images/noimage.png';"
+                            onerror="this.src='/thumbs/480x360x2/assets/images/noimage.png';"
                             src="{{ asset('https://img.youtube.com/vi/GNeYb8JxTls/0.jpg') }}" alt="" /></div>
                     <h3 class="name-video text-split"></h3>
                 </div>
