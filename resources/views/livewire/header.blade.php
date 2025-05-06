@@ -1,18 +1,11 @@
 <div>
-    <div class="top-header" style="background: {{ $settings->consulting_color }}; color: #fff; padding: 5px 0;">
-        <div class="center d-flex align-items-center justify-content-between">
-            <div class="left">
-                <i class="fas fa-map-marker-alt"></i> {{ $settings->address }}
-            </div>
-            <div class="right">
-                <i class="fas fa-phone"></i> Hotline: {{ $settings->hotline }} | <i class="far fa-envelope"></i> Email:
-                {{ $settings->email }}
-            </div>
-        </div>
-    </div>
+
     <div id="menu" style="background: #003D26; padding: 0;">
         <div class="center d-flex align-items-center justify-content-between">
             <div class="left-menu">
+                <div style="color: #fff;">
+                    <i class="fas fa-map-marker-alt"></i> {{ $settings->web_address }}
+                </div>
                 <ul class="d-flex align-items-center justify-content-start" style="color: #fff;">
                     <li>
                         <a class="transition {{ request()->routeIs('home') ? 'active' : '' }}"
@@ -48,7 +41,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="   d-flex align-items-center">
+            <div class="   d-flex align-items-center" id="logo_">
                 <a href="{{ route('home') }}">
                     <img onerror="this.src='/thumbs/148x60x2/assets/images/noimage.png';"
                         src="{{ Storage::url($settings->web_logo) }}" alt="{{ $settings->web_name }}"
@@ -66,8 +59,32 @@
                     padding: 10px;
                     border-radius: 0;
                 }
+
+                #menu {
+                    box-shadow: initial;
+                }
+
+                @media (max-width: 768px) {
+                    #logo_ {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    #logo_ img {
+                        height: 100px;
+                    }
+                }
             </style>
             <div class="right-menu">
+                <div class="right" style="display: flex; align-items: center; gap: 10px; color: #fff;">
+                    <div style="display: flex; align-items: center; gap: 5px; white-space: nowrap; ">
+                        <i class="fas fa-phone"></i> Hotline: {{ $settings->web_phone }}
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 5px; white-space: nowrap;">
+                        <i class="far fa-envelope"></i> Email: {{ $settings->web_email }}
+                    </div>
+                </div>
                 <ul class="d-flex align-items-center justify-content-start">
                     <li>
                         <a class="transition {{ request()->routeIs('video.list') ? 'active' : '' }}"

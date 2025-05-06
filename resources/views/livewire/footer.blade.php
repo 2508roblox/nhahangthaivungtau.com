@@ -1,77 +1,49 @@
 <div>
     <div class="wave-container">
         <div class="wave-container">
-            <svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <path d="
-                M0,120
-                C120,40 240,200 360,120
-                C480,40 600,0 720,120
-                C840,240 960,240 1080,120
-                C1200,0 1320,80 1440,120
-              "
-              fill="none" stroke="#FFD369" stroke-width="5" />
-            </svg>
+            <img src="/logo/Frame_90-removebg-preview.png" style="width: 100%;" alt="">
           </div>
       </div>
     <div id="footer">
 
         <div class="footer-top">
-            <div class="center d-flex flex-wrap align-items-start justify-content-between">
-                <div class="footer-1">
-                    <div class="logo-ft sss1 d-flex align-items-center justify-content-center">
-                        <a href=""><img onerror="this.src='/thumbs/225x90x2/assets/images/noimage.png';"
-                                src="{{ asset('/thumbs/225x90x2/upload/photo/logoft-4363.png') }}" /></a>
+            <div class="container">
+                <div class="row text-center text-md-start align-items-center">
+
+                  <!-- Column 1: Info -->
+                  <div class="col-md-4 mb-4">
+                    <h5>NHÀ HÀNG THÁI</h5>
+                    <p>Cityland Park Hills, Phường 11, Quận Gò Vấp,<br>
+                      Thành phố Hồ Chí Minh, Việt Nam</p>
+                    <p>Hotline: <span class="highlight">{{ $settings->web_phone }}</span></p>
+                    <p>Email: <a style="color: #fff;" href="mailto:{{ $settings->web_email }}">{{ $settings->web_email }}</a></p>
+                    <div class="social-icons mt-3">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                      <a href="#"><i class="fab fa-tiktok"></i></a>
                     </div>
-                    <div class="footer-content">
-                        <p style="text-align: center;">Địa chỉ: 89 Nguyễn Thị Búp, Quận 12, Thành phố Hồ Chí Minh,
-                            Việt Nam</p>
+                  </div>
 
-                        <p style="text-align: center;">Email: nhahangthaivungtau@gmail.com  Hotline - 0918 606 032</p>
+                  <!-- Column 2: Logo + Text -->
+                  <div class="col-md-4 mb-4 text-center">
+                    <img src="/logo/logo_footer.png" alt="Logo" class="logo mb-3"> <!-- Thay link này bằng logo của bạn -->
+                    <p>©2025 <strong>Khay–Pha Thai</strong>.</p>
+                    <p>Design by <strong>Vinasoftware (VNS)</strong></p>
+                  </div>
 
-                        <p style="text-align: center;"> </p>
-
-                        <p style="text-align: center;">Hân hạnh được phục vụ quý khách!</p>
+                  <!-- Column 3: Facebook card -->
+                  <div class="col-md-4 mb-4">
+                    <h5>FACEBOOK</h5>
+                    <div class="fb-card p-3 mt-3">
+                      <img src="/logo/fanpage.png" alt="Logo" class="brand-logo me-2"> <!-- Avatar -->
                     </div>
-                    <ul class="mxh footer-mxh">
-                        <li>
-                            <a href="" target="_blank">
-                                <img onerror="this.src='/thumbs/20x20x2/assets/images/noimage.png';"
-                                    src="{{ asset('/thumbs/20x20x2/upload/photo/socicalft4-28243.png') }}"
-                                    alt="4">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" target="_blank">
-                                <img onerror="this.src='/thumbs/20x20x2/assets/images/noimage.png';"
-                                    src="{{ asset('/thumbs/20x20x2/upload/photo/socicalft3-88092.png') }}"
-                                    alt="3">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" target="_blank">
-                                <img onerror="this.src='/thumbs/20x20x2/assets/images/noimage.png';"
-                                    src="{{ asset('/thumbs/20x20x2/upload/photo/socicalft2-68291.png') }}"
-                                    alt="2">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" target="_blank">
-                                <img onerror="this.src='/thumbs/20x20x2/assets/images/noimage.png';"
-                                    src="{{ asset('/thumbs/20x20x2/upload/photo/socicalft1-42700.png') }}"
-                                    alt="1">
-                            </a>
-                        </li>
-                    </ul>
+                  </div>
+
                 </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="center d-flex flex-wrap align-items-center justify-content-between">
-                <p class="copyright">Copyright ©2024 Ẩm Thực Đảo Ngọc. Design by <a
-                        href="https://vinasoftware.com.vn/">Vina Software (VNS)</a></p>
-            </div>
-        </div>
 
+              </div>
+        </div>
     </div>
 
     {!! $settings->map_iframe !!}
@@ -123,4 +95,16 @@
             </li>
         </ul>
     </div>
+    <div class="map-container">
+        {!! $settings->web_map_iframe !!}
+    </div>
+    <style>
+        iframe {
+    width: 100%;
+}
+#footer {
+ background: linear-gradient(180deg, #015436, #004f32);
+
+}
+    </style>
 </div>

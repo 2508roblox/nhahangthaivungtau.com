@@ -27,7 +27,11 @@
     @livewireScripts
     {!! $setting->script_footer !!}
 </body>
+
 <style>
+    body.index.mm-wrapper {
+    background: #015436;
+}
 .elementor-kit-998 {
 
     /* --e-global-color-51288f4: #168549; */
