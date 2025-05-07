@@ -115,13 +115,13 @@
                         </div>
 
                         <div style="margin-bottom: 30px;">
-                          <img src="https://via.placeholder.com/500x300?text=Hình+1" alt="Món Thái 1" style="width: 100%; border-radius: 8px;">
+                          <img src="/logo/image 26 (1).png" alt="Món Thái 1" style="width: 100%; border-radius: 8px;">
                           <h3 style="margin-top: 15px;">Menu Buffet Lẩu Thái 229k</h3>
                           <p style="color: #f8e08e; font-weight: bold;">Giá: 229k</p>
                         </div>
 
                         <div>
-                          <img src="https://via.placeholder.com/500x300?text=Hình+2" alt="Món Thái 2" style="width: 100%; border-radius: 8px;">
+                          <img src="/logo/image 27.png" alt="Món Thái 2" style="width: 100%; border-radius: 8px;">
                           <h3 style="margin-top: 15px;">Menu Buffet Lẩu Thái 229k</h3>
                           <p style="color: #f8e08e; font-weight: bold;">Giá: 229k</p>
                         </div>
@@ -167,16 +167,126 @@
                       </div>
                     </div>
                     <div>
-
+<img src="/logo/Screenshot 2025-05-07 110643.png" alt="">
                     </div>
                   </div>
 
             </div>
         </div>
-        <div id="quangcao" class="animate__animated animate__fadeIn wow">
-            <a onclick="goToByScroll('#video')"><img onerror="this.src='/thumbs/1366x330x2/assets/images/noimage.png';"
-                    src="{{ asset('/thumbs/1366x330x1/upload/photo/bgqc-3531.jpg') }}" /></a>
+        <div id="intro" style="
+        background: #015134;
+    ">
+            <div class="center d-flex flex-wrap justify-content-between">
+                <div style="background-color: #0c4f39;padding: 40px 20px;text-align: center;font-family: sans-serif;width: 100%;">
+                    <!-- Tiêu đề -->
+                    <h2 style="color: #fcd34d; font-size: 32px; font-weight: bold; letter-spacing: 1px; margin-bottom: 30px;">
+                      MÓN ĂN ĐẶC SẮC
+                    </h2>
+
+                    <!-- Thanh menu các món -->
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+                      <div style="background-color: #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px; font-weight: bold;">
+                        Món đặc biệt
+                      </div>
+                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                        Lẩu thái
+                      </div>
+                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                        Cơm trộn
+                      </div>
+                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                        Gỏi Somtum
+                      </div>
+                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                        Món khác
+                      </div>
+                    </div>
+                    <div>
+                        <div class="row g-4">
+
+                            <!-- Thẻ nổi bật -->
+                            <div class="col-md-3">
+                              <div class="card card-custom highlight">
+                                <img src="https://via.placeholder.com/300x200?text=Món+1" class="card-img-top" alt="Món 1">
+                                <div class="card-body">
+                                  <div class="title">Menu Buffet Lẩu Thái</div>
+                                  <div class="price">Giá: 229k</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Các thẻ còn lại -->
+                            <div class="col-md-3">
+                              <div class="card card-custom">
+                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
+                                <div class="card-body">
+                                  <div class="title">Menu Buffet Lẩu Thái</div>
+                                  <div class="price">Giá: 229k</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="card card-custom">
+                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
+                                <div class="card-body">
+                                  <div class="title">Menu Buffet Lẩu Thái</div>
+                                  <div class="price">Giá: 229k</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="card card-custom">
+                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
+                                <div class="card-body">
+                                  <div class="title">Menu Buffet Lẩu Thái</div>
+                                  <div class="price">Giá: 229k</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="card card-custom">
+                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
+                                <div class="card-body">
+                                  <div class="title">Menu Buffet Lẩu Thái</div>
+                                  <div class="price">Giá: 229k</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="card card-custom">
+                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
+                                <div class="card-body">
+                                  <div class="title">Menu Buffet Lẩu Thái</div>
+                                  <div class="price">Giá: 229k</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="card card-custom">
+                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
+                                <div class="card-body">
+                                  <div class="title">Menu Buffet Lẩu Thái</div>
+                                  <div class="price">Giá: 229k</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="card card-custom">
+                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
+                                <div class="card-body">
+                                  <div class="title">Menu Buffet Lẩu Thái</div>
+                                  <div class="price">Giá: 229k</div>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
+                  </div>
+
+            </div>
         </div>
+
         <div id="product" class="animate__animated animate__fadeIn wow">
             <div class="center">
                 <div class="title">
