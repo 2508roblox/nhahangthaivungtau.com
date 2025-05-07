@@ -99,6 +99,80 @@
 
             </div>
         </div>
+        <img src="/logo/Frame_90-removebg-preview.png" style="width: 100%;" alt="Ẩm Thực Đảo Ngọc">
+        <div id="intro" style="
+        background: #015134;
+    ">
+            <div class="center d-flex flex-wrap justify-content-between">
+                <div class="intro-right animate__animated animate__fadeInRight wow">
+                    <h1 style="color:#e3b505;font-size: 3rem;font-weight: bold;text-align: center;width: 100%;">MÓN NGON <br> NHẤT ĐỊNH PHẢI THỬ</h1>
+                    <div style="background-color: #0c4f39; color: #fff; font-family: sans-serif; padding: 30px; text-align: center; max-width: 600px; margin: auto; border: 3px solid #daa520;">
+                        <div style="margin-bottom: 20px;">
+                          <h2 style="font-size: 18px; font-weight: normal;">
+                            Được mệnh danh <strong style="color: #f8e08e;"><em>“xứ sở chùa Vàng”</em></strong>, không chỉ có chùa chiền<br>
+                            mà văn hóa ẩm thực Thái Lan cũng rất độc đáo.
+                          </h2>
+                        </div>
+
+                        <div style="margin-bottom: 30px;">
+                          <img src="https://via.placeholder.com/500x300?text=Hình+1" alt="Món Thái 1" style="width: 100%; border-radius: 8px;">
+                          <h3 style="margin-top: 15px;">Menu Buffet Lẩu Thái 229k</h3>
+                          <p style="color: #f8e08e; font-weight: bold;">Giá: 229k</p>
+                        </div>
+
+                        <div>
+                          <img src="https://via.placeholder.com/500x300?text=Hình+2" alt="Món Thái 2" style="width: 100%; border-radius: 8px;">
+                          <h3 style="margin-top: 15px;">Menu Buffet Lẩu Thái 229k</h3>
+                          <p style="color: #f8e08e; font-weight: bold;">Giá: 229k</p>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="intro-left animate__animated animate__fadeInLeft wow">
+                    <h1 style="color:#e3b505;font-size: 3rem;font-weight: bold;text-align: center;width: 100%;">BEST SELLER</h1>
+                    <div >
+                        <img src="{{ asset('logo/image.png') }}" alt="Món Thái 1" style="width: 100%; border-radius: 8px;">
+                      </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="intro" style="
+        background: #015134;
+    ">
+            <div class="center d-flex flex-wrap justify-content-between">
+                <div style="background-color: #0c4f39;padding: 40px 20px;text-align: center;font-family: sans-serif;width: 100%;">
+                    <!-- Tiêu đề -->
+                    <h2 style="color: #fcd34d; font-size: 32px; font-weight: bold; letter-spacing: 1px; margin-bottom: 30px;">
+                      MENU TẠI KHAY-PHA THAI
+                    </h2>
+
+                    <!-- Thanh menu các món -->
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+                      <div style="background-color: #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px; font-weight: bold;">
+                        Món đặc biệt
+                      </div>
+                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                        Lẩu thái
+                      </div>
+                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                        Cơm trộn
+                      </div>
+                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                        Gỏi Somtum
+                      </div>
+                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                        Món khác
+                      </div>
+                    </div>
+                    <div>
+
+                    </div>
+                  </div>
+
+            </div>
+        </div>
         <div id="quangcao" class="animate__animated animate__fadeIn wow">
             <a onclick="goToByScroll('#video')"><img onerror="this.src='/thumbs/1366x330x2/assets/images/noimage.png';"
                     src="{{ asset('/thumbs/1366x330x1/upload/photo/bgqc-3531.jpg') }}" /></a>
