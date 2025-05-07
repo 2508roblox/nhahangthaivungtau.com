@@ -48,11 +48,12 @@
         <div class="slideshow">
             <p class="control-slideshow prev-slideshow transition"><i class="fas fa-chevron-left"></i></p>
             <div class="owl-carousel owl-theme owl-slideshow">
-                @foreach($slides as $slide)
+                @foreach ($slides as $slide)
                     <div>
                         <a href="" target="_blank" title="Slideshow 1"><img
                                 onerror="this.src='/thumbs/1366x600x2/assets/images/noimage.png';"
-                                src="{{ Storage::url($slide->image_link) }}" alt="Slideshow 1" title="Slideshow 1" /></a>
+                                src="{{ Storage::url($slide->image_link) }}" alt="Slideshow 1"
+                                title="Slideshow 1" /></a>
                     </div>
                 @endforeach
             </div>
@@ -82,18 +83,20 @@
                         <p>Được mệnh danh <strong>“xứ sở chùa Vàng”</strong>, không chỉ có chùa chiền mà văn hóa ẩm thực
                             Thái Lan cũng rất độc đáo.</p>
                     </div>
-                    <div style="
+                    <div
+                        style="
                     width: 100%;
                     display: flex;
                     justify-content: end;
                 ">
 
-                        <a style="background: url('{{ asset('logo/Frame 7.png') }}') no-repeat center center; background-size: 100% 100%; color: #fff;" href="gioi-thieu" class="intro-btn">Xem Thêm</a>
-                    <style>
-                        .intro-btn {
-    border: inherit;
-}
-                    </style>
+                        <a style="background: url('{{ asset('logo/Frame 7.png') }}') no-repeat center center; background-size: 100% 100%; color: #fff;"
+                            href="gioi-thieu" class="intro-btn">Xem Thêm</a>
+                        <style>
+                            .intro-btn {
+                                border: inherit;
+                            }
+                        </style>
                     </div>
                 </div>
 
@@ -105,34 +108,40 @@
     ">
             <div class="center d-flex flex-wrap justify-content-between">
                 <div class="intro-right animate__animated animate__fadeInRight wow">
-                    <h1 style="color:#e3b505;font-size: 3rem;font-weight: bold;text-align: center;width: 100%;">MÓN NGON <br> NHẤT ĐỊNH PHẢI THỬ</h1>
-                    <div style="background-color: #0c4f39; color: #fff; font-family: sans-serif; padding: 30px; text-align: center; max-width: 600px; margin: auto; border: 3px solid #daa520;">
+                    <h1 style="color:#e3b505;font-size: 3rem;font-weight: bold;text-align: center;width: 100%;">MÓN NGON
+                        <br> NHẤT ĐỊNH PHẢI THỬ
+                    </h1>
+                    <div
+                        style="background-color: #0c4f39; color: #fff; font-family: sans-serif; padding: 30px; text-align: center; max-width: 600px; margin: auto; border: 3px solid #daa520;">
                         <div style="margin-bottom: 20px;">
-                          <h2 style="font-size: 18px; font-weight: normal;">
-                            Được mệnh danh <strong style="color: #f8e08e;"><em>“xứ sở chùa Vàng”</em></strong>, không chỉ có chùa chiền<br>
-                            mà văn hóa ẩm thực Thái Lan cũng rất độc đáo.
-                          </h2>
+                            <h2 style="font-size: 18px; font-weight: normal;">
+                                Được mệnh danh <strong style="color: #f8e08e;"><em>“xứ sở chùa Vàng”</em></strong>,
+                                không chỉ có chùa chiền<br>
+                                mà văn hóa ẩm thực Thái Lan cũng rất độc đáo.
+                            </h2>
                         </div>
 
                         <div style="margin-bottom: 30px;">
-                          <img src="/logo/image 26 (1).png" alt="Món Thái 1" style="width: 100%; border-radius: 8px;">
-                          <h3 style="margin-top: 15px;">Menu Buffet Lẩu Thái 229k</h3>
-                          <p style="color: #f8e08e; font-weight: bold;">Giá: 229k</p>
+                            <img src="/logo/image 26 (1).png" alt="Món Thái 1" style="width: 100%; border-radius: 8px;">
+                            <h3 style="margin-top: 15px;">Menu Buffet Lẩu Thái 229k</h3>
+                            <p style="color: #f8e08e; font-weight: bold;">Giá: 229k</p>
                         </div>
 
                         <div>
-                          <img src="/logo/image 27.png" alt="Món Thái 2" style="width: 100%; border-radius: 8px;">
-                          <h3 style="margin-top: 15px;">Menu Buffet Lẩu Thái 229k</h3>
-                          <p style="color: #f8e08e; font-weight: bold;">Giá: 229k</p>
+                            <img src="/logo/image 27.png" alt="Món Thái 2" style="width: 100%; border-radius: 8px;">
+                            <h3 style="margin-top: 15px;">Menu Buffet Lẩu Thái 229k</h3>
+                            <p style="color: #f8e08e; font-weight: bold;">Giá: 229k</p>
                         </div>
-                      </div>
+                    </div>
 
                 </div>
                 <div class="intro-left animate__animated animate__fadeInLeft wow">
-                    <h1 style="color:#e3b505;font-size: 3rem;font-weight: bold;text-align: center;width: 100%;">BEST SELLER</h1>
-                    <div >
-                        <img src="{{ asset('logo/image.png') }}" alt="Món Thái 1" style="width: 100%; border-radius: 8px;">
-                      </div>
+                    <h1 style="color:#e3b505;font-size: 3rem;font-weight: bold;text-align: center;width: 100%;">BEST
+                        SELLER</h1>
+                    <div>
+                        <img src="{{ asset('logo/image.png') }}" alt="Món Thái 1"
+                            style="width: 100%; border-radius: 8px;">
+                    </div>
 
                 </div>
 
@@ -142,34 +151,37 @@
         background: #015134;
     ">
             <div class="center d-flex flex-wrap justify-content-between">
-                <div style="background-color: #0c4f39;padding: 40px 20px;text-align: center;font-family: sans-serif;width: 100%;">
+                <div
+                    style="background-color: #0c4f39;padding: 40px 20px;text-align: center;font-family: sans-serif;width: 100%;">
                     <!-- Tiêu đề -->
-                    <h2 style="color: #fcd34d; font-size: 32px; font-weight: bold; letter-spacing: 1px; margin-bottom: 30px;">
-                      MENU TẠI KHAY-PHA THAI
+                    <h2
+                        style="color: #fcd34d; font-size: 32px; font-weight: bold; letter-spacing: 1px; margin-bottom: 30px;">
+                        MENU TẠI KHAY-PHA THAI
                     </h2>
 
                     <!-- Thanh menu các món -->
                     <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-                      <div style="background-color: #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px; font-weight: bold;">
-                        Món đặc biệt
-                      </div>
-                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                        Lẩu thái
-                      </div>
-                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                        Cơm trộn
-                      </div>
-                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                        Gỏi Somtum
-                      </div>
-                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                        Món khác
-                      </div>
+                        <div
+                            style="background-color: #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px; font-weight: bold;">
+                            Món đặc biệt
+                        </div>
+                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                            Lẩu thái
+                        </div>
+                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                            Cơm trộn
+                        </div>
+                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                            Gỏi Somtum
+                        </div>
+                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                            Món khác
+                        </div>
                     </div>
                     <div>
-<img src="/logo/Screenshot 2025-05-07 110643.png" alt="">
+                        <img src="/logo/Screenshot 2025-05-07 110643.png" alt="">
                     </div>
-                  </div>
+                </div>
 
             </div>
         </div>
@@ -177,29 +189,32 @@
         background: #015134;
     ">
             <div class="center d-flex flex-wrap justify-content-between">
-                <div style="background-color: #0c4f39;padding: 40px 20px;text-align: center;font-family: sans-serif;width: 100%;">
+                <div
+                    style="background-color: #0c4f39;padding: 40px 20px;text-align: center;font-family: sans-serif;width: 100%;">
                     <!-- Tiêu đề -->
-                    <h2 style="color: #fcd34d; font-size: 32px; font-weight: bold; letter-spacing: 1px; margin-bottom: 30px;">
-                      MÓN ĂN ĐẶC SẮC
+                    <h2
+                        style="color: #fcd34d; font-size: 32px; font-weight: bold; letter-spacing: 1px; margin-bottom: 30px;">
+                        MÓN ĂN ĐẶC SẮC
                     </h2>
 
                     <!-- Thanh menu các món -->
                     <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-                      <div style="background-color: #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px; font-weight: bold;">
-                        Món đặc biệt
-                      </div>
-                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                        Lẩu thái
-                      </div>
-                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                        Cơm trộn
-                      </div>
-                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                        Gỏi Somtum
-                      </div>
-                      <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                        Món khác
-                      </div>
+                        <div
+                            style="background-color: #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px; font-weight: bold;">
+                            Món đặc biệt
+                        </div>
+                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                            Lẩu thái
+                        </div>
+                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                            Cơm trộn
+                        </div>
+                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                            Gỏi Somtum
+                        </div>
+                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
+                            Món khác
+                        </div>
                     </div>
                     <div>
                         <style>
@@ -208,24 +223,30 @@
                                 color: #ffffff;
                                 font-size: 15px;
                             }
-                            .cart_pd:hover >.card {
+
+                            .cart_pd:hover>.card {
                                 background-color: #ffc44c !important;
                             }
+
                             .cart_pd strong {
                                 color: #ffc44c !important;
                             }
-                            .cart_pd:hover  .asdf {
+
+                            .cart_pd:hover .asdf {
                                 color: #000000 !important;
                             }
-                            .cart_pd:hover  strong {
+
+                            .cart_pd:hover strong {
                                 color: #000000 !important;
                             }
-                            .lslsl{
+
+                            .lslsl {
                                 padding: 15px;
-                              border-radius: 15px;
-                              background-color: transparent;
-                                  border: 1px solid #fbbf24;
+                                border-radius: 15px;
+                                background-color: transparent;
+                                border: 1px solid #fbbf24;
                             }
+
                             @media (max-width: 768px) {
                                 #reviews {
                                     gap: 20px;
@@ -236,81 +257,102 @@
 
                             <!-- Thẻ nổi bật -->
                             <div class="col-md-3 cart_pd" style="background-color: transparent;">
-                              <div class="card card-custom highlight lslsl">
-                                <img style="
+                                <div class="card card-custom highlight lslsl">
+                                    <img style="
                                 border-radius: 15px;
-                            " src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top" alt="Món 1">
-                                <div class="card-body">
-                                  <div class="asdf title">Menu Buffet Lẩu Thái</div>
-                                  <div class="asdf price" style="
+                            "
+                                        src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top"
+                                        alt="Món 1">
+                                    <div class="card-body">
+                                        <div class="asdf title">Menu Buffet Lẩu Thái</div>
+                                        <div class="asdf price"
+                                            style="
                                   font-size: 20px;
-                              ">Giá: <strong style="color: #fbbf24;">229k</strong></div>
+                              ">
+                                            Giá: <strong style="color: #fbbf24;">229k</strong></div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
                             <div class="col-md-3 cart_pd" style="background-color: transparent;">
-                              <div class="card card-custom highlight lslsl">
-                                <img style="
+                                <div class="card card-custom highlight lslsl">
+                                    <img style="
                                 border-radius: 15px;
-                            " src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top" alt="Món 1">
-                                <div class="card-body">
-                                  <div class="asdf title">Menu Buffet Lẩu Thái</div>
-                                  <div class="asdf price" style="
+                            "
+                                        src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top"
+                                        alt="Món 1">
+                                    <div class="card-body">
+                                        <div class="asdf title">Menu Buffet Lẩu Thái</div>
+                                        <div class="asdf price"
+                                            style="
                                   font-size: 20px;
-                              ">Giá: <strong style="color: #fbbf24;">229k</strong></div>
+                              ">
+                                            Giá: <strong style="color: #fbbf24;">229k</strong></div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
                             <div class="col-md-3 cart_pd" style="background-color: transparent;">
-                              <div class="card card-custom highlight lslsl">
-                                <img style="
+                                <div class="card card-custom highlight lslsl">
+                                    <img style="
                                 border-radius: 15px;
-                            " src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top" alt="Món 1">
-                                <div class="card-body">
-                                  <div class="asdf title">Menu Buffet Lẩu Thái</div>
-                                  <div class="asdf price" style="
+                            "
+                                        src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top"
+                                        alt="Món 1">
+                                    <div class="card-body">
+                                        <div class="asdf title">Menu Buffet Lẩu Thái</div>
+                                        <div class="asdf price"
+                                            style="
                                   font-size: 20px;
-                              ">Giá: <strong style="color: #fbbf24;">229k</strong></div>
+                              ">
+                                            Giá: <strong style="color: #fbbf24;">229k</strong></div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
                             <div class="col-md-3 cart_pd" style="background-color: transparent;">
-                              <div class="card card-custom highlight lslsl">
-                                <img style="
+                                <div class="card card-custom highlight lslsl">
+                                    <img style="
                                 border-radius: 15px;
-                            " src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top" alt="Món 1">
-                                <div class="card-body">
-                                  <div class="asdf title">Menu Buffet Lẩu Thái</div>
-                                  <div class="asdf price" style="
+                            "
+                                        src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top"
+                                        alt="Món 1">
+                                    <div class="card-body">
+                                        <div class="asdf title">Menu Buffet Lẩu Thái</div>
+                                        <div class="asdf price"
+                                            style="
                                   font-size: 20px;
-                              ">Giá: <strong style="color: #fbbf24;">229k</strong></div>
+                              ">
+                                            Giá: <strong style="color: #fbbf24;">229k</strong></div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
 
 
 
                         </div>
                     </div>
-                  </div>
+                </div>
 
             </div>
         </div>
         <style>
             h1.review-title {
-    text-align: center;
-    color: #015134;
-    font-weight: bold;
-    font-size: 3rem;
-    margin: 20px 0;
-}
-@media (max-width: 768px) {
-    #reviewaf {
-        gap: 20px;
-    }
-}
+                text-align: center;
+                color: #015134;
+                font-weight: bold;
+                font-size: 3rem;
+                margin: 20px 0;
+            }
+
+            @media (max-width: 768px) {
+                #reviewaf {
+                    gap: 20px;
+                }
+                /* .ljaksfdsss{
+                    flex-direction: column !important;
+                } */
+            }
         </style>
-        <div class="container" style="
+        <div class="container"
+            style="
         background: white;
         padding: 20px;
         border-radius: 20px;
@@ -321,33 +363,39 @@
                     <div class="card" style="
                     position: relative;
                     ">
-                        <img src="/logo/Screenshot 2025-05-07 174624.png" class="card-img-top" alt="Food Image" style="
+                        <img src="/logo/Screenshot 2025-05-07 174624.png" class="card-img-top" alt="Food Image"
+                            style="
                         border-radius: 20px;
                     ">
-                        <div class="card-body" style="
+                        <div class="card-body"
+                            style="
                         display: flex;
                         justify-content: space-between;
                         position: absolute;
                             width: 100%;
                     ">
-                            <div style="
+                            <div
+                                style="
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             text-align: center;
                         ">
-                                <img src="{{ Storage::url($setting->web_favicon) }}" alt="" style="
+                                <img src="{{ Storage::url($setting->web_favicon) }}" alt=""
+                                    style="
                                 width: 30px;
                                 height: 30px;
                                 border-radius: 50%;
                                 ">
-                                <h5 class="card-title" style="
+                                <h5 class="card-title"
+                                    style="
                                 margin: inherit;
                                 margin-left: 10px;
                                 color: #ffffff;
                                 font-size: 1.2rem;
                                 font-weight: bold;
-                            ">KHAY-PHA THAI</h5>
+                            ">
+                                    KHAY-PHA THAI</h5>
 
                             </div>
                             <a href="#" class="share-link">► Share</a>
@@ -359,33 +407,39 @@
                     <div class="card" style="
                     position: relative;
                     ">
-                        <img src="/logo/Screenshot 2025-05-07 174624.png" class="card-img-top" alt="Food Image" style="
+                        <img src="/logo/Screenshot 2025-05-07 174624.png" class="card-img-top" alt="Food Image"
+                            style="
                         border-radius: 20px;
                     ">
-                        <div class="card-body" style="
+                        <div class="card-body"
+                            style="
                         display: flex;
                         justify-content: space-between;
                         position: absolute;
                             width: 100%;
                     ">
-                            <div style="
+                            <div
+                                style="
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             text-align: center;
                         ">
-                                <img src="{{ Storage::url($setting->web_favicon) }}" alt="" style="
+                                <img src="{{ Storage::url($setting->web_favicon) }}" alt=""
+                                    style="
                                 width: 30px;
                                 height: 30px;
                                 border-radius: 50%;
                                 ">
-                                <h5 class="card-title" style="
+                                <h5 class="card-title"
+                                    style="
                                 margin: inherit;
                                 margin-left: 10px;
                                 color: #ffffff;
                                 font-size: 1.2rem;
                                 font-weight: bold;
-                            ">KHAY-PHA THAI</h5>
+                            ">
+                                    KHAY-PHA THAI</h5>
 
                             </div>
                             <a href="#" class="share-link">► Share</a>
@@ -397,36 +451,121 @@
                     <div class="card" style="
                     position: relative;
                     ">
-                        <img src="/logo/Screenshot 2025-05-07 174624.png" class="card-img-top" alt="Food Image" style="
+                        <img src="/logo/Screenshot 2025-05-07 174624.png" class="card-img-top" alt="Food Image"
+                            style="
                         border-radius: 20px;
                     ">
-                        <div class="card-body" style="
+                        <div class="card-body"
+                            style="
                         display: flex;
                         justify-content: space-between;
                         position: absolute;
                             width: 100%;
                     ">
-                            <div style="
+                            <div
+                                style="
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             text-align: center;
                         ">
-                                <img src="{{ Storage::url($setting->web_favicon) }}" alt="" style="
+                                <img src="{{ Storage::url($setting->web_favicon) }}" alt=""
+                                    style="
                                 width: 30px;
                                 height: 30px;
                                 border-radius: 50%;
                                 ">
-                                <h5 class="card-title" style="
+                                <h5 class="card-title"
+                                    style="
                                 margin: inherit;
                                 margin-left: 10px;
                                 color: #ffffff;
                                 font-size: 1.2rem;
                                 font-weight: bold;
-                            ">KHAY-PHA THAI</h5>
+                            ">
+                                    KHAY-PHA THAI</h5>
 
                             </div>
                             <a href="#" class="share-link">► Share</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container" style="    padding-top: 100px;">
+            <div class=" bg-transparent text-white" style="    margin: 50px 0;">
+                <div class="row ljaksfdsss">
+                    <div class="col-md-5 col-12" style="    justify-content: center;    display: flex;    flex-direction: column;">
+                        <h1 class="display-4"
+                            style="     font-size: 2.4rem; ">CẨM NANG <br> TẠI
+                            KHAY-PHA THAI</h1>
+                        <p>Được mệnh danh "xứ sở chùa Vàng", không chỉ có chùa chiền mà văn hóa ẩm thực Thái Lan cũng
+                            rất độc đáo.
+
+                        </p>
+                    </div>
+                    <div class="col-md-7 col-12">
+                        <div
+                            style="    border: 1px solid #fbbf24;    border-radius: 20px;">
+
+                            <img style="    border-radius: 20px;"
+                                src="http://127.0.0.1:8000/logo/Screenshot 2025-05-07 181424.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+            .card:hover .owowo {
+                    color: #fbbf24 !important;
+                }
+                @media (max-width: 768px) {
+                    .lasdf {
+                        left: 0px !important;
+                    }
+                    .ljaksfd{
+                        gap: 20px !important;
+                    }
+                }
+            </style>
+            <div class="row ljaksfd">
+
+                <div class="col-md-4">
+                    <div class="card bg-light" style="background: #085c3c !important;border: 1px solid #fbbf24;border-radius: 20px;color: #fbbf24; padding: 20px;">
+                        <img class="lasdf" style="    border-radius: 20px; left: -46px;" src="http://127.0.0.1:8000/logo/Screenshot%202025-05-07%20173212.png"
+                            class="card-img-top" alt="Thai Food 1">
+                        <div class="card-body">
+                            <h5 class="card-title owowo" style="color: white;">Ẩm thực Thái Lan đa dạng, hấp dẫn và huyền thoại - Bài viết</h5>
+                            <div style="    display: flex;    justify-content: end;    ">
+
+                                <a href="#" style="color: white; text-decoration: underline;" class="owowo">Xem chi tiết »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light" style="background: #085c3c !important;border: 1px solid #fbbf24;border-radius: 20px;color: #fbbf24; padding: 20px;">
+                        <img class="lasdf" style="    border-radius: 20px; left: -46px;" src="http://127.0.0.1:8000/logo/Screenshot%202025-05-07%20173212.png"
+                            class="card-img-top" alt="Thai Food 1">
+                        <div class="card-body">
+                            <h5 class="card-title owowo" style="color: white;">Ẩm thực Thái Lan đa dạng, hấp dẫn và huyền thoại - Bài viết</h5>
+                            <div style="    display: flex;    justify-content: end;    ">
+
+                                <a href="#" style="color: white; text-decoration: underline;" class="owowo">Xem chi tiết »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light" style="background: #085c3c !important;border: 1px solid #fbbf24;border-radius: 20px;color: #fbbf24; padding: 20px;">
+                        <img class="lasdf" style="    border-radius: 20px; left: -46px;" src="http://127.0.0.1:8000/logo/Screenshot%202025-05-07%20173212.png"
+                            class="card-img-top" alt="Thai Food 1">
+                        <div class="card-body">
+                            <h5 class="card-title owowo" style="color: white;">Ẩm thực Thái Lan đa dạng, hấp dẫn và huyền thoại - Bài viết</h5>
+                            <div style="    display: flex;    justify-content: end;    ">
+
+                                <a href="#" style="color: white; text-decoration: underline;" class="owowo">Xem chi tiết »</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -440,10 +579,10 @@
                             sắc</span></h2>
                 </div>
                 <div class="owl-page owl-carousel owl-theme" data-xsm-items="2:10" data-sm-items="2:10"
-                    data-md-items="3:10" data-lg-items="4:10" data-xlg-items="4:26" data-rewind="1" data-autoplay="1"
-                    data-loop="0" data-lazyload="0" data-mousedrag="0" data-touchdrag="0" data-smartspeed="800"
-                    data-autoplayspeed="800" data-autoplaytimeout="5000" data-dots="0" data-animations="" data-nav="0"
-                    data-navtext="\" data-navcontainer="">
+                    data-md-items="3:10" data-lg-items="4:10" data-xlg-items="4:26" data-rewind="1"
+                    data-autoplay="1" data-loop="0" data-lazyload="0" data-mousedrag="0" data-touchdrag="0"
+                    data-smartspeed="800" data-autoplayspeed="800" data-autoplaytimeout="5000" data-dots="0"
+                    data-animations="" data-nav="0" data-navtext="\" data-navcontainer="">
                     <div class="product-item">
                         <div class="product-image"><a class="scale-img" href="heo-sua-quay-lu"
                                 title="Heo sữa quay lu_Đảo ngọc"><img
@@ -574,8 +713,8 @@
                             enctype="multipart/form-data">
                             <div class="input-newsletter-group">
                                 <div class="input-newsletter">
-                                    <input type="text" class="form-control" id="ten-newsletter" name="ten-newsletter"
-                                        placeholder="Họ tên" required />
+                                    <input type="text" class="form-control" id="ten-newsletter"
+                                        name="ten-newsletter" placeholder="Họ tên" required />
 
                                 </div>
                                 <div class="input-newsletter">
@@ -592,13 +731,13 @@
 
                             </div>
                             <div class="input-newsletter">
-                                <textarea class="form-control" id="noidung-newsletter" name="noidung-newsletter"
-                                    placeholder="Bạn cần tư vấn gì?" /></textarea>
+                                <textarea class="form-control" id="noidung-newsletter" name="noidung-newsletter" placeholder="Bạn cần tư vấn gì?" /></textarea>
 
                             </div>
-                            <input type="submit" class="btn btn-newsletter" name="submit-newsletter" value="Đặt chỗ"
-                                disabled />
-                            <input type="hidden" name="recaptcha_response_newsletter" id="recaptchaResponseNewsletter">
+                            <input type="submit" class="btn btn-newsletter" name="submit-newsletter"
+                                value="Đặt chỗ" disabled />
+                            <input type="hidden" name="recaptcha_response_newsletter"
+                                id="recaptchaResponseNewsletter">
                         </form>
                     </div>
                 </div>
@@ -607,8 +746,8 @@
                         <h3>Video nổi bật</h3>
                     </div>
                     <div class="video-box">
-                        <iframe width="100%" height="100%" src="//www.youtube.com/embed/GNeYb8JxTls" frameborder="0"
-                            allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="//www.youtube.com/embed/GNeYb8JxTls"
+                            frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -755,25 +894,21 @@
         <script type="text/javascript" src="{{ asset('assets/bootstrap/bootstrap.js?v=Qj4Nv9JS8p') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/wow.min.js?v=cgWM89TmyN') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/mmenu/mmenu.js?v=A76q9wu0L9') }}"></script>
-        <script type="text/javascript"
-            src="{{ asset('assets/simplyscroll/jquery.simplyscroll.js?v=GXCWdNFQQC') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/simplyscroll/jquery.simplyscroll.js?v=GXCWdNFQQC') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/fotorama/fotorama.js?v=Ybnx4mBXWj') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/owlcarousel2/owl.carousel.js?v=dpdVqZM9D2') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/magiczoomplus/magiczoomplus.js?v=a9mirnTLp') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/slick/slick.js?v=yb4rxWWjn5') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/fancybox3/jquery.fancybox.js?v=WaSKy8wH0M') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/photobox/photobox.js?v=gDWvIirdq3') }}"></script>
-        <script type="text/javascript"
-            src="{{ asset('assets/datetimepicker/php-date-formatter.min.js?v=TZR6koLwZy') }}">
-            </script>
-        <script type="text/javascript"
-            src="{{ asset('assets/datetimepicker/jquery.mousewheel.js?v=vSIQqTeIOY') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/datetimepicker/php-date-formatter.min.js?v=TZR6koLwZy') }}">
+        </script>
+        <script type="text/javascript" src="{{ asset('assets/datetimepicker/jquery.mousewheel.js?v=vSIQqTeIOY') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/datetimepicker/jquery.datetimepicker.js?v=eGWWucYYKW') }}">
         </script>
         <script type="text/javascript" src="{{ asset('assets/toc/toc.js?v=GLFzz84q6k') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/functions.js?v=6EhZQVtYwT') }}"></script>
-        <script type="text/javascript"
-            src="{{ asset('assets/js/jquery.pixelentity.shiner.min.js?v=FVRx0pJ7Bi') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/jquery.pixelentity.shiner.min.js?v=FVRx0pJ7Bi') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/swiperjs/swiper-bundle.min.js?v=SOtTj4Ullh') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/apps.js?v=OkUgulXN6') }}"></script>
 
