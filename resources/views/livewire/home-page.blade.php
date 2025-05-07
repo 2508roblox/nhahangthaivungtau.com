@@ -351,12 +351,9 @@
                 } */
             }
         </style>
-        <div class="container"
-            style="
-        background: white;
-        padding: 20px;
-        border-radius: 20px;
-    ">
+        <div style="background: #015134;">
+
+        <div class="container" style="     background: white;     padding: 20px;     border-radius: 20px; ">
             <h1 class="review-title">REVIEW ẨM THỰC</h1>
             <div class="row" id="reviewaf">
                 <div class="col-md-4">
@@ -493,6 +490,9 @@
 
             </div>
         </div>
+    </div>
+<div style="background: #015134;">
+
         <div class="container" style="    padding-top: 100px;">
             <div class=" bg-transparent text-white" style="    margin: 50px 0;">
                 <div class="row ljaksfdsss">
@@ -572,21 +572,15 @@
 
             </div>
         </div>
+</div>
+
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+
+        <div style="  background: linear-gradient(to bottom, #015134, #046e47);">
 
         <div class="container">
             <style>
-                .album-title {
-    font-family: 'SVN-Hydrella', sans-serif; /* hoặc font tương tự như Montserrat Alternates Bold */
-    font-size: 100px;
-    font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 2px #FFD700; /* vàng */
-    text-stroke: 2px #FFD700; /* tiêu chuẩn cho trình duyệt hỗ trợ */
-    text-align: center;
-    letter-spacing: 10px;
-}
-
+                .album-title { font-family: 'SVN-Hydrella', sans-serif;   font-size: 100px; font-weight: bold; color: transparent; -webkit-text-stroke: 2px #FFD700;   text-stroke: 2px #FFD700;   text-align: center; letter-spacing: 10px;}
             </style>
             <h1 class="album-title text-center">ALBUM</h1>
 
@@ -613,6 +607,8 @@
                 <a style="background: url('/logo/Frame 7.png') no-repeat center center; background-size: 100% 100%; color: #fff;" href="gioi-thieu" class="intro-btn">XEM TẤT CẢ</a>
             </div>
           </div>
+        </div>
+
         @livewire('footer')
 
         <!-- Modal notify -->

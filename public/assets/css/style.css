@@ -628,9 +628,7 @@ p {
 }
 
 #menu div>ul>li>a.active,
-#menu div>ul>li:hover>a {
-    border: 1px solid #663333;
-}
+#menu div>ul>li:hover>a {}
 
 #menu ul li ul {
     position: absolute;
