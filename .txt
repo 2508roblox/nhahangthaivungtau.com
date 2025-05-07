@@ -1,5 +1,4 @@
 <div>
-
     <head>
 
         <title>Nhà Hàng Đảo Ngọc</title>
@@ -49,11 +48,12 @@
             <p class="control-slideshow prev-slideshow transition"><i class="fas fa-chevron-left"></i></p>
             <div class="owl-carousel owl-theme owl-slideshow">
                 @foreach($slides as $slide)
-                    <div>
-                        <a href="" target="_blank" title="Slideshow 1"><img
-                                onerror="this.src='/thumbs/1366x600x2/assets/images/noimage.png';"
-                                src="{{ Storage::url($slide->image_link) }}" alt="Slideshow 1" title="Slideshow 1" /></a>
-                    </div>
+                <div>
+                    <a href="" target="_blank" title="Slideshow 1"><img
+                            onerror="this.src='/thumbs/1366x600x2/assets/images/noimage.png';"
+                            src="{{ Storage::url($slide->image_link) }}" alt="Slideshow 1"
+                            title="Slideshow 1" /></a>
+                </div>
                 @endforeach
             </div>
             <p class="control-slideshow next-slideshow transition"><i class="fas fa-chevron-right"></i></p>
@@ -61,40 +61,28 @@
         <div id="intro">
             <div class="center d-flex flex-wrap justify-content-between">
                 <div class="intro-right animate__animated animate__fadeInRight wow">
-                    <h1 style="color:#e3b505 ; font-size: 4rem; font-weight: bold;">KHAY PHA THAI</h1>
-                    <div class="intro-image intro-image1 scale-img">
-                        <img onerror="this.src='/thumbs/331x420x2/assets/images/noimage.png';"
-                            src="{{ asset('/logo/image 9.png') }}" />
-                    </div>
+                    <div class="intro-image intro-image1 scale-img"><img
+                            onerror="this.src='/thumbs/331x420x2/assets/images/noimage.png';"
+                            src="{{ asset('/thumbs/331x420x1/upload/news/imggioithieu-8480.jpg') }}" /></div>
+                    <div class="intro-image intro-image2 scale-img"><img
+                            onerror="this.src='/thumbs/223x285x2/assets/images/noimage.png';"
+                            src="{{ asset('/thumbs/223x285x1/upload/news/imggioithieu2-7949.jpg') }}" /></div>
                 </div>
                 <div class="intro-left animate__animated animate__fadeInLeft wow">
-                    <h2>VỀ CHÚNG TÔI</h2>
-                    <div class="intro-info" style="color: #fff;">
-                        <p>Được mệnh danh <strong>“xứ sở chùa Vàng”</strong>, không chỉ có chùa chiền mà văn hóa ẩm thực
-                            Thái Lan cũng rất độc đáo.</p>
-                        <br>
-                        <p>Bếp Khay-Pha Thai là sự kế thừa và hoàn thiện từ thương hiệu Koh Samui, với mô hình căn bếp
-                            Thái
-                            gần gũi, thân thiện cùng gần 100 món ăn và đồ tráng miệng kiểu Thái nhằm tiếp đãi những
-                            người
-                            bạn Việt ghé thăm thưởng thức mỗi ngày</p>
-                        <br>
-                        <p>Được mệnh danh <strong>“xứ sở chùa Vàng”</strong>, không chỉ có chùa chiền mà văn hóa ẩm thực
-                            Thái Lan cũng rất độc đáo.</p>
-                    </div>
-                    <div style="
-                    width: 100%;
-                    display: flex;
-                    justify-content: end;
-                ">
+                    <p>Tinh hoa ẩm thực 3 miền</p>
+                    <h2>Ẩm thực Đảo Ngọc</h2>
+                    <div class="intro-info">
+                        <p>* Ẩm thực Đảo Ngọc nổi tiếng khắp Sài Gòn không chỉ bởi đồ ăn ngon mà còn nhờ phong cách phục
+                            vụ chuẩn Việt.</p>
 
-                        <a style="background: url('{{ asset('logo/Frame 7.png') }}') no-repeat center center; background-size: 100% 100%; color: #fff;" href="gioi-thieu" class="intro-btn">Xem Thêm</a>
-                    <style>
-                        .intro-btn {
-    border: inherit;
-}
-                    </style>
+                        <p>* Tại đây, ngoài việc thưởng thức món ngon, đậm đà bạn sẽ được cảm nhận đa dạng các món ăn
+                            kèm thoải mái mà không lo về giá.</p>
+
+                        <p>Địa chỉ: 89 Nguyễn Thị Búp, Quận 12, Vietnam</p>
+
+                        <p>Liên hệ đặt bàn: 0918 606 032</p>
                     </div>
+                    <a href="gioi-thieu" class="intro-btn">Xem tất cả</a>
                 </div>
 
             </div>
@@ -110,10 +98,10 @@
                             sắc</span></h2>
                 </div>
                 <div class="owl-page owl-carousel owl-theme" data-xsm-items="2:10" data-sm-items="2:10"
-                    data-md-items="3:10" data-lg-items="4:10" data-xlg-items="4:26" data-rewind="1" data-autoplay="1"
-                    data-loop="0" data-lazyload="0" data-mousedrag="0" data-touchdrag="0" data-smartspeed="800"
-                    data-autoplayspeed="800" data-autoplaytimeout="5000" data-dots="0" data-animations="" data-nav="0"
-                    data-navtext="\" data-navcontainer="">
+                    data-md-items="3:10" data-lg-items="4:10" data-xlg-items="4:26" data-rewind="1"
+                    data-autoplay="1" data-loop="0" data-lazyload="0" data-mousedrag="0" data-touchdrag="0"
+                    data-smartspeed="800" data-autoplayspeed="800" data-autoplaytimeout="5000" data-dots="0"
+                    data-animations="" data-nav="0" data-navtext="\" data-navcontainer="">
                     <div class="product-item">
                         <div class="product-image"><a class="scale-img" href="heo-sua-quay-lu"
                                 title="Heo sữa quay lu_Đảo ngọc"><img
@@ -244,8 +232,8 @@
                             enctype="multipart/form-data">
                             <div class="input-newsletter-group">
                                 <div class="input-newsletter">
-                                    <input type="text" class="form-control" id="ten-newsletter" name="ten-newsletter"
-                                        placeholder="Họ tên" required />
+                                    <input type="text" class="form-control" id="ten-newsletter"
+                                        name="ten-newsletter" placeholder="Họ tên" required />
 
                                 </div>
                                 <div class="input-newsletter">
@@ -262,13 +250,13 @@
 
                             </div>
                             <div class="input-newsletter">
-                                <textarea class="form-control" id="noidung-newsletter" name="noidung-newsletter"
-                                    placeholder="Bạn cần tư vấn gì?" /></textarea>
+                                <textarea class="form-control" id="noidung-newsletter" name="noidung-newsletter" placeholder="Bạn cần tư vấn gì?" /></textarea>
 
                             </div>
-                            <input type="submit" class="btn btn-newsletter" name="submit-newsletter" value="Đặt chỗ"
-                                disabled />
-                            <input type="hidden" name="recaptcha_response_newsletter" id="recaptchaResponseNewsletter">
+                            <input type="submit" class="btn btn-newsletter" name="submit-newsletter"
+                                value="Đặt chỗ" disabled />
+                            <input type="hidden" name="recaptcha_response_newsletter"
+                                id="recaptchaResponseNewsletter">
                         </form>
                     </div>
                 </div>
@@ -277,8 +265,8 @@
                         <h3>Video nổi bật</h3>
                     </div>
                     <div class="video-box">
-                        <iframe width="100%" height="100%" src="//www.youtube.com/embed/GNeYb8JxTls" frameborder="0"
-                            allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="//www.youtube.com/embed/GNeYb8JxTls"
+                            frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -366,7 +354,7 @@
                 </div>
             </div>
         </div>
-        @livewire('footer')
+      @livewire('footer')
 
         <!-- Modal notify -->
         <div class="modal modal-custom fade" id="popup-notify" tabindex="-1" role="dialog"
@@ -425,25 +413,21 @@
         <script type="text/javascript" src="{{ asset('assets/bootstrap/bootstrap.js?v=Qj4Nv9JS8p') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/wow.min.js?v=cgWM89TmyN') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/mmenu/mmenu.js?v=A76q9wu0L9') }}"></script>
-        <script type="text/javascript"
-            src="{{ asset('assets/simplyscroll/jquery.simplyscroll.js?v=GXCWdNFQQC') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/simplyscroll/jquery.simplyscroll.js?v=GXCWdNFQQC') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/fotorama/fotorama.js?v=Ybnx4mBXWj') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/owlcarousel2/owl.carousel.js?v=dpdVqZM9D2') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/magiczoomplus/magiczoomplus.js?v=a9mirnTLp') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/slick/slick.js?v=yb4rxWWjn5') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/fancybox3/jquery.fancybox.js?v=WaSKy8wH0M') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/photobox/photobox.js?v=gDWvIirdq3') }}"></script>
-        <script type="text/javascript"
-            src="{{ asset('assets/datetimepicker/php-date-formatter.min.js?v=TZR6koLwZy') }}">
-            </script>
-        <script type="text/javascript"
-            src="{{ asset('assets/datetimepicker/jquery.mousewheel.js?v=vSIQqTeIOY') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/datetimepicker/php-date-formatter.min.js?v=TZR6koLwZy') }}">
+        </script>
+        <script type="text/javascript" src="{{ asset('assets/datetimepicker/jquery.mousewheel.js?v=vSIQqTeIOY') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/datetimepicker/jquery.datetimepicker.js?v=eGWWucYYKW') }}">
         </script>
         <script type="text/javascript" src="{{ asset('assets/toc/toc.js?v=GLFzz84q6k') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/functions.js?v=6EhZQVtYwT') }}"></script>
-        <script type="text/javascript"
-            src="{{ asset('assets/js/jquery.pixelentity.shiner.min.js?v=FVRx0pJ7Bi') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/jquery.pixelentity.shiner.min.js?v=FVRx0pJ7Bi') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/swiperjs/swiper-bundle.min.js?v=SOtTj4Ullh') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/apps.js?v=OkUgulXN6') }}"></script>
 
@@ -477,14 +461,4 @@
             </svg>
         </div>
     </body>
-    <style>
-        .intro-image {
-            max-width: 100%;
-        }
-
-        .intro-image.intro-image1.scale-img {
-            border: initial;
-            box-shadow: initial;
-        }
-    </style>
 </div>

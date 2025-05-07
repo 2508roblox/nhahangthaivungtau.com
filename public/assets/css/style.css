@@ -3988,7 +3988,7 @@ coccocgrammar {
 
 #intro {
     position: relative;
-    background: url(../images/bg_gioithieu.jpg) top center no-repeat;
+    /* background: url(../images/bg_gioithieu.jpg) top center no-repeat; */
     /* background-size: cover; */
     padding: 124px 0px 109px 0px;
 }
