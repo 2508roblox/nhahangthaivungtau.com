@@ -202,83 +202,93 @@
                       </div>
                     </div>
                     <div>
-                        <div class="row g-4">
+                        <style>
+                            .asdf {
+                                font-weight: bold;
+                                color: #ffffff;
+                                font-size: 15px;
+                            }
+                            .cart_pd:hover >.card {
+                                background-color: #ffc44c !important;
+                            }
+                            .cart_pd strong {
+                                color: #ffc44c !important;
+                            }
+                            .cart_pd:hover  .asdf {
+                                color: #000000 !important;
+                            }
+                            .cart_pd:hover  strong {
+                                color: #000000 !important;
+                            }
+                            .lslsl{
+                                padding: 15px;
+                              border-radius: 15px;
+                              background-color: transparent;
+                                  border: 1px solid #fbbf24;
+                            }
+                            @media (max-width: 768px) {
+                                #reviews {
+                                    gap: 20px;
+                                }
+                            }
+                        </style>
+                        <div class="row g-4" id="reviews" style="margin-top: 20px;">
 
                             <!-- Thẻ nổi bật -->
-                            <div class="col-md-3">
-                              <div class="card card-custom highlight">
-                                <img src="https://via.placeholder.com/300x200?text=Món+1" class="card-img-top" alt="Món 1">
+                            <div class="col-md-3 cart_pd" style="background-color: transparent;">
+                              <div class="card card-custom highlight lslsl">
+                                <img style="
+                                border-radius: 15px;
+                            " src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top" alt="Món 1">
                                 <div class="card-body">
-                                  <div class="title">Menu Buffet Lẩu Thái</div>
-                                  <div class="price">Giá: 229k</div>
+                                  <div class="asdf title">Menu Buffet Lẩu Thái</div>
+                                  <div class="asdf price" style="
+                                  font-size: 20px;
+                              ">Giá: <strong style="color: #fbbf24;">229k</strong></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 cart_pd" style="background-color: transparent;">
+                              <div class="card card-custom highlight lslsl">
+                                <img style="
+                                border-radius: 15px;
+                            " src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top" alt="Món 1">
+                                <div class="card-body">
+                                  <div class="asdf title">Menu Buffet Lẩu Thái</div>
+                                  <div class="asdf price" style="
+                                  font-size: 20px;
+                              ">Giá: <strong style="color: #fbbf24;">229k</strong></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 cart_pd" style="background-color: transparent;">
+                              <div class="card card-custom highlight lslsl">
+                                <img style="
+                                border-radius: 15px;
+                            " src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top" alt="Món 1">
+                                <div class="card-body">
+                                  <div class="asdf title">Menu Buffet Lẩu Thái</div>
+                                  <div class="asdf price" style="
+                                  font-size: 20px;
+                              ">Giá: <strong style="color: #fbbf24;">229k</strong></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 cart_pd" style="background-color: transparent;">
+                              <div class="card card-custom highlight lslsl">
+                                <img style="
+                                border-radius: 15px;
+                            " src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top" alt="Món 1">
+                                <div class="card-body">
+                                  <div class="asdf title">Menu Buffet Lẩu Thái</div>
+                                  <div class="asdf price" style="
+                                  font-size: 20px;
+                              ">Giá: <strong style="color: #fbbf24;">229k</strong></div>
                                 </div>
                               </div>
                             </div>
 
-                            <!-- Các thẻ còn lại -->
-                            <div class="col-md-3">
-                              <div class="card card-custom">
-                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
-                                <div class="card-body">
-                                  <div class="title">Menu Buffet Lẩu Thái</div>
-                                  <div class="price">Giá: 229k</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="card card-custom">
-                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
-                                <div class="card-body">
-                                  <div class="title">Menu Buffet Lẩu Thái</div>
-                                  <div class="price">Giá: 229k</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="card card-custom">
-                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
-                                <div class="card-body">
-                                  <div class="title">Menu Buffet Lẩu Thái</div>
-                                  <div class="price">Giá: 229k</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="card card-custom">
-                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
-                                <div class="card-body">
-                                  <div class="title">Menu Buffet Lẩu Thái</div>
-                                  <div class="price">Giá: 229k</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="card card-custom">
-                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
-                                <div class="card-body">
-                                  <div class="title">Menu Buffet Lẩu Thái</div>
-                                  <div class="price">Giá: 229k</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="card card-custom">
-                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
-                                <div class="card-body">
-                                  <div class="title">Menu Buffet Lẩu Thái</div>
-                                  <div class="price">Giá: 229k</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="card card-custom">
-                                <img src="https://via.placeholder.com/300x200?text=Món+2" class="card-img-top" alt="Món 2">
-                                <div class="card-body">
-                                  <div class="title">Menu Buffet Lẩu Thái</div>
-                                  <div class="price">Giá: 229k</div>
-                                </div>
-                              </div>
-                            </div>
+
 
                         </div>
                     </div>
@@ -286,7 +296,143 @@
 
             </div>
         </div>
+        <style>
+            h1.review-title {
+    text-align: center;
+    color: #015134;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+@media (max-width: 768px) {
+    #reviewaf {
+        gap: 20px;
+    }
+}
+        </style>
+        <div class="container" style="
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+    ">
+            <h1 class="review-title">REVIEW ẨM THỰC</h1>
+            <div class="row" id="reviewaf">
+                <div class="col-md-4">
+                    <div class="card" style="
+                    position: relative;
+                    ">
+                        <img src="/logo/Screenshot 2025-05-07 174624.png" class="card-img-top" alt="Food Image" style="
+                        border-radius: 20px;
+                    ">
+                        <div class="card-body" style="
+                        display: flex;
+                        justify-content: space-between;
+                        position: absolute;
+                            width: 100%;
+                    ">
+                            <div style="
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                        ">
+                                <img src="{{ Storage::url($setting->web_favicon) }}" alt="" style="
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                ">
+                                <h5 class="card-title" style="
+                                margin: inherit;
+                                margin-left: 10px;
+                                color: #ffffff;
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                            ">KHAY-PHA THAI</h5>
 
+                            </div>
+                            <a href="#" class="share-link">► Share</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="
+                    position: relative;
+                    ">
+                        <img src="/logo/Screenshot 2025-05-07 174624.png" class="card-img-top" alt="Food Image" style="
+                        border-radius: 20px;
+                    ">
+                        <div class="card-body" style="
+                        display: flex;
+                        justify-content: space-between;
+                        position: absolute;
+                            width: 100%;
+                    ">
+                            <div style="
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                        ">
+                                <img src="{{ Storage::url($setting->web_favicon) }}" alt="" style="
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                ">
+                                <h5 class="card-title" style="
+                                margin: inherit;
+                                margin-left: 10px;
+                                color: #ffffff;
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                            ">KHAY-PHA THAI</h5>
+
+                            </div>
+                            <a href="#" class="share-link">► Share</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="
+                    position: relative;
+                    ">
+                        <img src="/logo/Screenshot 2025-05-07 174624.png" class="card-img-top" alt="Food Image" style="
+                        border-radius: 20px;
+                    ">
+                        <div class="card-body" style="
+                        display: flex;
+                        justify-content: space-between;
+                        position: absolute;
+                            width: 100%;
+                    ">
+                            <div style="
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                        ">
+                                <img src="{{ Storage::url($setting->web_favicon) }}" alt="" style="
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                ">
+                                <h5 class="card-title" style="
+                                margin: inherit;
+                                margin-left: 10px;
+                                color: #ffffff;
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                            ">KHAY-PHA THAI</h5>
+
+                            </div>
+                            <a href="#" class="share-link">► Share</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <div id="product" class="animate__animated animate__fadeIn wow">
             <div class="center">
                 <div class="title">
