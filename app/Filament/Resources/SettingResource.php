@@ -6,6 +6,7 @@ use App\Filament\Resources\SettingResource\Pages;
 use App\Filament\Resources\SettingResource\RelationManagers;
 use App\Models\Setting;
 use Filament\Forms;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -41,8 +42,30 @@ class SettingResource extends Resource
                                     ->label('Banner trang chủ (home_banner)')
                                     ->image()
                                     ->directory('settings'),
+                                    Section::make('Albums Trang chủ')
+                                    ->schema([
+                                        FileUpload::make('album_1')
+                                            ->label('Album 1 (album_1)')
+                                            ->image()
+                                            ->directory('settings'),
+                                        FileUpload::make('album_2')
+                                            ->label('Album 2 (album_2)')
+                                            ->image()
+                                            ->directory('settings'),
+                                        FileUpload::make('album_3')
+                                            ->label('Album 3 (album_3)')
+                                            ->image()
+                                            ->directory('settings'),
+                                        FileUpload::make('album_4')
+                                            ->label('Album 4 (album_4)')
+                                            ->image()
+                                            ->directory('settings'),
+                                        FileUpload::make('album_5')
+                                            ->label('Album 5 (album_5)')
+                                            ->image()
+                                            ->directory('settings'),
+                                    ])->columns(5),
                             ]),
-
                         Forms\Components\Tabs\Tab::make('Thông tin Website')
                             ->schema([
                                 FileUpload::make('web_logo')->label('Logo (web_logo)')->image()->directory('settings'),

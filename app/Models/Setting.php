@@ -34,6 +34,11 @@ class Setting extends Model
         'about_title',
         'about_content',
         'about_image',
+        'album_1',
+        'album_2',
+        'album_3',
+        'album_4',
+        'album_5',
     ];
 }
 

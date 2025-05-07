@@ -8,15 +8,15 @@
                 </div>
                 <ul class="d-flex align-items-center justify-content-start" style="color: #fff;">
                     <li>
-                        <a class="transition {{ request()->routeIs('home') ? 'active' : '' }}"
+                        <a style="background: {{ request()->routeIs('home') ? 'url("/logo/image_2025-05-07_204305047-removebg-preview.png")' : 'url("/logo/image_2025-05-07_204647669-removebg-preview.png")' }} no-repeat center center; background-size: 100% 100%; color: #fff; width: 100%;" class="transition {{ request()->routeIs('home') ? 'active' : '' }}"
                             href="{{ route('home') }}" title="Trang chủ" style="color: #fff;">Trang chủ</a>
                     </li>
                     <li>
-                        <a class="transition {{ request()->routeIs('about') ? 'active' : '' }}"
+                        <a style="background: {{ request()->routeIs('about') ? 'url("/logo/image_2025-05-07_204305047-removebg-preview.png")' : 'url("/logo/image_2025-05-07_204647669-removebg-preview.png")' }} no-repeat center center; background-size: 100% 100%; color: #fff; width: 100%;" class="transition {{ request()->routeIs('about') ? 'active' : '' }}"
                             href="{{ route('about') }}" title="Giới thiệu" style="color: #fff;">Giới thiệu</a>
                     </li>
-                    <li class="menu-item-has-children">
-                        <a class="transition {{ request()->routeIs('food.*') ? 'active' : '' }}"
+                    <li   class="menu-item-has-children">
+                        <a style="background: {{ request()->routeIs('food.*') ? 'url("/logo/image_2025-05-07_204305047-removebg-preview.png")' : 'url("/logo/image_2025-05-07_204647669-removebg-preview.png")' }} no-repeat center center; background-size: 100% 100%; color: #fff; width: 100%;" class="transition {{ request()->routeIs('food.*') ? 'active' : '' }}"
                             href="{{ route('food.list') }}" title="Món ăn" style="color: #fff;">Món ăn</a>
                         <ul class="sub-menu">
                             @foreach($categories as $category)
@@ -87,16 +87,16 @@
                 </div>
                 <ul class="d-flex align-items-center justify-content-start">
                     <li>
-                        <a class="transition {{ request()->routeIs('video.list') ? 'active' : '' }}"
+                        <a style="background: {{ request()->routeIs('video.list') ? 'url("/logo/image_2025-05-07_204305047-removebg-preview.png")' : 'url("/logo/image_2025-05-07_204647669-removebg-preview.png")' }} no-repeat center center; background-size: 100% 100%; color: #fff; width: 100%;" class="transition {{ request()->routeIs('video.list') ? 'active' : '' }}"
                             href="{{ route('video.list') }}" title="Review ẩm thực" style="color: #fff;">Review ẩm
                             thực</a>
                     </li>
                     <li>
-                        <a class="transition {{ request()->routeIs('album.list') ? 'active' : '' }}"
+                        <a style="background: {{ request()->routeIs('album.list') || request()->routeIs('album.*') ? 'url("/logo/image_2025-05-07_204305047-removebg-preview.png")' : 'url("/logo/image_2025-05-07_204647669-removebg-preview.png")' }} no-repeat center center; background-size: 100% 100%; color: #fff; width: 100%;" class="transition {{ request()->routeIs('album.list') || request()->routeIs('album.*') ? 'active' : '' }}"
                             href="{{ route('album.list') }}" title="Album ảnh" style="color: #fff;">Album ảnh</a>
                     </li>
                     <li>
-                        <a class="transition {{ request()->routeIs('news.list') ? 'active' : '' }}"
+                        <a style="background: {{ request()->routeIs('news.list') || request()->routeIs('news.*') ? 'url("/logo/image_2025-05-07_204305047-removebg-preview.png")' : 'url("/logo/image_2025-05-07_204647669-removebg-preview.png")' }} no-repeat center center; background-size: 100% 100%; color: #fff; width: 100%;" class="transition {{ request()->routeIs('news.list') || request()->routeIs('news.*') ? 'active' : '' }}"
                             href="{{ route('news.list') }}" title="Cẩm nang" style="color: #fff;">Cẩm nang</a>
                     </li>
 
@@ -117,7 +117,7 @@
             <ul>
                 <li class="heading">Chuyên mục</li>
                 <li>
-                    <a class="transition active" href="{{ route('home') }}" title="Trang chủ">Trang chủ</a>
+                    <a  class="transition active" href="{{ route('home') }}" title="Trang chủ">Trang chủ</a>
                 </li>
                 <li>
                     <a class="transition " href="{{ route('about') }}" title="Giới thiệu">Giới thiệu</a>
