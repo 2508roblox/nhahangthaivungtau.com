@@ -3,7 +3,7 @@
     <head>
 
         <!-- Title, Keywords, Description -->
-        <title>Không gian quán</title>
+        <title>Album ảnh</title>
 
         <!-- Css Files -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -57,7 +57,7 @@
         </div>
         <div id="container" class="center w-clear">
             <div class="title-main">
-                <h1>Không gian quán</h1>
+                <h1>Album ảnh</h1>
                 <p></p>
             </div>
             <div class="w-clear">

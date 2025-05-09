@@ -179,7 +179,55 @@
                         </div>
                     </div>
                     <div>
-                        <img src="/logo/Screenshot 2025-05-07 110643.png" alt="">
+                        <div id="viewer">
+                            <div class="bar-container">
+
+                                <div class="bar">
+                                    <div class="edges">
+                                        <div class="bg"></div>
+                                    </div>
+                                    <div class="items">
+                                        <div class="item"><i class="icon zoom-in"></i></div>
+                                        <div class="item"><i class="icon zoom-out"></i></div>
+                                        <div class="item"><i class="icon prev-page"></i></div>
+                                        <div class="item"><i class="icon next-page"></i></div>
+                                        <div class="item"><i class="icon share"></i></div>
+                                        <div class="item"><i class="icon clip"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="magazine-viewport" style="width:100%; height:100%;">
+                                <div class="magazine turn-magazine" id="magazine">
+                                    <div ignore="1" class="control control-previous-page">
+                                        <div><i></i></div>
+                                    </div>
+                                    <div ignore="1" class="control control-next-page">
+                                        <div><i></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Thumbnails -->
+                            <div class="bottom">
+                                <div class="edges">
+                                    <div class="thumbnails">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript" src="/assets/scripts/all.min.js"></script>
+                        <script type="text/javascript">
+                            flipify({
+                                id: 1,
+                                name: 'Las Vegas',
+                                display: 'double',
+                                pages: 12,
+                                pageWidth: 922 * 4,
+                                pageHeight: 600 * 4,
+                                path: 'statics/issue/'
+                            });
+                        </script>
                     </div>
                 </div>
 
@@ -576,11 +624,11 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
 
-        <div style="  background: linear-gradient(to bottom, #015134, #046e47);">
+        <div style="  background: linear-gradient(to bottom, #015134, #046e47);     padding-top: 9rem;">
 
         <div class="container">
             <style>
-                .album-title { font-family: 'SVN-Hydrella', sans-serif;   font-size: 100px; font-weight: bold; color: transparent; -webkit-text-stroke: 2px #FFD700;   text-stroke: 2px #FFD700;   text-align: center; letter-spacing: 10px;}
+                .album-title { font-family: 'SVN-Hydrella', sans-serif;  margin-bottom: -119px;;  font-size: 14rem; font-weight: bold; color: transparent; -webkit-text-stroke: .5px #FFD700;   text-stroke: 2px #FFD700;   text-align: center; letter-spacing: 10px;}
             </style>
             <h1 class="album-title text-center">ALBUM</h1>
 
@@ -604,7 +652,7 @@
             display: flex;
             justify-content: center;
         ">
-                <a style="background: url('/logo/Frame 7.png') no-repeat center center; background-size: 100% 100%; color: #fff;" href="gioi-thieu" class="intro-btn">XEM TẤT CẢ</a>
+                <a style="background: url('/logo/Frame 7.png') no-repeat center center; background-size: 100% 100%; color: #fff;" href="/album-anh" class="intro-btn">XEM TẤT CẢ</a>
             </div>
           </div>
         </div>

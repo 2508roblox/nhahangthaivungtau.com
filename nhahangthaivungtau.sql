@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 06, 2025 at 01:51 PM
+-- Generation Time: May 09, 2025 at 03:21 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -44,7 +44,14 @@ CREATE TABLE `albums` (
 --
 
 INSERT INTO `albums` (`id`, `image_link`, `created_at`, `updated_at`, `title`, `order_number`, `images`, `slug`, `views`) VALUES
-(2, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0);
+(2, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
+(9, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
+(10, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
+(11, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
+(12, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
+(13, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
+(14, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
+(15, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0);
 
 -- --------------------------------------------------------
 
@@ -63,10 +70,10 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1746537058),
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746537058;', 1746537058),
-('laravel_cache_livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1746536662),
-('laravel_cache_livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1746536662;', 1746536662);
+('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1746760346),
+('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746760346;', 1746760346),
+('laravel_cache_livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1746758617),
+('laravel_cache_livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1746758617;', 1746758617);
 
 -- --------------------------------------------------------
 
@@ -101,8 +108,11 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `slug`, `order_number`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'Món chính', 'mon-chinh', 2, 1, '2025-05-03 05:04:47', '2025-05-03 05:08:45'),
-(2, 'Món phụ', 'mon-phu', 1, 1, '2025-05-03 05:04:52', '2025-05-03 05:08:45');
+(14, 'Món khai vị', 'mon-khai-vi', 0, 1, '2025-05-08 19:55:51', '2025-05-08 19:55:51'),
+(15, 'Món chính', 'mon-chinh', 0, 1, '2025-05-08 19:55:54', '2025-05-08 19:55:54'),
+(16, 'Món hải sản', 'mon-hai-san', 0, 1, '2025-05-08 19:55:57', '2025-05-08 19:55:57'),
+(17, 'Món chay', 'mon-chay', 0, 1, '2025-05-08 19:56:00', '2025-05-08 19:56:00'),
+(18, 'Món tráng miệng', 'mon-trang-mieng', 0, 1, '2025-05-08 19:56:03', '2025-05-08 19:56:03');
 
 -- --------------------------------------------------------
 
@@ -176,8 +186,23 @@ CREATE TABLE `foods` (
 --
 
 INSERT INTO `foods` (`id`, `category_id`, `sub_category_id`, `name`, `slug`, `thumb_img`, `img`, `price`, `discount_price`, `description`, `order_number`, `status`, `is_best_seller`, `best_seller_banner`, `created_at`, `updated_at`) VALUES
-(1, 1, 3, 'Menu Buffet Lẩu Thái', 'menu-buffet-lau-thai', 'foods/thumb/01JTB28TSJYTS35WZX33EWYJE8.png', 'foods/01JTB28TSNP3ZB9HM3G3E3MGRK.png', '195000.00', '165000.00', '<p>test</p>', 0, 1, 1, 'foods/best_seller/01JTCGVA4TYN5KPYR459KQX31M.png', '2025-05-03 05:34:51', '2025-05-03 19:10:00'),
-(3, 1, 3, 'Menu Buffet Lẩu Thái', 'menu-buffet-lau-thai1', 'foods/thumb/01JTB28TSJYTS35WZX33EWYJE8.png', 'foods/01JTB28TSNP3ZB9HM3G3E3MGRK.png', '195000.00', '165000.00', '<p>test</p>', 0, 1, 1, 'foods/best_seller/01JTCGVA4TYN5KPYR459KQX31M.png', '2025-05-03 05:34:51', '2025-05-03 19:10:00');
+(8, 16, 13, 'Gỏi cá hồi mắm Thái', 'goi-ca-hoi-mam-thai', 'foods/thumb/01JTSFY6M6YM3RPNRPFFBBXB6A.jpg', 'foods/01JTSFY6M80XNPHMD4RHW8BP79.jpg', '259000.00', '259000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:03:05', '2025-05-08 20:03:05'),
+(9, 16, NULL, 'HẢI SẢN SỐT THÁI', 'hai-san-sot-thai', 'foods/thumb/01JTSFZRVP5M7JD13QQVYPME6Z.jpg', 'foods/01JTSFZRVRX2A9T2QJ3A398GBC.jpg', '280000.00', '280000.00', '<p>Spicy Thai Seafood Mango Salad</p><p><br><br></p>', 0, 1, 0, NULL, '2025-05-08 20:03:56', '2025-05-08 20:03:56'),
+(10, 14, 8, 'GỎI ĐU ĐỦ TÔM KHÔ & BA KHÍA', 'goi-du-du-tom-kho-ba-khia', 'foods/thumb/01JTSG0K6QKPY9JG168VF6MK48.jpg', 'foods/01JTSG0K6SRVG2Z14GFJCHP4MR.jpg', '113000.00', '113000.00', '<p>Papaya Salad with Dried Shrimp and salted Sesarmid Crab</p><p><br><br></p>', 0, 1, 0, NULL, '2025-05-08 20:04:23', '2025-05-08 20:04:23'),
+(11, 14, 8, 'GỎI TÔM SỐNG VỚI SỐT ỚT CHANH', 'goi-tom-song-voi-sot-ot-chanh', 'foods/thumb/01JTSG1614GFFV2VYHTWYSHRGZ.jpg', 'foods/01JTSG1616N5XDFHG1C96CV789.jpg', '211000.00', '211000.00', '<p>Raw Prawn Salad with Lime &amp; Chilli Sauce</p><p><br><br></p>', 0, 1, 0, NULL, '2025-05-08 20:04:42', '2025-05-08 20:04:42'),
+(12, 18, NULL, 'GỎI XOÀI XANH VỚI CÁ TRÊ CHIÊN GIÒN', 'goi-xoai-xanh-voi-ca-tre-chien-gion', 'foods/thumb/01JTSG1STMZ0T60T2GDYDJZTQT.jpg', 'foods/01JTSG1STPQV5HYEWJ1XYSYZSX.jpg', '173000.00', '173000.00', '<p>Green Mango Salad with Deep Fried Catfish</p><p><br><br></p>', 0, 1, 0, NULL, '2025-05-08 20:05:03', '2025-05-08 20:05:03'),
+(13, 14, 8, 'GỎI ĐU ĐỦ VỚI TÔM KHÔ TRỨNG MUỐI', 'goi-du-du-voi-tom-kho-trung-muoi', 'foods/thumb/01JTSG2K4QNTRBT0GMEN5RYGSZ.jpg', 'foods/01JTSG2K4TVVVMGD9J0DHRKK33.jpg', '81000.00', '81000.00', '<p>Green Papaya Salad with Dried Shrimp &amp; Salted Egg</p><p><br><br></p>', 0, 1, 0, NULL, '2025-05-08 20:05:28', '2025-05-08 20:05:28'),
+(14, 14, 8, 'GỎI MIẾN HẢI SẢN', 'goi-mien-hai-san', 'foods/thumb/01JTSG38PN9Q0Q8R9D8KZKCA4Y.jpg', 'foods/01JTSG38PQJKRZXW4NFTV3Z18A.jpg', '135000.00', '135000.00', '<p>Vermicelli Seafood Salad</p><p><br><br></p>', 0, 1, 0, NULL, '2025-05-08 20:05:51', '2025-05-08 20:05:51'),
+(15, 15, NULL, 'CHÂN GÀ RÚT XƯƠNG SỐT THÁI', 'chan-ga-rut-xuong-sot-thai', 'foods/thumb/01JTSG3Z56KT699RF1AR2K5VPR.jpg', 'foods/01JTSG3Z59SV4J3CSK283EK9D3.jpg', '120000.00', '120000.00', '<p>Thai style Boneless chicken feet</p><p><br><br></p>', 0, 1, 0, NULL, '2025-05-08 20:06:14', '2025-05-08 20:06:14'),
+(16, 17, NULL, 'Mooping Viên', 'mooping-vien', 'foods/thumb/01JTSG4ZZ6D9FA9Y2BV0HZ1EKA.jpg', 'foods/01JTSG4ZZB2V1WRYZ4QMTZE3V8.jpg', '99000.00', '99000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:06:47', '2025-05-08 20:06:47'),
+(17, 17, NULL, 'Mooping miếng', 'mooping-mieng', 'foods/thumb/01JTSG5CDFRJGA0ZRV50GAE5BN.jpg', 'foods/01JTSG5CDHZBVW7VSMVQGMT3Y5.jpg', '99000.00', '99000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:07:00', '2025-05-08 20:07:00'),
+(18, 15, NULL, 'HEO HONG Ủ SẢ', 'heo-hong-u-sa', 'foods/thumb/01JTSG5XTED1CX3287B9PYS125.jpg', 'foods/01JTSG5XTHGYDQMVRCJ9SYW2MF.jpg', '139000.00', '139000.00', '<p>Deep fried pork with lemongrass</p><p><br><br></p>', 0, 1, 0, NULL, '2025-05-08 20:07:18', '2025-05-08 20:07:18'),
+(19, 18, NULL, 'Thịt viên', 'thit-vien', 'foods/thumb/01JTSG79JVFW11BP01WZTB1TBM.jpg', 'foods/01JTSG79JXC01KZ0NKBDQQ1JAR.jpg', '27000.00', '27000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:08:03', '2025-05-08 20:08:03'),
+(20, 18, NULL, 'Chả cá viên (3 viên)', 'cha-ca-vien-3-vien', 'foods/thumb/01JTSG7XKKTBBKRSR3MGP1MF67.jpg', 'foods/01JTSG7XKNE6E61ET3SAF07GPM.jpg', '27000.00', '27000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:08:23', '2025-05-08 20:08:23'),
+(22, 18, NULL, 'Chả cá viên (3 viên)', '1', 'foods/thumb/01JTSG7XKKTBBKRSR3MGP1MF67.jpg', 'foods/01JTSG7XKNE6E61ET3SAF07GPM.jpg', '27000.00', '27000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:08:23', '2025-05-08 20:08:23'),
+(23, 18, NULL, 'Chả cá viên (3 viên)', '12', 'foods/thumb/01JTSG7XKKTBBKRSR3MGP1MF67.jpg', 'foods/01JTSG7XKNE6E61ET3SAF07GPM.jpg', '27000.00', '27000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:08:23', '2025-05-08 20:08:23'),
+(24, 18, NULL, 'Chả cá viên (3 viên)', '123', 'foods/thumb/01JTSG7XKKTBBKRSR3MGP1MF67.jpg', 'foods/01JTSG7XKNE6E61ET3SAF07GPM.jpg', '27000.00', '27000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:08:23', '2025-05-08 20:08:23'),
+(25, 18, NULL, 'Chả cá viên (3 viên)', '1234', 'foods/thumb/01JTSG7XKKTBBKRSR3MGP1MF67.jpg', 'foods/01JTSG7XKNE6E61ET3SAF07GPM.jpg', '27000.00', '27000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:08:23', '2025-05-08 20:08:23');
 
 -- --------------------------------------------------------
 
@@ -300,8 +325,8 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `title`, `slug`, `desc`, `short_desc`, `thumb_img`, `views`, `created_at`, `updated_at`) VALUES
-(1, 'Ẩm thực Thái Lan đa dạng, hấp dẫn và huyền thoại ', 'am-thuc-thai-lan-da-dang-hap-dan-va-huyen-thoai', '<h2>Khám phá Đảo Ngọc - Nơi mang đến tinh hoa ẩm thực Việt</h2><p><strong>Đảo Ngọc</strong> tọa lạc tại địa chỉ <strong>89 Nguyễn Thị Búp, Quận 12</strong>, hứa hẹn mang đến cho bạn trải nghiệm ẩm thực Việt Nam <strong>đậm đà hương vị</strong> và <strong>chuẩn mực phục vụ</strong>.</p><p><strong>Tại đây, bạn sẽ được:</strong></p><ul><li><strong>Thưởng thức:</strong><ul><li>Các món ăn <strong>nổi tiếng khắp Sài Gòn</strong> được chế biến từ nguyên liệu tươi ngon,<em> đảm bảo </em>vệ sinh an toàn thực phẩm.</li><li>Hương vị <strong>đậm đà, chuẩn vị Việt</strong>, mang đến cho bạn cảm giác như đang lạc bước vào thế giới ẩm thực truyền thống.</li></ul></li><li><strong>Trải nghiệm:</strong><ul><li><strong>Phong cách phục vụ chuyên nghiệp, chu đáo</strong>, mang đến cho bạn sự hài lòng tuyệt đối.</li><li><strong>Không gian ấm cúng, gần gũi</strong>, tạo cảm giác thoải mái như đang ở nhà.</li></ul></li><li><strong>Thích thú:</strong><ul><li><strong>Đa dạng các món ăn kèm</strong> được phục vụ miễn phí, cho bạn thỏa sức lựa chọn và thưởng thức.</li><li><strong>Mức giá hợp lý</strong>, phù hợp với mọi đối tượng khách hàng.</li></ul></li></ul><p><strong>Đảo Ngọc</strong> là điểm đến lý tưởng cho những ai muốn:</p><ul><li>Tìm kiếm <strong>món ngon Việt Nam</strong> đúng điệu.</li><li>Trải nghiệm <strong>phong cách phục vụ chuyên nghiệp</strong>.</li><li>Thưởng thức <strong>đa dạng các món ăn kèm</strong>.</li><li>Có những giây phút <strong>vui vẻ, thoải mái</strong> bên gia đình và bạn bè.</li></ul><p><strong>Hãy đến với Đảo Ngọc để:</strong></p><ul><li>Khám phá <strong>tinh hoa ẩm thực Việt</strong>.</li><li>Tận hưởng <strong>dịch vụ hoàn hảo</strong>.</li><li>Tạo dựng những kỷ niệm đẹp đẽ.</li></ul><p><strong>Liên hệ đặt bàn:</strong></p><ul><li><strong>Địa chỉ:</strong> 89 Nguyễn Thị Búp, Quận 12, Vietnam</li><li><strong>Điện thoại:</strong> 0918 606 032</li></ul><p><strong>Đảo Ngọc - Nơi mang đến sự hài lòng cho mọi thực khách!</strong></p><p><br></p>', 'Đảo Ngọc tọa lạc tại địa chỉ 89 Nguyễn Thị Búp, Quận 12, hứa hẹn mang đến cho bạn trải nghiệm ẩm thực Việt Nam đậm đà hương vị và chuẩn mực phục vụ.', '01JTCH9KCC0P79YKCCQF7G3MD6.png', 0, '2025-05-03 19:16:39', '2025-05-03 19:16:39'),
-(2, 'Ẩm thực Thái Lan đa dạng, hấp dẫn và huyền thoại ', 'am-thuc-1thai-lan-da-dang-hap-dan-va-huyen-thoai', '<h2>Khám phá Đảo Ngọc - Nơi mang đến tinh hoa ẩm thực Việt</h2><p><strong>Đảo Ngọc</strong> tọa lạc tại địa chỉ <strong>89 Nguyễn Thị Búp, Quận 12</strong>, hứa hẹn mang đến cho bạn trải nghiệm ẩm thực Việt Nam <strong>đậm đà hương vị</strong> và <strong>chuẩn mực phục vụ</strong>.</p><p><strong>Tại đây, bạn sẽ được:</strong></p><ul><li><strong>Thưởng thức:</strong><ul><li>Các món ăn <strong>nổi tiếng khắp Sài Gòn</strong> được chế biến từ nguyên liệu tươi ngon,<em> đảm bảo </em>vệ sinh an toàn thực phẩm.</li><li>Hương vị <strong>đậm đà, chuẩn vị Việt</strong>, mang đến cho bạn cảm giác như đang lạc bước vào thế giới ẩm thực truyền thống.</li></ul></li><li><strong>Trải nghiệm:</strong><ul><li><strong>Phong cách phục vụ chuyên nghiệp, chu đáo</strong>, mang đến cho bạn sự hài lòng tuyệt đối.</li><li><strong>Không gian ấm cúng, gần gũi</strong>, tạo cảm giác thoải mái như đang ở nhà.</li></ul></li><li><strong>Thích thú:</strong><ul><li><strong>Đa dạng các món ăn kèm</strong> được phục vụ miễn phí, cho bạn thỏa sức lựa chọn và thưởng thức.</li><li><strong>Mức giá hợp lý</strong>, phù hợp với mọi đối tượng khách hàng.</li></ul></li></ul><p><strong>Đảo Ngọc</strong> là điểm đến lý tưởng cho những ai muốn:</p><ul><li>Tìm kiếm <strong>món ngon Việt Nam</strong> đúng điệu.</li><li>Trải nghiệm <strong>phong cách phục vụ chuyên nghiệp</strong>.</li><li>Thưởng thức <strong>đa dạng các món ăn kèm</strong>.</li><li>Có những giây phút <strong>vui vẻ, thoải mái</strong> bên gia đình và bạn bè.</li></ul><p><strong>Hãy đến với Đảo Ngọc để:</strong></p><ul><li>Khám phá <strong>tinh hoa ẩm thực Việt</strong>.</li><li>Tận hưởng <strong>dịch vụ hoàn hảo</strong>.</li><li>Tạo dựng những kỷ niệm đẹp đẽ.</li></ul><p><strong>Liên hệ đặt bàn:</strong></p><ul><li><strong>Địa chỉ:</strong> 89 Nguyễn Thị Búp, Quận 12, Vietnam</li><li><strong>Điện thoại:</strong> 0918 606 032</li></ul><p><strong>Đảo Ngọc - Nơi mang đến sự hài lòng cho mọi thực khách!</strong></p><p><br></p>', 'Đảo Ngọc tọa lạc tại địa chỉ 89 Nguyễn Thị Búp, Quận 12, hứa hẹn mang đến cho bạn trải nghiệm ẩm thực Việt Nam đậm đà hương vị và chuẩn mực phục vụ.', '01JTCHCP1GEK9Y7YGDS02PSGFE.png', 7, '2025-05-03 19:16:39', '2025-05-05 04:10:11'),
+(1, 'Ẩm thực Thái Lan đa dạng, hấp dẫn và huyền thoại ', 'am-thuc-thai-lan-da-dang-hap-dan-va-huyen-thoai', '<h2>Khám phá Đảo Ngọc - Nơi mang đến tinh hoa ẩm thực Việt</h2><p><strong>Đảo Ngọc</strong> tọa lạc tại địa chỉ <strong>89 Nguyễn Thị Búp, Quận 12</strong>, hứa hẹn mang đến cho bạn trải nghiệm ẩm thực Việt Nam <strong>đậm đà hương vị</strong> và <strong>chuẩn mực phục vụ</strong>.</p><p><strong>Tại đây, bạn sẽ được:</strong></p><ul><li><strong>Thưởng thức:</strong><ul><li>Các món ăn <strong>nổi tiếng khắp Sài Gòn</strong> được chế biến từ nguyên liệu tươi ngon,<em> đảm bảo </em>vệ sinh an toàn thực phẩm.</li><li>Hương vị <strong>đậm đà, chuẩn vị Việt</strong>, mang đến cho bạn cảm giác như đang lạc bước vào thế giới ẩm thực truyền thống.</li></ul></li><li><strong>Trải nghiệm:</strong><ul><li><strong>Phong cách phục vụ chuyên nghiệp, chu đáo</strong>, mang đến cho bạn sự hài lòng tuyệt đối.</li><li><strong>Không gian ấm cúng, gần gũi</strong>, tạo cảm giác thoải mái như đang ở nhà.</li></ul></li><li><strong>Thích thú:</strong><ul><li><strong>Đa dạng các món ăn kèm</strong> được phục vụ miễn phí, cho bạn thỏa sức lựa chọn và thưởng thức.</li><li><strong>Mức giá hợp lý</strong>, phù hợp với mọi đối tượng khách hàng.</li></ul></li></ul><p><strong>Đảo Ngọc</strong> là điểm đến lý tưởng cho những ai muốn:</p><ul><li>Tìm kiếm <strong>món ngon Việt Nam</strong> đúng điệu.</li><li>Trải nghiệm <strong>phong cách phục vụ chuyên nghiệp</strong>.</li><li>Thưởng thức <strong>đa dạng các món ăn kèm</strong>.</li><li>Có những giây phút <strong>vui vẻ, thoải mái</strong> bên gia đình và bạn bè.</li></ul><p><strong>Hãy đến với Đảo Ngọc để:</strong></p><ul><li>Khám phá <strong>tinh hoa ẩm thực Việt</strong>.</li><li>Tận hưởng <strong>dịch vụ hoàn hảo</strong>.</li><li>Tạo dựng những kỷ niệm đẹp đẽ.</li></ul><p><strong>Liên hệ đặt bàn:</strong></p><ul><li><strong>Địa chỉ:</strong> 89 Nguyễn Thị Búp, Quận 12, Vietnam</li><li><strong>Điện thoại:</strong> 0918 606 032</li></ul><p><strong>Đảo Ngọc - Nơi mang đến sự hài lòng cho mọi thực khách!</strong></p><p><br></p>', 'Đảo Ngọc tọa lạc tại địa chỉ 89 Nguyễn Thị Búp, Quận 12, hứa hẹn mang đến cho bạn trải nghiệm ẩm thực Việt Nam đậm đà hương vị và chuẩn mực phục vụ.', '01JTCH9KCC0P79YKCCQF7G3MD6.png', 2, '2025-05-03 19:16:39', '2025-05-07 16:31:28'),
+(2, 'Ẩm thực Thái Lan đa dạng, hấp dẫn và huyền thoại ', 'am-thuc-1thai-lan-da-dang-hap-dan-va-huyen-thoai', '<h2>Khám phá Đảo Ngọc - Nơi mang đến tinh hoa ẩm thực Việt</h2><p><strong>Đảo Ngọc</strong> tọa lạc tại địa chỉ <strong>89 Nguyễn Thị Búp, Quận 12</strong>, hứa hẹn mang đến cho bạn trải nghiệm ẩm thực Việt Nam <strong>đậm đà hương vị</strong> và <strong>chuẩn mực phục vụ</strong>.</p><p><strong>Tại đây, bạn sẽ được:</strong></p><ul><li><strong>Thưởng thức:</strong><ul><li>Các món ăn <strong>nổi tiếng khắp Sài Gòn</strong> được chế biến từ nguyên liệu tươi ngon,<em> đảm bảo </em>vệ sinh an toàn thực phẩm.</li><li>Hương vị <strong>đậm đà, chuẩn vị Việt</strong>, mang đến cho bạn cảm giác như đang lạc bước vào thế giới ẩm thực truyền thống.</li></ul></li><li><strong>Trải nghiệm:</strong><ul><li><strong>Phong cách phục vụ chuyên nghiệp, chu đáo</strong>, mang đến cho bạn sự hài lòng tuyệt đối.</li><li><strong>Không gian ấm cúng, gần gũi</strong>, tạo cảm giác thoải mái như đang ở nhà.</li></ul></li><li><strong>Thích thú:</strong><ul><li><strong>Đa dạng các món ăn kèm</strong> được phục vụ miễn phí, cho bạn thỏa sức lựa chọn và thưởng thức.</li><li><strong>Mức giá hợp lý</strong>, phù hợp với mọi đối tượng khách hàng.</li></ul></li></ul><p><strong>Đảo Ngọc</strong> là điểm đến lý tưởng cho những ai muốn:</p><ul><li>Tìm kiếm <strong>món ngon Việt Nam</strong> đúng điệu.</li><li>Trải nghiệm <strong>phong cách phục vụ chuyên nghiệp</strong>.</li><li>Thưởng thức <strong>đa dạng các món ăn kèm</strong>.</li><li>Có những giây phút <strong>vui vẻ, thoải mái</strong> bên gia đình và bạn bè.</li></ul><p><strong>Hãy đến với Đảo Ngọc để:</strong></p><ul><li>Khám phá <strong>tinh hoa ẩm thực Việt</strong>.</li><li>Tận hưởng <strong>dịch vụ hoàn hảo</strong>.</li><li>Tạo dựng những kỷ niệm đẹp đẽ.</li></ul><p><strong>Liên hệ đặt bàn:</strong></p><ul><li><strong>Địa chỉ:</strong> 89 Nguyễn Thị Búp, Quận 12, Vietnam</li><li><strong>Điện thoại:</strong> 0918 606 032</li></ul><p><strong>Đảo Ngọc - Nơi mang đến sự hài lòng cho mọi thực khách!</strong></p><p><br></p>', 'Đảo Ngọc tọa lạc tại địa chỉ 89 Nguyễn Thị Búp, Quận 12, hứa hẹn mang đến cho bạn trải nghiệm ẩm thực Việt Nam đậm đà hương vị và chuẩn mực phục vụ.', '01JTCHCP1GEK9Y7YGDS02PSGFE.png', 8, '2025-05-03 19:16:39', '2025-05-08 20:20:41'),
 (3, 'Ẩm thực Thái Lan đa dạng, hấp dẫn và huyền thoại ', 'a2m-thuc-thai-lan-da-dang-hap-dan-va-huyen-thoai', '<h2>Khám phá Đảo Ngọc - Nơi mang đến tinh hoa ẩm thực Việt</h2><p><strong>Đảo Ngọc</strong> tọa lạc tại địa chỉ <strong>89 Nguyễn Thị Búp, Quận 12</strong>, hứa hẹn mang đến cho bạn trải nghiệm ẩm thực Việt Nam <strong>đậm đà hương vị</strong> và <strong>chuẩn mực phục vụ</strong>.</p><p><strong>Tại đây, bạn sẽ được:</strong></p><ul><li><strong>Thưởng thức:</strong><ul><li>Các món ăn <strong>nổi tiếng khắp Sài Gòn</strong> được chế biến từ nguyên liệu tươi ngon,<em> đảm bảo </em>vệ sinh an toàn thực phẩm.</li><li>Hương vị <strong>đậm đà, chuẩn vị Việt</strong>, mang đến cho bạn cảm giác như đang lạc bước vào thế giới ẩm thực truyền thống.</li></ul></li><li><strong>Trải nghiệm:</strong><ul><li><strong>Phong cách phục vụ chuyên nghiệp, chu đáo</strong>, mang đến cho bạn sự hài lòng tuyệt đối.</li><li><strong>Không gian ấm cúng, gần gũi</strong>, tạo cảm giác thoải mái như đang ở nhà.</li></ul></li><li><strong>Thích thú:</strong><ul><li><strong>Đa dạng các món ăn kèm</strong> được phục vụ miễn phí, cho bạn thỏa sức lựa chọn và thưởng thức.</li><li><strong>Mức giá hợp lý</strong>, phù hợp với mọi đối tượng khách hàng.</li></ul></li></ul><p><strong>Đảo Ngọc</strong> là điểm đến lý tưởng cho những ai muốn:</p><ul><li>Tìm kiếm <strong>món ngon Việt Nam</strong> đúng điệu.</li><li>Trải nghiệm <strong>phong cách phục vụ chuyên nghiệp</strong>.</li><li>Thưởng thức <strong>đa dạng các món ăn kèm</strong>.</li><li>Có những giây phút <strong>vui vẻ, thoải mái</strong> bên gia đình và bạn bè.</li></ul><p><strong>Hãy đến với Đảo Ngọc để:</strong></p><ul><li>Khám phá <strong>tinh hoa ẩm thực Việt</strong>.</li><li>Tận hưởng <strong>dịch vụ hoàn hảo</strong>.</li><li>Tạo dựng những kỷ niệm đẹp đẽ.</li></ul><p><strong>Liên hệ đặt bàn:</strong></p><ul><li><strong>Địa chỉ:</strong> 89 Nguyễn Thị Búp, Quận 12, Vietnam</li><li><strong>Điện thoại:</strong> 0918 606 032</li></ul><p><strong>Đảo Ngọc - Nơi mang đến sự hài lòng cho mọi thực khách!</strong></p><p><br></p>', 'Đảo Ngọc tọa lạc tại địa chỉ 89 Nguyễn Thị Búp, Quận 12, hứa hẹn mang đến cho bạn trải nghiệm ẩm thực Việt Nam đậm đà hương vị và chuẩn mực phục vụ.', '01JTCHDVVVDM2DYTSW58J44XEW.png', 0, '2025-05-03 19:16:39', '2025-05-03 19:18:59');
 
 -- --------------------------------------------------------
@@ -323,7 +348,7 @@ CREATE TABLE `online_users` (
 --
 
 INSERT INTO `online_users` (`id`, `ip_address`, `last_activity`, `created_at`, `updated_at`) VALUES
-(17, '127.0.0.1', '2025-05-06 06:49:44', '2025-05-06 06:44:35', '2025-05-06 06:49:44');
+(34, '127.0.0.1', '2025-05-08 20:21:42', '2025-05-08 19:28:04', '2025-05-08 20:21:42');
 
 -- --------------------------------------------------------
 
@@ -413,8 +438,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('yXvPx3w2SPmWMZjLCO1o0AUe8KFFe64yjo53yKUo', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiU1FxNGZSSnhhNVVXN0JERUpMQUFvMDVJRGZtNnFTYmRlTDliZnFsaCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC90aW4tdHVjIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJFA2OWNTSk04WlZFWUhESFBsUXFxMi41cWQ0djU3WFh0ZUxtSWtwVFowdVEzbUxoUC5qM3N5IjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1746452411),
-('ZhKbhAAiMIutIg5nHqIVIkJEHDTm8REyBETgzuGg', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiZTFnd3RXWjU1QmNGSm9WemFVYmJ4M2Vxa3V5ZFp2R1ZHR0NWT1pqSyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1746539381);
+('8NnnvN0KHEDod5WpFQ2iuYIOiiAPQ69mLNXgqRlQ', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiWUZjeU4zbFMzYVNnUXRaMXBsWUdOTTRNN25rbmxmc3lUalFUNHBtcCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1746760902);
 
 -- --------------------------------------------------------
 
@@ -448,15 +472,20 @@ CREATE TABLE `settings` (
   `about_content` longtext COLLATE utf8mb4_unicode_ci,
   `about_image` text COLLATE utf8mb4_unicode_ci,
   `created_at` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `updated_at` text COLLATE utf8mb4_unicode_ci NOT NULL
+  `updated_at` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `album_1` text COLLATE utf8mb4_unicode_ci,
+  `album_2` text COLLATE utf8mb4_unicode_ci,
+  `album_3` text COLLATE utf8mb4_unicode_ci,
+  `album_4` text COLLATE utf8mb4_unicode_ci,
+  `album_5` text COLLATE utf8mb4_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `settings`
 --
 
-INSERT INTO `settings` (`id`, `home_title`, `home_keyword`, `home_description`, `home_banner`, `web_logo`, `web_favicon`, `web_name`, `web_keyword`, `web_address`, `web_phone`, `web_email`, `web_instagram`, `web_facebook`, `web_youtube`, `web_tiktok`, `web_zalo`, `web_map_link`, `web_map_iframe`, `script_footer`, `script_header`, `about_title`, `about_content`, `about_image`, `created_at`, `updated_at`) VALUES
-(1, 'KHAY PHA THAI', 'ẩm thực Thái Lan, nhà hàng Thái Lan, Khay-Pha Thai, Koh Samui, món Thái, đồ Thái tại Việt Nam, bếp Thái truyền thống, văn hóa ẩm thực Thái, món ăn Thái Lan, nhà hàng Thái gần đây', 'Khám phá văn hóa ẩm thực Thái Lan đặc sắc tại Khay-Pha Thai – kế thừa tinh hoa từ Koh Samui với hơn 100 món ăn và tráng miệng truyền thống Thái, phục vụ người Việt mỗi ngày.\n', 'settings/01JTG93KDNH6C083BEJR3QTM52.png', 'settings/01JTJVFBT41JJ8DDNT7X3RFB0B.png', 'settings/01JTG94FM2Z1H0BC5Y7X8HRP5H.png', 'KHAY PHA THAI', 'KHAY PHA THAI', '43 Lê Phụng Hiểu , phường 8 , Bà Rịa , Vũng Tàu ', '0342097272', 'thaikhaypha@gmail.com', NULL, 'https://www.facebook.com/nhahangthaivungtau.monanthaitaivungtau', NULL, NULL, NULL, 'https://maps.app.goo.gl/qEePDcAArrzYxKA67', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.801400305833!2d107.0917817!3d10.3577589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756f007d62c0b1%3A0x8672f7d4a7af87e4!2zS0hBWeKAolBIQSBUaMOhaQ!5e0!3m2!1svi!2s!4v1746450701194!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>', NULL, NULL, 'ẨM THỰC KHAY•PHA Thái ', '<p><strong>Được mệnh danh là “xứ sở chùa Vàng”, Thái Lan không chỉ nổi tiếng với những ngôi chùa linh thiêng mà còn hấp dẫn bởi nền văn hóa ẩm thực đặc sắc.</strong> Khay-Pha Thai ra đời như một chiếc cầu nối mang tinh hoa ẩm thực Thái đến gần hơn với thực khách Việt, đặc biệt là tại thành phố biển Vũng Tàu.</p><p>Chúng tôi kế thừa và hoàn thiện từ thương hiệu nổi tiếng <strong>Koh Samui</strong>, mang đến trải nghiệm ẩm thực Thái Lan đích thực với mô hình bếp Thái thân thiện, gần gũi. Tại Khay-Pha Thai, bạn sẽ được thưởng thức <strong>hơn 100 món ăn và tráng miệng truyền thống</strong> được chế biến chuẩn vị Thái – từ Tom Yum cay nồng, Pad Thai đậm đà cho đến xôi xoài ngọt thanh, thơm dẻo.</p><p>Với không gian ấm cúng, phong cách phục vụ chu đáo và nguyên liệu chất lượng cao, Khay-Pha Thai mong muốn trở thành điểm đến quen thuộc của những ai yêu thích hương vị Thái Lan tại Vũng Tàu.</p>', 'settings/01JTG9AQRCK5SM5S74G0TPPKSN.png', '', '2025-05-06 13:10:00');
+INSERT INTO `settings` (`id`, `home_title`, `home_keyword`, `home_description`, `home_banner`, `web_logo`, `web_favicon`, `web_name`, `web_keyword`, `web_address`, `web_phone`, `web_email`, `web_instagram`, `web_facebook`, `web_youtube`, `web_tiktok`, `web_zalo`, `web_map_link`, `web_map_iframe`, `script_footer`, `script_header`, `about_title`, `about_content`, `about_image`, `created_at`, `updated_at`, `album_1`, `album_2`, `album_3`, `album_4`, `album_5`) VALUES
+(1, 'KHAY PHA THAI', 'ẩm thực Thái Lan, nhà hàng Thái Lan, Khay-Pha Thai, Koh Samui, món Thái, đồ Thái tại Việt Nam, bếp Thái truyền thống, văn hóa ẩm thực Thái, món ăn Thái Lan, nhà hàng Thái gần đây', 'Khám phá văn hóa ẩm thực Thái Lan đặc sắc tại Khay-Pha Thai – kế thừa tinh hoa từ Koh Samui với hơn 100 món ăn và tráng miệng truyền thống Thái, phục vụ người Việt mỗi ngày.\n', 'settings/01JTG93KDNH6C083BEJR3QTM52.png', 'settings/01JTJVFBT41JJ8DDNT7X3RFB0B.png', 'settings/01JTG94FM2Z1H0BC5Y7X8HRP5H.png', 'KHAY PHA THAI', 'KHAY PHA THAI', '43 Lê Phụng Hiểu , phường 8 , Bà Rịa , Vũng Tàu ', '0342097272', 'thaikhaypha@gmail.com', NULL, 'https://www.facebook.com/nhahangthaivungtau.monanthaitaivungtau', NULL, NULL, NULL, 'https://maps.app.goo.gl/qEePDcAArrzYxKA67', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.801400305833!2d107.0917817!3d10.3577589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756f007d62c0b1%3A0x8672f7d4a7af87e4!2zS0hBWeKAolBIQSBUaMOhaQ!5e0!3m2!1svi!2s!4v1746450701194!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>', NULL, NULL, 'ẨM THỰC KHAY•PHA Thái ', '<p><strong>Được mệnh danh là “xứ sở chùa Vàng”, Thái Lan không chỉ nổi tiếng với những ngôi chùa linh thiêng mà còn hấp dẫn bởi nền văn hóa ẩm thực đặc sắc.</strong> Khay-Pha Thai ra đời như một chiếc cầu nối mang tinh hoa ẩm thực Thái đến gần hơn với thực khách Việt, đặc biệt là tại thành phố biển Vũng Tàu.</p><p>Chúng tôi kế thừa và hoàn thiện từ thương hiệu nổi tiếng <strong>Koh Samui</strong>, mang đến trải nghiệm ẩm thực Thái Lan đích thực với mô hình bếp Thái thân thiện, gần gũi. Tại Khay-Pha Thai, bạn sẽ được thưởng thức <strong>hơn 100 món ăn và tráng miệng truyền thống</strong> được chế biến chuẩn vị Thái – từ Tom Yum cay nồng, Pad Thai đậm đà cho đến xôi xoài ngọt thanh, thơm dẻo.</p><p>Với không gian ấm cúng, phong cách phục vụ chu đáo và nguyên liệu chất lượng cao, Khay-Pha Thai mong muốn trở thành điểm đến quen thuộc của những ai yêu thích hương vị Thái Lan tại Vũng Tàu.</p>', 'settings/01JTG9AQRCK5SM5S74G0TPPKSN.png', '', '2025-05-07 13:26:34', 'settings/01JTNERFJVEJ5Y0JEWTA1ZVMBK.png', 'settings/01JTNES0YG160Z42ASQZGQ9YS6.png', 'settings/01JTNETDMJZXWQG8Z14Z2GWJH1.png', 'settings/01JTNETDMMSQBD6HN14XSV8N3K.png', 'settings/01JTNETDMP9A8JS1ARPDFGM63B.png');
 
 -- --------------------------------------------------------
 
@@ -504,13 +533,15 @@ CREATE TABLE `sub_categories` (
 --
 
 INSERT INTO `sub_categories` (`id`, `category_id`, `name`, `slug`, `order_number`, `status`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Đồ kho', 'do-kho', 3, 1, '2025-05-03 05:05:16', '2025-05-03 05:07:54'),
-(2, 1, 'Khai vị', 'khai-vi', 1, 1, '2025-05-03 05:05:22', '2025-05-03 05:08:22'),
-(3, 1, 'Lẩu', 'lau', 2, 1, '2025-05-03 05:05:33', '2025-05-03 05:07:54'),
-(4, 2, 'Mì', 'mi', 4, 1, '2025-05-03 05:05:48', '2025-05-03 05:07:54'),
-(5, 2, 'Cơm', 'com', 5, 1, '2025-05-03 05:05:54', '2025-05-03 05:07:54'),
-(6, 2, 'Gỏi', 'goi', 6, 1, '2025-05-03 05:06:01', '2025-05-03 05:07:54'),
-(7, 1, 'Súp', 'sup', 7, 1, '2025-05-03 05:06:07', '2025-05-03 05:07:54');
+(8, 14, 'Gỏi ', 'goi', 0, 1, '2025-05-08 19:56:24', '2025-05-08 19:56:24'),
+(9, 14, 'Súp ', 'sup', 0, 1, '2025-05-08 19:56:31', '2025-05-08 19:56:31'),
+(10, 15, 'Cơm ', 'com', 0, 1, '2025-05-08 19:56:37', '2025-05-08 19:56:37'),
+(11, 15, 'Mì ', 'mi', 0, 1, '2025-05-08 19:56:43', '2025-05-08 19:56:43'),
+(12, 16, 'Tôm ', 'tom', 0, 1, '2025-05-08 19:56:52', '2025-05-08 19:56:52'),
+(13, 16, 'Cá ', 'ca', 0, 1, '2025-05-08 19:56:57', '2025-05-08 19:56:57'),
+(14, 17, 'Đậu hủ', 'dau-hu', 0, 1, '2025-05-08 19:57:05', '2025-05-08 19:57:05'),
+(15, 17, 'Cà ri', 'ca-ri', 0, 1, '2025-05-08 19:57:11', '2025-05-08 19:57:11'),
+(16, 18, 'Kem ', 'kem', 0, 1, '2025-05-08 19:57:24', '2025-05-08 19:57:24');
 
 -- --------------------------------------------------------
 
@@ -560,7 +591,10 @@ INSERT INTO `visitors` (`id`, `date`, `count`, `created_at`, `updated_at`) VALUE
 (1, '2025-05-03', 321, '2025-05-03 04:41:49', '2025-05-03 06:45:48'),
 (2, '2025-05-04', 292, '2025-05-03 18:36:19', '2025-05-03 20:08:56'),
 (3, '2025-05-05', 3118, '2025-05-05 03:38:06', '2025-05-05 06:40:12'),
-(4, '2025-05-06', 474, '2025-05-06 05:59:03', '2025-05-06 06:49:44');
+(4, '2025-05-06', 493, '2025-05-06 05:59:03', '2025-05-06 06:53:23'),
+(5, '2025-05-07', 1167, '2025-05-06 19:16:37', '2025-05-07 16:57:06'),
+(6, '2025-05-08', 74, '2025-05-07 18:24:15', '2025-05-08 04:22:03'),
+(7, '2025-05-09', 678, '2025-05-08 19:28:04', '2025-05-08 20:21:42');
 
 --
 -- Indexes for dumped tables
@@ -721,13 +755,13 @@ ALTER TABLE `visitors`
 -- AUTO_INCREMENT for table `albums`
 --
 ALTER TABLE `albums`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `customer_feedback`
@@ -745,7 +779,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `foods`
 --
 ALTER TABLE `foods`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `jobs`
@@ -775,7 +809,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `online_users`
 --
 ALTER TABLE `online_users`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `reservations`
@@ -805,7 +839,7 @@ ALTER TABLE `slideshows`
 -- AUTO_INCREMENT for table `sub_categories`
 --
 ALTER TABLE `sub_categories`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -817,7 +851,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `visitors`
 --
 ALTER TABLE `visitors`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables

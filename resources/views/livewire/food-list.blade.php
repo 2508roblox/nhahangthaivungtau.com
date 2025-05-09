@@ -34,6 +34,11 @@
         <!-- Js Google Analytic -->
 
         <!-- Js Head -->
+        <style>
+            #menu ul li ul li a {
+    padding: 5px 10px !important;
+}
+        </style>
     </head>
 
     <body>
@@ -68,7 +73,7 @@
                     <div class="product-item">
                         <div class="product-image"><a class="scale-img" href="{{ route('food.detail', $food->slug) }}"
                                 title="{{ $food->name }}"><img
-                                    onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
+                                    onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy product-image_food" style="height: 250px !important;"
                                     src="{{ Storage::url($food->thumb_img) }}"
                                     alt="{{ $food->name }}"></a></div>
                         <div class="product-desc">
@@ -79,6 +84,12 @@
                     </div>
                     @endforeach
                 </div>
+                <style>
+                    .product-image_food {
+                        height: 250px !important;
+                        object-fit: cover;
+                    }
+                </style>
                 <div class="clear"></div>
                 <div class="pagination-home mgt-25"></div>
             </div>

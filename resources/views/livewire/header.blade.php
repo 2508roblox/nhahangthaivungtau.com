@@ -50,14 +50,14 @@
                         <a style="background: {{ request()->routeIs('food.*') ? 'url("/logo/image_2025-05-07_204305047-removebg-preview.png")' : 'url("/logo/image_2025-05-07_204647669-removebg-preview.png")' }} no-repeat center center; background-size: 100% 100%; color: #fff; width: 100%;"
                             class="transition {{ request()->routeIs('food.*') ? 'active' : '' }}"
                             href="{{ route('food.list') }}" title="Món ăn" style="color: #fff;">Món ăn</a>
-                        <ul class="sub-menu">
+                        <ul class="sub-menu" style="    margin-top: 20px;">
                             @foreach($categories as $category)
-                                <li class="menu-item-has-children">
+                                <li class="menu-item-has-children" >
                                     <a style="color: #000000;"
                                         href="{{ route('food.list', ['category' => $category->id]) }}"
                                         title="{{ $category->name }}">{{ $category->name }}</a>
                                     @if($category->subCategories->count() > 0)
-                                        <ul class="sub-menu">
+                                        <ul class="sub-menu" style="margin-left: 10px; margin-top: 10px;">
                                             @foreach($category->subCategories as $subCategory)
                                                 <li>
                                                     <a style="color: #000000;"
@@ -160,7 +160,22 @@
                 </li>
                 <li>
                     <a class="transition " href="{{ route('food.list') }}" title="Món ăn">Món ăn</a>
+                    <ul class="sub-menu">
+                        @foreach($categories as $category)
+                            <li>
+                                <a href="{{ route('food.list', ['category' => $category->id]) }}" title="{{ $category->name }}">{{ $category->name }}</a>
+                                <ul class="sub-menu">
+                                    @foreach($category->subCategories as $subCategory)
+                                        <li>
+                                            <a href="{{ route('food.list', ['category' => $category->id, 'subcategory' => $subCategory->id]) }}" title="{{ $subCategory->name }}">{{ $subCategory->name }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                        @endforeach
+                    </ul>
                 </li>
+
                 <li>
                     <a class="transition " href="{{ route('video.list') }}" title="Review ẩm thực">Review ẩm thực</a>
                 </li>
@@ -172,5 +187,12 @@
                 </li>
             </ul>
         </nav>
+        <style>
+            @media (max-width: 768px) {
+                li.mm-listitem {
+                    width: 300px !important;
+                    }
+            }
+        </style>
     </div>
 </div>

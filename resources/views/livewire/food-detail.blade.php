@@ -131,7 +131,7 @@
                 <div class="product-item">
                     <div class="product-image"><a class="scale-img" href="{{ route('food.detail', $relatedFood->slug) }}"
                             title="{{ $relatedFood->name }}"><img
-                                onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy"
+                                onerror="this.src='/thumbs/540x540x2/assets/images/noimage.png'" class="lazy product-image_food" style="height: 250px !important; object-fit: cover;"
                                 src="{{ Storage::url($relatedFood->thumb_img) }}"
                                 alt="{{ $relatedFood->name }}"></a></div>
                     <div class="product-desc">
