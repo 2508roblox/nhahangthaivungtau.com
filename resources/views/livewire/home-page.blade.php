@@ -62,14 +62,14 @@
         <div id="intro">
             <div class="center d-flex flex-wrap justify-content-between">
                 <div class="intro-right animate__animated animate__fadeInRight wow">
-                    <h1 style="color:#e3b505 ; font-size: 4rem; font-weight: bold;">KHAY PHA THAI</h1>
+                    <h1 style="color:#ffca00 ; font-size: 5.5rem;   font-family: 'Lodestone', sans-serif; ">KHAY-PHA THAI</h1>
                     <div class="intro-image intro-image1 scale-img">
                         <img onerror="this.src='/thumbs/331x420x2/assets/images/noimage.png';"
                             src="{{ asset('/logo/image 9.png') }}" />
                     </div>
                 </div>
-                <div class="intro-left animate__animated animate__fadeInLeft wow">
-                    <h2>VỀ CHÚNG TÔI</h2>
+                <div class="intro-left animate__animated animate__fadeInLeft wow" style="padding: 2rem; border: 1px solid #ffca00; border-radius: 23px;">
+                    <h2 style="color: #fff; font-family: 'Lodestone', sans-serif; ">VỀ CHÚNG TÔI</h2>
                     <div class="intro-info" style="color: #fff;">
                         <p>Được mệnh danh <strong>“xứ sở chùa Vàng”</strong>, không chỉ có chùa chiền mà văn hóa ẩm thực
                             Thái Lan cũng rất độc đáo.</p>
@@ -96,6 +96,13 @@
                             .intro-btn {
                                 border: inherit;
                             }
+                            .intro-left>h2 {
+    font-size: 3.5rem;
+    background: rgb(255 255 255);
+    /* background: linear-gradient(90deg, rgba(255, 204, 102, 1) 0%, rgba(186, 138, 31, 1) 100%, rgba(204, 153, 0, 1) 100%); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
                         </style>
                     </div>
                 </div>
@@ -155,7 +162,7 @@
                     style="background-color: #0c4f39;padding: 40px 20px;text-align: center;font-family: sans-serif;width: 100%;">
                     <!-- Tiêu đề -->
                     <h2
-                        style="color: #fcd34d; font-size: 32px; font-weight: bold; letter-spacing: 1px; margin-bottom: 30px;">
+                        style="color: #fcd34d; font-size: 3rem; letter-spacing: 1px; margin-bottom: 30px; font-family: 'Lodestone', sans-serif;">
                         MENU TẠI KHAY-PHA THAI
                     </h2>
 
@@ -628,9 +635,9 @@
 
         <div class="container">
             <style>
-                .album-title { font-family: 'SVN-Hydrella', sans-serif;  margin-bottom: -119px;;  font-size: 14rem; font-weight: bold; color: transparent; -webkit-text-stroke: .5px #FFD700;   text-stroke: 2px #FFD700;   text-align: center; letter-spacing: 10px;}
+                .album-title { font-family: 'Lodestone', sans-serif;  margin-bottom: -119px;;  font-size: 20rem;  color: transparent; -webkit-text-stroke: 1px #FFD700;   text-stroke: 2px #FFD700;   text-align: center; letter-spacing: 10px;}
             </style>
-            <h1 class="album-title text-center">ALBUM</h1>
+            <h1 class="album-title text-center" style="font-family: 'Lodestone', sans-serif;">ALBUM</h1>
 
             <div class="row">
               <div class="col-md-4" style="    display: flex;    flex-direction: column;    justify-content: end;">
