@@ -95,9 +95,15 @@
                         <li class="w-clear">
                             <label class="attr-label-pro-detail">Giá:</label>
                             <div class="attr-content-pro-detail">
-                                <span class="price-new-pro-detail">Liên hệ</span>
+                                <span class="price-new-pro-detail">{{ number_format($food->price, 0, ',', '.') }}đ</span>
+                                <span class="price-old-pro-detail">{{ number_format($food->discount_price, 0, ',', '.') }}đ</span>
                             </div>
                         </li>
+                        <style>
+                            .price-old-pro-detail {
+    padding-left: 11px;
+}
+                        </style>
                     </ul>
                 </div>
 
@@ -117,7 +123,7 @@
                         {!! $food->description !!}
                     </div>
                     <div class="content-tabs-pro-detail commentfb-pro-detail mgt-25">
-                        <div class="fb-comments" data-href="https://nhahangthaivungtau.com/tom-hung-alaskadao-ngoc"
+                        <div class="fb-comments" data-href="{{ route('food.detail', $food->slug) }}"
                             data-numposts="3" data-colorscheme="light" data-width="100%"></div>
                     </div>
                 </div>
@@ -187,9 +193,9 @@
         <!-- Js Config -->
         <script type="text/javascript">
             var VNS_FRAMEWORK = VNS_FRAMEWORK || {};
-            var CONFIG_BASE = 'https://nhahangthaivungtau.com/';
-            var WEBSITE_NAME = 'Ẩm Thực Đảo Ngọc';
-            var TIMENOW = '04/05/2025';
+            var CONFIG_BASE = '/';
+            var WEBSITE_NAME = '';
+            var TIMENOW = '{{ date('d/m/Y') }}';
             var SHIP_CART = false;
             var GOTOP = 'assets/images/top.png';
             var LANG = {

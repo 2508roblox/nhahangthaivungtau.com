@@ -66,12 +66,13 @@
 
                     <!-- Column 3: Facebook card -->
                     <div class="col-md-4 mb-4">
-                        <h5 style="color: #ffffff;font-size: 2rem;letter-spacing: 1px;font-family: 'Lodestone', sans-serif;text-align: left;">FACEBOOK</h5>
+                        <h5 style="color: #ffffff;font-size: 2rem;letter-spacing: 1px;font-family: 'Lodestone', sans-serif;text-align: left;" class="text-leftsss">FACEBOOK</h5>
                         <div style="
                         padding: 0 !important;!i;!;
                         margin: 0;
+                        cursor: pointer;
                     " class="fb-card p-3 mt-3">
-                            <img src="/logo/fanpage.png" alt="Logo" class="brand-logo me-2"> <!-- Avatar -->
+                            <img onclick="window.open('{{ $settings->web_facebook }}', '_blank')" src="/logo/fanpage.png" alt="Logo" class="brand-logo me-2"> <!-- Avatar -->
                         </div>
                     </div>
 
@@ -143,6 +144,9 @@
             .btn-phone,
             #messages-facebook {
                 display: block;
+            }
+            .text-leftsss {
+                text-align: center !important;
             }
         }
     </style>

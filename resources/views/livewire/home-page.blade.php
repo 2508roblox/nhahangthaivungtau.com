@@ -60,10 +60,28 @@
             <p class="control-slideshow next-slideshow transition"><i class="fas fa-chevron-right"></i></p>
         </div>
         <div id="intro">
+            <style>
+                @media (max-width: 768px) {
+                    #lldfdfd {
+    font-size: 3rem !important;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.sdfsdfsdf {
+margin-bottom: 2rem;
+}
+.album-title {
+    font-size: 7rem !important;
+    text-align: center !important;
+    margin-bottom: initial !important;
+}
+                }
+            </style>
             <div class="center d-flex flex-wrap justify-content-between">
                 <div class="intro-right animate__animated animate__fadeInRight wow">
-                    <h1 style="color:#ffca00 ; font-size: 5.5rem;   font-family: 'Lodestone', sans-serif; ">KHAY-PHA THAI</h1>
-                    <div class="intro-image intro-image1 scale-img">
+                    <h1 id="lldfdfd" style="color:#ffca00 ; font-size: 5.5rem;   font-family: 'Lodestone', sans-serif; ">KHAY-PHA THAI</h1>
+                    <div class="intro-image intro-image1 scale-img sdfsdfsdf" >
                         <img onerror="this.src='/thumbs/331x420x2/assets/images/noimage.png';"
                             src="{{ asset('/logo/image 9.png') }}" />
                     </div>
@@ -115,7 +133,7 @@
     ">
             <div class="center d-flex flex-wrap justify-content-between">
                 <div class="intro-right animate__animated animate__fadeInRight wow">
-                    <h1 style="color:#e3b505;font-size: 3rem;font-weight: bold;text-align: center;width: 100%;">MÓN NGON
+                    <h1 id="lldfdfddfdf" style="color:#ffca00;font-size: 4rem;font-family: 'Lodestone', sans-serif;text-align: center;margin-bottom: 4rem; width: 100%;">MÓN NGON
                         <br> NHẤT ĐỊNH PHẢI THỬ
                     </h1>
                     <div
@@ -127,26 +145,23 @@
                                 mà văn hóa ẩm thực Thái Lan cũng rất độc đáo.
                             </h2>
                         </div>
-
-                        <div style="margin-bottom: 30px;">
-                            <img src="/logo/image 26 (1).png" alt="Món Thái 1" style="width: 100%; border-radius: 8px;">
-                            <h3 style="margin-top: 15px;">Menu Buffet Lẩu Thái 229k</h3>
-                            <p style="color: #f8e08e; font-weight: bold;">Giá: 229k</p>
+                        @foreach ($setting->best_sellers as $best_seller)
+                        <div style="margin-bottom: 30px; cursor: pointer;" onclick="window.location.href='{{ $best_seller['link'] }}'">
+                            <img src="{{ Storage::url($best_seller['image']) }}" alt="Món Thái 1" style="width: 100%; border-radius: 8px;">
+                            <h3 style="margin-top: 15px;">{{ $best_seller['name'] }}</h3>
+                            <p style="color: #f8e08e; font-weight: bold;">Giá: {{ $best_seller['price'] }}</p>
                         </div>
+                        @endforeach
 
-                        <div>
-                            <img src="/logo/image 27.png" alt="Món Thái 2" style="width: 100%; border-radius: 8px;">
-                            <h3 style="margin-top: 15px;">Menu Buffet Lẩu Thái 229k</h3>
-                            <p style="color: #f8e08e; font-weight: bold;">Giá: 229k</p>
-                        </div>
                     </div>
 
                 </div>
                 <div class="intro-left animate__animated animate__fadeInLeft wow">
-                    <h1 style="color:#e3b505;font-size: 3rem;font-weight: bold;text-align: center;width: 100%;">BEST
-                        SELLER</h1>
-                    <div>
-                        <img src="{{ asset('logo/image.png') }}" alt="Món Thái 1"
+                    <img src="/logo/image_2025-05-09_201438147-removebg-preview.png" style=" padding: 0px 4rem;    width: 100%;            " alt="">
+                    <h1 style="color: #fcd34d; font-size: 3rem; letter-spacing: 1px; margin-bottom: 30px; font-family: 'Lodestone', sans-serif; text-align: center;">"BEST
+                        SELLER"</h1>
+                    <div style="cursor: pointer;" onclick="window.location.href='{{ $setting->link_seller }}'">
+                        <img src="{{ Storage::url($setting->banner_seller) }}" alt="Món Thái 1"
                             style="width: 100%; border-radius: 8px;">
                     </div>
 
@@ -168,23 +183,18 @@
 
                     <!-- Thanh menu các món -->
                     <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-                        <div
-                            style="background-color: #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px; font-weight: bold;">
-                            Món đặc biệt
+                        @foreach ($categories as $category)
+                        <div class="category-items"
+                            style="background-color: transparent; color: #fff; padding: 10px 25px; border: 1px solid #fcd34d; border-radius: 30px; font-weight: bold; cursor: pointer;" onclick="window.location.href='/mon-an?category={{ $category->id }}'">
+                            {{ $category->name }}
                         </div>
-                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                            Lẩu thái
-                        </div>
-                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                            Cơm trộn
-                        </div>
-                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                            Gỏi Somtum
-                        </div>
-                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                            Món khác
-                        </div>
+                        @endforeach
                     </div>
+                    <style>
+                        .category-items:hover{
+                            background-color: #fcd34d !important;
+                        }
+                    </style>
                     <div>
                         <div id="viewer">
                             <div class="bar-container">
@@ -251,134 +261,79 @@
                         style="color: #fcd34d; font-size: 4rem;  letter-spacing: 1px; margin-bottom: 30px;  font-family: 'Lodestone', sans-serif;">
                         MÓN ĂN ĐẶC SẮC
                     </h2>
+                    <style>
+                        .asdf {
+                            font-weight: bold;
+                            color: #ffffff;
+                            font-size: 15px;
+                            height: 50px;
+                        }
 
+                        .cart_pd:hover>.card {
+                            background-color: #ffc44c !important;
+                        }
+
+                        .cart_pd strong {
+                            color: #ffc44c !important;
+                        }
+
+                        .cart_pd:hover .asdf {
+                            color: #000000 !important;
+                        }
+
+                        .cart_pd:hover strong {
+                            color: #000000 !important;
+                        }
+
+                        .lslsl {
+                            padding: 15px;
+                            border-radius: 15px;
+                            background-color: transparent;
+                            border: 1px solid #fbbf24;
+                        }
+
+                        @media (max-width: 768px) {
+                            #reviews {
+                                gap: 20px;
+                            }
+                            #lldfdfddfdf {
+                                font-size: 3rem !important;
+                                text-align: center;
+                                width: 100%;
+                                margin-bottom: 2rem;
+                            }
+                        }
+                    </style>
                     <!-- Thanh menu các món -->
                     <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-                        <div
-                            style="background-color: #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px; font-weight: bold;">
-                            Món đặc biệt
+                        @foreach ($categories as $category)
+                        <div class="category-items"
+                            style="background-color: transparent; color: #fff; padding: 10px 25px; border: 1px solid #fcd34d; border-radius: 30px; font-weight: bold; cursor: pointer;" onclick="window.location.href='/mon-an?category={{ $category->id }}'">
+                            {{ $category->name }}
                         </div>
-                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                            Lẩu thái
-                        </div>
-                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                            Cơm trộn
-                        </div>
-                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                            Gỏi Somtum
-                        </div>
-                        <div style="border: 1px solid #fbbf24; color: #fff; padding: 10px 25px; border-radius: 30px;">
-                            Món khác
-                        </div>
+                        @endforeach
+
                     </div>
                     <div>
-                        <style>
-                            .asdf {
-                                font-weight: bold;
-                                color: #ffffff;
-                                font-size: 15px;
-                            }
 
-                            .cart_pd:hover>.card {
-                                background-color: #ffc44c !important;
-                            }
-
-                            .cart_pd strong {
-                                color: #ffc44c !important;
-                            }
-
-                            .cart_pd:hover .asdf {
-                                color: #000000 !important;
-                            }
-
-                            .cart_pd:hover strong {
-                                color: #000000 !important;
-                            }
-
-                            .lslsl {
-                                padding: 15px;
-                                border-radius: 15px;
-                                background-color: transparent;
-                                border: 1px solid #fbbf24;
-                            }
-
-                            @media (max-width: 768px) {
-                                #reviews {
-                                    gap: 20px;
-                                }
-                            }
-                        </style>
                         <div class="row g-4" id="reviews" style="margin-top: 20px;">
 
                             <!-- Thẻ nổi bật -->
-                            <div class="col-md-3 cart_pd" style="background-color: transparent;">
+                            @foreach ($foods as $food)
+                            <div class="col-md-3 cart_pd" style="background-color: transparent; margin-bottom: 2rem; cursor: pointer;" onclick="window.location.href='/mon-an/{{ $food->slug  }}'">
                                 <div class="card card-custom highlight lslsl">
-                                    <img style="
-                                border-radius: 15px;
-                            "
-                                        src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top"
-                                        alt="Món 1">
+                                    <img style="     border-radius: 15px;     height: 200px;     object-fit: cover; "
+                                        src="{{ Storage::url($food->thumb_img) }}" class="card-img-top"
+                                        alt="{{ $food->name }}">
                                     <div class="card-body">
-                                        <div class="asdf title">Menu Buffet Lẩu Thái</div>
+                                        <div class="asdf title">{{ $food->name }}</div>
                                         <div class="asdf price"
-                                            style="
-                                  font-size: 20px;
-                              ">
-                                            Giá: <strong style="color: #fbbf24;">229k</strong></div>
+                                            style="    font-size: 20px;">
+                                            Giá: <strong style="color: #fbbf24;">{{ number_format($food->price, 0, ',', '.') }}đ</strong></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 cart_pd" style="background-color: transparent;">
-                                <div class="card card-custom highlight lslsl">
-                                    <img style="
-                                border-radius: 15px;
-                            "
-                                        src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top"
-                                        alt="Món 1">
-                                    <div class="card-body">
-                                        <div class="asdf title">Menu Buffet Lẩu Thái</div>
-                                        <div class="asdf price"
-                                            style="
-                                  font-size: 20px;
-                              ">
-                                            Giá: <strong style="color: #fbbf24;">229k</strong></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 cart_pd" style="background-color: transparent;">
-                                <div class="card card-custom highlight lslsl">
-                                    <img style="
-                                border-radius: 15px;
-                            "
-                                        src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top"
-                                        alt="Món 1">
-                                    <div class="card-body">
-                                        <div class="asdf title">Menu Buffet Lẩu Thái</div>
-                                        <div class="asdf price"
-                                            style="
-                                  font-size: 20px;
-                              ">
-                                            Giá: <strong style="color: #fbbf24;">229k</strong></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 cart_pd" style="background-color: transparent;">
-                                <div class="card card-custom highlight lslsl">
-                                    <img style="
-                                border-radius: 15px;
-                            "
-                                        src="/logo/Screenshot 2025-05-07 173212.png" class="card-img-top"
-                                        alt="Món 1">
-                                    <div class="card-body">
-                                        <div class="asdf title">Menu Buffet Lẩu Thái</div>
-                                        <div class="asdf price"
-                                            style="
-                                  font-size: 20px;
-                              ">
-                                            Giá: <strong style="color: #fbbf24;">229k</strong></div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
 
 
 
@@ -553,9 +508,11 @@
                 <div class="row ljaksfdsss">
                     <div class="col-md-5 col-12" style="    justify-content: center;    display: flex;    flex-direction: column;">
                         <h1 class="display-4"
-                            style="     font-size: 2.4rem; ">CẨM NANG <br> TẠI
+                        style="font-size: 3.7rem;font-family: 'Lodestone', sans-serif;color: #fcd34d;margin-bottom: 3rem;">CẨM NANG <br> TẠI
                             KHAY-PHA THAI</h1>
-                        <p>Được mệnh danh "xứ sở chùa Vàng", không chỉ có chùa chiền mà văn hóa ẩm thực Thái Lan cũng
+                        <p style="
+                        font-size: 1.27rem;
+                    ">Được mệnh danh  <strong style="">"xứ sở chùa Vàng"</strong>, không chỉ có chùa chiền mà văn hóa ẩm thực Thái Lan cũng
                             rất độc đáo.
 
                         </p>
@@ -640,7 +597,7 @@
             <h1 class="album-title text-center" style="font-family: 'Lodestone', sans-serif;">ALBUM</h1>
 
             <div class="row">
-              <div class="col-md-4" style="    display: flex;    flex-direction: column;    justify-content: end;">
+              <div class="col-md-4" style="display: flex;flex-direction: column;justify-content: end;margin-bottom: 1rem;">
                 <img style="       border: 6px solid #fbbf24 !important;" src="{{ Storage::url($setting->album_1) }}" class="img-fluid mb-3" alt="Food 1">
                 <img style="       border: 6px solid #fbbf24 !important;" src="{{ Storage::url($setting->album_2) }}" class="img-fluid" alt="Food 2">
               </div>

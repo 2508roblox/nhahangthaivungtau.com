@@ -6,6 +6,8 @@ use App\Filament\Resources\SettingResource\Pages;
 use App\Filament\Resources\SettingResource\RelationManagers;
 use App\Models\Setting;
 use Filament\Forms;
+use Filament\Forms\Components\HasManyRepeater;
+use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -65,6 +67,36 @@ class SettingResource extends Resource
                                             ->image()
                                             ->directory('settings'),
                                     ])->columns(5),
+
+                                    Section::make('Khối best seller')
+                                    ->schema([
+                                        Repeater::make('best_sellers')
+                                            ->label(' Khối món ngon nhất định phải thử')
+                                            ->schema([
+                                                FileUpload::make('image')
+                                                    ->label('Ảnh (image)')
+                                                    ->image()
+                                                    ->required()
+                                                    ->directory('best_sellers'),
+                                                TextInput::make('name')
+                                                    ->required()
+                                                    ->label('Tên (name)'),
+                                                TextInput::make('price')
+                                                    ->required()
+                                                    ->label('Giá (price)'),
+                                                TextInput::make('link')
+                                                    ->required()
+                                                    ->label('Link (link)'),
+                                            ])->columns(5),
+                                            FileUpload::make('banner_seller')
+                                            ->label('Banner best seller (banner_seller)')
+                                            ->image()
+                                            ->required()
+                                            ->directory('settings'),
+                                            TextInput::make('link_seller')
+                                            ->required()
+                                            ->label('Link best seller (link_seller)'),
+                                    ]),
                             ]),
                         Forms\Components\Tabs\Tab::make('Thông tin Website')
                             ->schema([

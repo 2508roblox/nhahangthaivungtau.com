@@ -190,9 +190,12 @@
         <style>
             @media (max-width: 768px) {
                 li.mm-listitem {
-                    width: 300px !important;
+                    /* width: 300px !important; */
                     }
             }
+            #menu-mobile {
+    background: #ffca00;
+}
         </style>
     </div>
 </div>

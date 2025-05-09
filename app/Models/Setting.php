@@ -39,6 +39,12 @@ class Setting extends Model
         'album_3',
         'album_4',
         'album_5',
+        'best_sellers',
+        'banner_seller',
+        'link_seller',
+    ];
+    protected $casts = [
+        'best_sellers' => 'array',
     ];
 }
 
