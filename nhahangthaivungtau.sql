@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 09, 2025 at 03:21 AM
+-- Generation Time: May 09, 2025 at 03:39 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -348,7 +348,7 @@ CREATE TABLE `online_users` (
 --
 
 INSERT INTO `online_users` (`id`, `ip_address`, `last_activity`, `created_at`, `updated_at`) VALUES
-(34, '127.0.0.1', '2025-05-08 20:21:42', '2025-05-08 19:28:04', '2025-05-08 20:21:42');
+(35, '127.0.0.1', '2025-05-08 20:39:03', '2025-05-08 20:35:01', '2025-05-08 20:39:03');
 
 -- --------------------------------------------------------
 
@@ -438,7 +438,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('8NnnvN0KHEDod5WpFQ2iuYIOiiAPQ69mLNXgqRlQ', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiWUZjeU4zbFMzYVNnUXRaMXBsWUdOTTRNN25rbmxmc3lUalFUNHBtcCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1746760902);
+('8NnnvN0KHEDod5WpFQ2iuYIOiiAPQ69mLNXgqRlQ', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiWUZjeU4zbFMzYVNnUXRaMXBsWUdOTTRNN25rbmxmc3lUalFUNHBtcCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1746761943);
 
 -- --------------------------------------------------------
 
@@ -594,7 +594,7 @@ INSERT INTO `visitors` (`id`, `date`, `count`, `created_at`, `updated_at`) VALUE
 (4, '2025-05-06', 493, '2025-05-06 05:59:03', '2025-05-06 06:53:23'),
 (5, '2025-05-07', 1167, '2025-05-06 19:16:37', '2025-05-07 16:57:06'),
 (6, '2025-05-08', 74, '2025-05-07 18:24:15', '2025-05-08 04:22:03'),
-(7, '2025-05-09', 678, '2025-05-08 19:28:04', '2025-05-08 20:21:42');
+(7, '2025-05-09', 696, '2025-05-08 19:28:04', '2025-05-08 20:39:03');
 
 --
 -- Indexes for dumped tables
@@ -809,7 +809,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `online_users`
 --
 ALTER TABLE `online_users`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `reservations`

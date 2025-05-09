@@ -19,6 +19,14 @@
     <link rel="icon" type="image/png" href="{{Storage::url($setting->web_favicon)}}">
     {!! $setting->script_header !!}
     @livewireStyles
+    <style>
+         @font-face {
+        font-family: 'Lodestone';
+        src: url('/font/iCielBC-Lodestone.ttf') format('truetype');
+    }
+
+
+    </style>
 </head>
 
 <body>

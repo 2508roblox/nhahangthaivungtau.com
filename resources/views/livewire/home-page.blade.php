@@ -241,7 +241,7 @@
                     style="background-color: #0c4f39;padding: 40px 20px;text-align: center;font-family: sans-serif;width: 100%;">
                     <!-- Tiêu đề -->
                     <h2
-                        style="color: #fcd34d; font-size: 32px; font-weight: bold; letter-spacing: 1px; margin-bottom: 30px;">
+                        style="color: #fcd34d; font-size: 4rem;  letter-spacing: 1px; margin-bottom: 30px;  font-family: 'Lodestone', sans-serif;">
                         MÓN ĂN ĐẶC SẮC
                     </h2>
 
@@ -402,7 +402,7 @@
         <div style="background: #015134;">
 
         <div class="container" style="     background: white;     padding: 20px;     border-radius: 20px; ">
-            <h1 class="review-title">REVIEW ẨM THỰC</h1>
+            <h1 class="review-title" style="font-family: 'Lodestone', sans-serif;">REVIEW ẨM THỰC</h1>
             <div class="row" id="reviewaf">
                 <div class="col-md-4">
                     <div class="card" style="
