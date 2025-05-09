@@ -12,18 +12,48 @@
 
                     <!-- Column 1: Info -->
                     <div class="col-md-4 mb-4">
-                        <h5>NHÀ HÀNG THÁI</h5>
+                        <h5
+                            style="color: #ffffff;font-size: 2rem;letter-spacing: 1px;margin-bottom: 30px;font-family: 'Lodestone', sans-serif;">
+                            NHÀ HÀNG THÁI</h5>
                         <p>Cityland Park Hills, Phường 11, Quận Gò Vấp,<br>
                             Thành phố Hồ Chí Minh, Việt Nam</p>
                         <p>Hotline: <span class="highlight">{{ $settings->web_phone }}</span></p>
                         <p>Email: <a style="color: #fff;"
                                 href="mailto:{{ $settings->web_email }}">{{ $settings->web_email }}</a></p>
-                        <div class="social-icons mt-3">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <div class="social-iconss">
+                            <div class="icons" onclick="window.open('{{ $settings->web_facebook }}', '_blank')"><img src="/logo/icons8-facebook-480.png" alt="Facebook"></div>
+                            <div class="icons" onclick="window.open('{{ $settings->web_instagram }}', '_blank')"><img src="/logo/icons8-instagram-logo-250.png" alt="Instagram"></div>
+                            <div class="icons" onclick="window.open('{{ $settings->web_youtube }}', '_blank')"><img src="/logo/icons8-youtube-512.png" alt="YouTube"></div>
+                            <div class="icons" onclick="window.open('{{ $settings->web_tiktok }}', '_blank')"><img src="/logo/icons8-tiktok-512.png" alt="TikTok"></div>
                         </div>
+                        <style>
+                          .social-iconss {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 2rem 0;
+}
+                            .icons {
+                                width: 50px;
+                                height: 50px;
+                                border: 2px solid white;
+                                border-radius: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #005F40;
+                                transition: background-color 0.3s;
+                            }
+
+                            .icons:hover {
+                                background-color: rgba(255, 255, 255, 0.1);
+                            }
+
+                            .icons img {
+                                width: 70%;
+                                /* Điều chỉnh kích thước biểu tượng */
+                            }
+                        </style>
                     </div>
 
                     <!-- Column 2: Logo + Text -->
@@ -36,8 +66,11 @@
 
                     <!-- Column 3: Facebook card -->
                     <div class="col-md-4 mb-4">
-                        <h5>FACEBOOK</h5>
-                        <div class="fb-card p-3 mt-3">
+                        <h5 style="color: #ffffff;font-size: 2rem;letter-spacing: 1px;font-family: 'Lodestone', sans-serif;text-align: left;">FACEBOOK</h5>
+                        <div style="
+                        padding: 0 !important;!i;!;
+                        margin: 0;
+                    " class="fb-card p-3 mt-3">
                             <img src="/logo/fanpage.png" alt="Logo" class="brand-logo me-2"> <!-- Avatar -->
                         </div>
                     </div>
@@ -64,43 +97,6 @@
     </a>
     <div id="messages-facebook"></div>
 
-    <div class="fix-toolbar">
-        <ul>
-            <li>
-                <a id="goidien" href="tel:0918606032" title="title">
-                    <img src="{{ asset('assets/images/fp-phone.png') }}" alt="images"><br>
-                    <span>Gọi điện</span>
-                </a>
-            </li>
-            <li>
-                <a id="sms" href="sms:0918606032" title="title">
-                    <img src="{{ asset('assets/images/fp-sms.png') }}" alt="images"><br>
-                    <span>Nhắn tin</span>
-                </a>
-            </li>
-            <li>
-                <a target="_blank"
-                    href="https://www.google.com/maps/dir/?api=1&origin=&destination=89 Nguyễn Thị Búp, phường Tân Chánh Hiệp, quận 12, TP. HCM"
-                    title="Map">
-                    <img src="{{ asset('assets/images/fp-zalo.png') }}" alt="images"><br>
-
-                    <span>Chỉ Đường</span>
-                </a>
-            </li>
-            <li>
-                <a id="chatzalo" href="https://zalo.me/0918606032" title="title">
-                    <img src="{{ asset('assets/images/fp-zalo.png') }}" alt="images"><br>
-                    <span>Chat zalo</span>
-                </a>
-            </li>
-            <li>
-                <a target="_blank" id="chatfb" href="https://www.facebook.com/facebook/" title="title">
-                    <img src="{{ asset('assets/images/fp-mess.png') }}" alt="images"><br>
-                    <span>Chat facebook</span>
-                </a>
-            </li>
-        </ul>
-    </div>
     <div class="map-container">
         {!! $settings->web_map_iframe !!}
     </div>
@@ -136,8 +132,18 @@
         .progress-wrap svg.progress-circle path {
             stroke: #e3b505;
         }
+
         #footer {
-    background: #015134;
-}
+            background: #015134;
+        }
+
+        @media (max-width: 767px) {
+
+            .btn-zalo,
+            .btn-phone,
+            #messages-facebook {
+                display: block;
+            }
+        }
     </style>
 </div>
