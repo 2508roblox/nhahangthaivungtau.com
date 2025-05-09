@@ -366,137 +366,25 @@ margin-bottom: 2rem;
         <div class="container" style="     background: white;     padding: 20px;     border-radius: 20px; ">
             <h1 class="review-title" style="font-family: 'Lodestone', sans-serif;">REVIEW ẨM THỰC</h1>
             <div class="row" id="reviewaf">
-                <div class="col-md-4">
-                    <div class="card" style="
-                    position: relative;
-                    ">
-                        <img src="/logo/Screenshot 2025-05-07 174624.png" class="card-img-top" alt="Food Image"
-                            style="
-                        border-radius: 20px;
-                    ">
-                        <div class="card-body"
-                            style="
-                        display: flex;
-                        justify-content: space-between;
-                        position: absolute;
-                            width: 100%;
-                    ">
+                @foreach ($reviews as $review)
+                <div class="col-md-4" style="    margin-bottom: 1rem;">
+                    <div class="card" style="position: relative;  cursor: pointer;" data-src="{{ $review->video_link }}" data-fancybox="video" >
+                        <img src="{{Storage::url($review->image) }}" class="card-img-top" alt="Food Image"        style="    border-radius: 20px;">
+                        <div class="card-body"        style="    display: flex;    justify-content: space-between;    position: absolute;        width: 100%;">
                             <div
-                                style="
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            text-align: center;
-                        ">
-                                <img src="{{ Storage::url($setting->web_favicon) }}" alt=""
-                                    style="
-                                width: 30px;
-                                height: 30px;
-                                border-radius: 50%;
-                                ">
-                                <h5 class="card-title"
-                                    style="
-                                margin: inherit;
-                                margin-left: 10px;
-                                color: #ffffff;
-                                font-size: 1.2rem;
-                                font-weight: bold;
-                            ">
+                                style="     display: flex;     justify-content: center;     align-items: center;     text-align: center; ">
+                                <img src="{{ Storage::url($setting->web_favicon) }}" alt=""     style=" width: 30px; height: 30px; border-radius: 50%; ">
+                                <h5 class="card-title"         style="     margin: inherit;     margin-left: 10px;     color: #ffffff;     font-size: 1.2rem;     font-weight: bold; ">
                                     KHAY-PHA THAI</h5>
 
                             </div>
-                            <a href="#" class="share-link">► Share</a>
+                            <a href="{{ $review->video_link }}" class="share-link" style="color: #ffffff;">► Share</a>
                         </div>
                     </div>
                 </div>
+                @endforeach
 
-                <div class="col-md-4">
-                    <div class="card" style="
-                    position: relative;
-                    ">
-                        <img src="/logo/Screenshot 2025-05-07 174624.png" class="card-img-top" alt="Food Image"
-                            style="
-                        border-radius: 20px;
-                    ">
-                        <div class="card-body"
-                            style="
-                        display: flex;
-                        justify-content: space-between;
-                        position: absolute;
-                            width: 100%;
-                    ">
-                            <div
-                                style="
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            text-align: center;
-                        ">
-                                <img src="{{ Storage::url($setting->web_favicon) }}" alt=""
-                                    style="
-                                width: 30px;
-                                height: 30px;
-                                border-radius: 50%;
-                                ">
-                                <h5 class="card-title"
-                                    style="
-                                margin: inherit;
-                                margin-left: 10px;
-                                color: #ffffff;
-                                font-size: 1.2rem;
-                                font-weight: bold;
-                            ">
-                                    KHAY-PHA THAI</h5>
 
-                            </div>
-                            <a href="#" class="share-link">► Share</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card" style="
-                    position: relative;
-                    ">
-                        <img src="/logo/Screenshot 2025-05-07 174624.png" class="card-img-top" alt="Food Image"
-                            style="
-                        border-radius: 20px;
-                    ">
-                        <div class="card-body"
-                            style="
-                        display: flex;
-                        justify-content: space-between;
-                        position: absolute;
-                            width: 100%;
-                    ">
-                            <div
-                                style="
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            text-align: center;
-                        ">
-                                <img src="{{ Storage::url($setting->web_favicon) }}" alt=""
-                                    style="
-                                width: 30px;
-                                height: 30px;
-                                border-radius: 50%;
-                                ">
-                                <h5 class="card-title"
-                                    style="
-                                margin: inherit;
-                                margin-left: 10px;
-                                color: #ffffff;
-                                font-size: 1.2rem;
-                                font-weight: bold;
-                            ">
-                                    KHAY-PHA THAI</h5>
-
-                            </div>
-                            <a href="#" class="share-link">► Share</a>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>
@@ -522,7 +410,7 @@ margin-bottom: 2rem;
                             style="    border: 1px solid #fbbf24;    border-radius: 20px;">
 
                             <img style="    border-radius: 20px;"
-                                src="http://127.0.0.1:8000/logo/Screenshot 2025-05-07 181424.png" alt="">
+                                src="/logo/Screenshot 2025-05-07 181424.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -542,45 +430,22 @@ margin-bottom: 2rem;
             </style>
             <div class="row ljaksfd">
 
+                @foreach ($news as $new)
                 <div class="col-md-4">
                     <div class="card bg-light" style="background: #085c3c !important;border: 1px solid #fbbf24;border-radius: 20px;color: #fbbf24; padding: 20px;">
-                        <img class="lasdf" style="    border-radius: 20px; left: -46px;" src="http://127.0.0.1:8000/logo/Screenshot%202025-05-07%20173212.png"
+                        <img class="lasdf" style="    border-radius: 20px; left: -46px;" src="{{Storage::url($new->thumb_img) }}"
                             class="card-img-top" alt="Thai Food 1">
                         <div class="card-body">
-                            <h5 class="card-title owowo" style="color: white;">Ẩm thực Thái Lan đa dạng, hấp dẫn và huyền thoại - Bài viết</h5>
+                            <h5 class="card-title owowo" style="color: white;">{{ $new->title }}</h5>
                             <div style="    display: flex;    justify-content: end;    ">
 
-                                <a href="#" style="color: white; text-decoration: underline;" class="owowo">Xem chi tiết »</a>
+                                <a href="/tin-tuc/{{ $new->slug }}" style="color: white; text-decoration: underline;" class="owowo">Xem chi tiết »</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card bg-light" style="background: #085c3c !important;border: 1px solid #fbbf24;border-radius: 20px;color: #fbbf24; padding: 20px;">
-                        <img class="lasdf" style="    border-radius: 20px; left: -46px;" src="http://127.0.0.1:8000/logo/Screenshot%202025-05-07%20173212.png"
-                            class="card-img-top" alt="Thai Food 1">
-                        <div class="card-body">
-                            <h5 class="card-title owowo" style="color: white;">Ẩm thực Thái Lan đa dạng, hấp dẫn và huyền thoại - Bài viết</h5>
-                            <div style="    display: flex;    justify-content: end;    ">
+                @endforeach
 
-                                <a href="#" style="color: white; text-decoration: underline;" class="owowo">Xem chi tiết »</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card bg-light" style="background: #085c3c !important;border: 1px solid #fbbf24;border-radius: 20px;color: #fbbf24; padding: 20px;">
-                        <img class="lasdf" style="    border-radius: 20px; left: -46px;" src="http://127.0.0.1:8000/logo/Screenshot%202025-05-07%20173212.png"
-                            class="card-img-top" alt="Thai Food 1">
-                        <div class="card-body">
-                            <h5 class="card-title owowo" style="color: white;">Ẩm thực Thái Lan đa dạng, hấp dẫn và huyền thoại - Bài viết</h5>
-                            <div style="    display: flex;    justify-content: end;    ">
-
-                                <a href="#" style="color: white; text-decoration: underline;" class="owowo">Xem chi tiết »</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>
@@ -604,7 +469,7 @@ margin-bottom: 2rem;
               <div class="col-md-4" style="     gap: 20px;     display: flex;     flex-direction: column; ">
                 <img style="    height: 100%;    border: 6px solid #fbbf24 !important;" src="{{ Storage::url($setting->album_3) }}" class="img-fluid" alt="Food 3">
                 <img style="    height: 100%;    border: 6px solid #fbbf24 !important;" src="{{ Storage::url($setting->album_4) }}" class="img-fluid" alt="Food 3">
-                <img src="http://127.0.0.1:8000/logo/logo_footer.png" alt="">
+                <img src="/logo/logo_footer.png" alt="">
 
               </div>
               <div class="col-md-4" style="padding-top: 100px;">
