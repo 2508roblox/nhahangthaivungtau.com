@@ -38,6 +38,16 @@ class Food extends Model
         static::updating(function ($food) {
             $food->slug = Str::slug($food->name);
         });
+        static::updating(function ($food) {
+            if ($food->isDirty('thumb_img') && ($food->getOriginal('thumb_img') !== null)) {
+                Storage::disk('public')->delete($food->getOriginal('thumb_img'));
+            }
+        });
+        static::deleting(function ($food) {
+            if ($food->thumb_img) {
+                Storage::disk('public')->delete($food->thumb_img);
+            }
+        });
     }
 
     public function category()
@@ -49,26 +59,5 @@ class Food extends Model
     {
         return $this->belongsTo(SubCategory::class);
     }
-    protected static function boot()
-    {
-        parent::boot();
 
-        /** @var Model $model */
-        static::updating(function ($model) {
-            if ($model->isDirty('thumb_img') && ($model->getOriginal('thumb_img') !== null)) {
-                Storage::disk('public')->delete($model->getOriginal('thumb_img'));
-            }
-            if ($model->isDirty('img') && ($model->getOriginal('img') !== null)) {
-                Storage::disk('public')->delete($model->getOriginal('img'));
-            }
-        });
-        static::deleting(function ($model) {
-            if ($model->thumb_img) {
-                Storage::disk('public')->delete($model->thumb_img);
-            }
-            if ($model->img) {
-                Storage::disk('public')->delete($model->img);
-            }
-        });
-    }
 }

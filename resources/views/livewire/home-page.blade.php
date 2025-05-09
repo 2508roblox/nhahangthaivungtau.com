@@ -178,10 +178,10 @@ margin-bottom: 2rem;
 
                     <!-- Thanh menu các món -->
                     <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-                        @foreach ($categories as $category)
+                        @foreach ($menus as $menu)
                         <div class="category-items"
-                            style="background-color: transparent; color: #fff; padding: 10px 25px; border: 1px solid #fcd34d; border-radius: 30px; font-weight: bold; cursor: pointer;" onclick="window.location.href='/mon-an?category={{ $category->id }}'">
-                            {{ $category->name }}
+                            style="background-color: transparent; color: #fff; padding: 10px 25px; border: 1px solid #fcd34d; border-radius: 30px; font-weight: bold; cursor: pointer;">
+                            {{ $menu->name }}
                         </div>
                         @endforeach
                     </div>
@@ -191,7 +191,7 @@ margin-bottom: 2rem;
                         }
                     </style>
                     <div>
-                        <div id="viewer">
+                        <div id="viewer" style="     height: 700px; ">
                             <div class="bar-container">
 
                                 <div class="bar">

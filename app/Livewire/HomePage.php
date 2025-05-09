@@ -9,6 +9,7 @@ use App\Models\Setting;
 use App\Models\Category;
 use App\Models\Review;
 use App\Models\News;
+use App\Models\Menu;
 class HomePage extends Component
 {
     public $slides;
@@ -17,6 +18,7 @@ class HomePage extends Component
     public $foods;
     public $reviews;
     public $news;
+    public $menus;
     public function mount()
     {
         $this->slides = Slideshow::all();
@@ -25,6 +27,7 @@ class HomePage extends Component
         $this->foods = Food::all();
         $this->reviews = Review::orderBy('created_at', 'desc')->limit(6)->get();
         $this->news = News::orderBy('views', 'desc')->limit(3)->get();
+        $this->menus = Menu::all();
     }
 
     public function render()
