@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Support\Facades\Storage;
 class Setting extends Model
 {
     use HasFactory;
@@ -46,5 +46,38 @@ class Setting extends Model
     protected $casts = [
         'best_sellers' => 'array',
     ];
+    protected static function boot()
+    {
+        parent::boot();
+
+        /** @var Model $model */
+        static::updating(function ($model) {
+            if ($model->isDirty('web_logo') && ($model->getOriginal('web_logo') !== null)) {
+                Storage::disk('public')->delete($model->getOriginal('web_logo'));
+            }
+            if ($model->isDirty('web_favicon') && ($model->getOriginal('web_favicon') !== null)) {
+                Storage::disk('public')->delete($model->getOriginal('web_favicon'));
+            }
+            if ($model->isDirty('album_1') && ($model->getOriginal('album_1') !== null)) {
+                Storage::disk('public')->delete($model->getOriginal('album_1'));
+            }
+            if ($model->isDirty('album_2') && ($model->getOriginal('album_2') !== null)) {
+                Storage::disk('public')->delete($model->getOriginal('album_2'));
+            }
+            if ($model->isDirty('album_3') && ($model->getOriginal('album_3') !== null)) {
+                Storage::disk('public')->delete($model->getOriginal('album_3'));
+            }
+            if ($model->isDirty('album_4') && ($model->getOriginal('album_4') !== null)) {
+                Storage::disk('public')->delete($model->getOriginal('album_4'));
+            }
+            if ($model->isDirty('album_5') && ($model->getOriginal('album_5') !== null)) {
+                Storage::disk('public')->delete($model->getOriginal('album_5'));
+            }
+            if ($model->isDirty('banner_seller') && ($model->getOriginal('banner_seller') !== null)) {
+                Storage::disk('public')->delete($model->getOriginal('banner_seller'));
+            }
+        });
+
+    }
 }
 

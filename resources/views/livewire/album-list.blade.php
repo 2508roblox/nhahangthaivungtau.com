@@ -3,7 +3,7 @@
     <head>
 
         <!-- Title, Keywords, Description -->
-        <title>Album ảnh</title>
+        <title>Album ảnh - {{ \App\Models\Setting::first()->web_name }}</title>
 
         <!-- Css Files -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -39,12 +39,7 @@
     </head>
 
     <body>
-        <ul class="h-card hidden">
-            <li class="h-fn fn">Ẩm Thực Đảo Ngọc</li>
-            <li class="h-org org">Ẩm Thực Đảo Ngọc</li>
-            <li class="h-tel tel">0918606032</li>
-            <li><a class="u-url ul" href="https://nhahangthaivungtau.com/">https://nhahangthaivungtau.com/</a></li>
-        </ul>
+
         @livewire('header')
         <div class="breadCrumbs">
             <div class="center">
@@ -57,7 +52,7 @@
         </div>
         <div id="container" class="center w-clear">
             <div class="title-main">
-                <h1>Album ảnh</h1>
+                <h1 style="font-family: 'Lodestone', sans-serif;">Album ảnh</h1>
                 <p></p>
             </div>
             <div class="w-clear">
@@ -118,7 +113,7 @@
         <script type="text/javascript">
             var VNS_FRAMEWORK = VNS_FRAMEWORK || {};
             var CONFIG_BASE = 'https://nhahangthaivungtau.com/';
-            var WEBSITE_NAME = 'Ẩm Thực Đảo Ngọc';
+            var WEBSITE_NAME = 'Ẩm Thực Thái';
             var TIMENOW = '04/05/2025';
             var SHIP_CART = false;
             var GOTOP = 'assets/images/top.png';
@@ -166,7 +161,7 @@
         {
             "@context" : "https://schema.org",
             "@type" : "Organization",
-            "name" : "Ẩm Thực Đảo Ngọc",
+            "name" : "Ẩm Thực Thái",
             "url" : "https://nhahangthaivungtau.com/",
             "sameAs" :
             [

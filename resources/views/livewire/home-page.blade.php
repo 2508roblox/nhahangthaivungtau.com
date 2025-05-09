@@ -2,7 +2,8 @@
 
     <head>
 
-        <title>Nhà Hàng Đảo Ngọc</title>
+        <title>{{ $setting->home_title }} </title>
+        <meta name="description" content="{{ $setting->home_description }}">
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link href="{{ asset('assets/css/animate.min.css?v=2EnyLwmDl') }}" rel="stylesheet">
@@ -37,13 +38,7 @@
     </head>
 
     <body class="index">
-        <ul class="h-card hidden">
-            <li class="h-fn fn">Ẩm Thực Đảo Ngọc</li>
-            <li class="h-org org">Ẩm Thực Đảo Ngọc</li>
-            <li class="h-tel tel">0918606032</li>
-            <li><a class="u-url ul" href="https://nhahangthaivungtau.com/">https://nhahangthaivungtau.com/</a></li>
-        </ul>
-        <h1 class="hidden-seoh">Nhà Hàng Đảo Ngọc</h1>
+        <h1 class="hidden-seoh">Nhà Hàng Thái Vũng Tàu</h1>
         @livewire('header')
         <div class="slideshow">
             <p class="control-slideshow prev-slideshow transition"><i class="fas fa-chevron-left"></i></p>
@@ -127,7 +122,7 @@ margin-bottom: 2rem;
 
             </div>
         </div>
-        <img src="/logo/Frame_90-removebg-preview.png" style="width: 100%;" alt="Ẩm Thực Đảo Ngọc">
+        <img src="/logo/Frame_90-removebg-preview.png" style="width: 100%;" alt="Ẩm Thực Thái">
         <div id="intro" style="
         background: #015134;
     ">
@@ -527,7 +522,7 @@ margin-bottom: 2rem;
         <script type="text/javascript">
             var VNS_FRAMEWORK = VNS_FRAMEWORK || {};
             var CONFIG_BASE = 'https://nhahangthaivungtau.com/';
-            var WEBSITE_NAME = 'Ẩm Thực Đảo Ngọc';
+            var WEBSITE_NAME = 'Ẩm Thực Thái';
             var TIMENOW = '04/05/2025';
             var SHIP_CART = false;
             var GOTOP = 'assets/images/top.png';
@@ -571,7 +566,7 @@ margin-bottom: 2rem;
         {
             "@context" : "https://schema.org",
             "@type" : "Organization",
-            "name" : "Ẩm Thực Đảo Ngọc",
+            "name" : "Ẩm Thực Thái",
             "url" : "https://nhahangthaivungtau.com/",
             "sameAs" :
             [

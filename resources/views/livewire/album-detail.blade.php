@@ -3,7 +3,8 @@
     <head>
 
         <!-- Title, Keywords, Description -->
-        <title>{{ $album->title }}</title>
+        <title>{{ $album->title }} - {{ \App\Models\Setting::first()->web_name }}</title>
+
 
         <!-- Css Files -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -39,12 +40,7 @@
     </head>
 
     <body>
-        <ul class="h-card hidden">
-            <li class="h-fn fn">Ẩm Thực Đảo Ngọc</li>
-            <li class="h-org org">Ẩm Thực Đảo Ngọc</li>
-            <li class="h-tel tel">0918606032</li>
-            <li><a class="u-url ul" href="https://nhahangthaivungtau.com/">https://nhahangthaivungtau.com/</a></li>
-        </ul>
+
         @livewire('header')
         <div class="breadCrumbs">
             <div class="center">
@@ -53,13 +49,13 @@
                     <li class="breadcrumb-item "><a class="text-decoration-none"
                             href="/album-anh"><span>Album</span></a></li>
                     <li class="breadcrumb-item active"><a class="text-decoration-none"
-                            href="/album-anh/{{ $album->slug }}"><span>{{ $album->title }}</span></a></li>
+                            href="/album-anh/{{ $album->slug }}" style=""><span>{{ $album->title }}</span></a></li>
                 </ol>
             </div>
         </div>
         <div id="container" class="center w-clear">
             <div class="title-main">
-                <h1>{{ $album->title }}</h1>
+                <h1 style="font-family: 'Lodestone', sans-serif;">{{ $album->title }}</h1>
                 <p></p>
             </div>
             <div class="content-main album-gallery form-row w-clear">
@@ -162,7 +158,7 @@
         <script type="text/javascript">
             var VNS_FRAMEWORK = VNS_FRAMEWORK || {};
             var CONFIG_BASE = 'https://nhahangthaivungtau.com/';
-            var WEBSITE_NAME = 'Ẩm Thực Đảo Ngọc';
+            var WEBSITE_NAME = 'Ẩm Thực Thái';
             var TIMENOW = '04/05/2025';
             var SHIP_CART = false;
             var GOTOP = 'assets/images/top.png';
@@ -210,7 +206,7 @@
         {
             "@context" : "https://schema.org",
             "@type" : "Organization",
-            "name" : "Ẩm Thực Đảo Ngọc",
+            "name" : "Ẩm Thực Thái",
             "url" : "https://nhahangthaivungtau.com/",
             "sameAs" :
             [

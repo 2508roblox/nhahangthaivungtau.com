@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        <title>{{ $setting->about_title }}</title>
+        <title>{{ $setting->about_title }} - {{ $setting->web_name }}</title>
         <meta property="og:image" content="{{ url(Storage::url($setting->about_image)) }}">
 
         <!-- Css Files -->
@@ -52,7 +52,7 @@
         </div>
         <div id="container" class="center w-clear">
             <div class="title-main">
-                <h1>{{ $setting->about_title }}</h1>
+                <h1 style="font-family: 'Lodestone', sans-serif;">{{ $setting->about_title }}</h1>
                 <p></p>
             </div>
             <div class="content w-clear">
@@ -130,7 +130,7 @@
         <script type="text/javascript">
             var VNS_FRAMEWORK = VNS_FRAMEWORK || {};
             var CONFIG_BASE = 'https://nhahangthaivungtau.com/';
-            var WEBSITE_NAME = 'Ẩm Thực Đảo Ngọc';
+            var WEBSITE_NAME = 'Ẩm Thực Thái';
             var TIMENOW = '04/05/2025';
             var SHIP_CART = false;
             var GOTOP = 'assets/images/top.png';
@@ -179,7 +179,7 @@
                 "@type": "WebPage",
                 "@id": "https://google.com/article"
             },
-            "headline": "Ẩm thực Đảo Ngọc",
+            "headline": "Ẩm Thực Thái",
             "image":
             [
             "https://nhahangthaivungtau.com/upload/photo/imggioithieu-8480.jpg"
@@ -189,7 +189,7 @@
             "author":
             {
                 "@type": "Person",
-                "name": "Ẩm Thực Đảo Ngọc"
+                "name": "Ẩm Thực Thái"
             },
             "publisher":
             {

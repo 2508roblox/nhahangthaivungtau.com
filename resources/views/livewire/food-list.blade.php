@@ -2,7 +2,7 @@
     <head>
 
         <!-- Title, Keywords, Description -->
-        <title>Món ăn - {{ $setting->web_name }}</title>
+        <title>Món ăn - {{ \App\Models\Setting::first()->web_name }}</title>
         <!-- Css Files -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link href="{{ asset('assets/css/animate.min.css?v=fpyPnG26N7') }}" rel="stylesheet">
@@ -64,7 +64,7 @@
         </div>
         <div id="container" class="center w-clear">
             <div class="title-main">
-                <h1>Menu</h1>
+                <h1 style="font-family: 'Lodestone', sans-serif;">Menu</h1>
                 <p></p>
             </div>
             <div class="w-clear">
@@ -135,7 +135,7 @@
         <script type="text/javascript">
             var VNS_FRAMEWORK = VNS_FRAMEWORK || {};
             var CONFIG_BASE = 'https://nhahangthaivungtau.com/';
-            var WEBSITE_NAME = 'Ẩm Thực Đảo Ngọc';
+            var WEBSITE_NAME = 'Ẩm Thực Thái';
             var TIMENOW = '04/05/2025';
             var SHIP_CART = false;
             var GOTOP = 'assets/images/top.png';
@@ -179,7 +179,7 @@
         {
             "@context" : "https://schema.org",
             "@type" : "Organization",
-            "name" : "Ẩm Thực Đảo Ngọc",
+            "name" : "Ẩm Thực Thái",
             "url" : "https://nhahangthaivungtau.com/",
             "sameAs" :
             [

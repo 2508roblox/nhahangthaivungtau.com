@@ -1,7 +1,7 @@
 <div>
     <head>
 
-        <title>{{ $food->name }} - {{ $setting->name }}</title>
+        <title>{{ $food->name }} - {{ \App\Models\Setting::first()->web_name }}</title>
         <meta property="og:image" content="{{ url(Storage::url($setting->thumb_img)) }}">
         <!-- Css Files -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -130,7 +130,7 @@
             </div>
 
             <div class="title-main">
-                <h2>Sản phẩm cùng loại</h2>
+                <h2 style="font-family: 'Lodestone', sans-serif;">Sản phẩm cùng loại</h2>
             </div>
             <div class="div-product">
                 @foreach ($relatedFoods as $relatedFood)
@@ -249,7 +249,7 @@
             "brand":
             {
                 "@type": "Thing",
-                "name": "Ẩm Thực Đảo Ngọc"
+                "name": "Ẩm Thực Thái"
             },
             "review":
             {
@@ -263,7 +263,7 @@
                 "author":
                 {
                     "@type": "Person",
-                    "name": "Ẩm Thực Đảo Ngọc"
+                    "name": "Ẩm Thực Thái"
                 }
             },
             "aggregateRating":

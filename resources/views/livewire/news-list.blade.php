@@ -2,7 +2,7 @@
 
     <head>
 
-        <title>Cách thưởng thức</title>
+        <title>Cẩm nang ẩm thực - {{ \App\Models\Setting::first()->web_name }}</title>
         <!-- Css Files -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link href="{{ asset('assets/css/animate.min.css?v=PH2iw4glF') }}" rel="stylesheet">
@@ -37,21 +37,16 @@
     </head>
 
     <body>
-        <ul class="h-card hidden">
-            <li class="h-fn fn">Ẩm Thực Đảo Ngọc</li>
-            <li class="h-org org">Ẩm Thực Đảo Ngọc</li>
-            <li class="h-tel tel">0918606032</li>
-            <li><a class="u-url ul" href="https://nhahangthaivungtau.com/">https://nhahangthaivungtau.com/</a></li>
-        </ul>
+
         @livewire('header')
 
         <div class="breadCrumbs">
             <div class="center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-decoration-none"
-                            href="https://nhahangthaivungtau.com/"><span>Trang chủ</span></a></li>
+                            href="/"><span>Trang chủ</span></a></li>
                     <li class="breadcrumb-item active"><a class="text-decoration-none"
-                            href="https://nhahangthaivungtau.com/cach-thuong-thuc"><span>Cách thưởng thức</span></a>
+                            href="/tin-tuc"><span>Cẩm nang ẩm thực</span></a>
                     </li>
                 </ol>
                 <script
@@ -60,9 +55,9 @@
         </div>
         <div id="container" class="center w-clear">
             <div class="title-main">
-                <h1>Cách thưởng thức</h1>
+                <h1 style="font-family: 'Lodestone', sans-serif;">Cẩm nang ẩm thực</h1>
             </div>
-            <div class="loading-news" data-show="10" data-type="cach-thuong-thuc" data-title="Cách thưởng thức">
+            <div class="loading-news" data-show="10" data-type="cach-thuong-thuc" data-title="Cẩm nang ẩm thực">
                 @foreach ($news as $item)
                 <div class="box-hot-news animate__ animate__zoomIn wow animated"
                     style="visibility: visible; animation-name: zoomIn;">
@@ -127,7 +122,7 @@
         <script type="text/javascript">
             var VNS_FRAMEWORK = VNS_FRAMEWORK || {};
             var CONFIG_BASE = 'https://nhahangthaivungtau.com/';
-            var WEBSITE_NAME = 'Ẩm Thực Đảo Ngọc';
+            var WEBSITE_NAME = 'Ẩm Thực Thái';
             var TIMENOW = '04/05/2025';
             var SHIP_CART = false;
             var GOTOP = 'assets/images/top.png';
@@ -175,7 +170,7 @@
         {
             "@context" : "https://schema.org",
             "@type" : "Organization",
-            "name" : "Ẩm Thực Đảo Ngọc",
+            "name" : "Ẩm Thực Thái",
             "url" : "https://nhahangthaivungtau.com/",
             "sameAs" :
             [

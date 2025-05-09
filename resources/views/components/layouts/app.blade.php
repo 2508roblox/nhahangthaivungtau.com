@@ -12,7 +12,7 @@
         <title>{{ $setting->home_title }}</title>
         <meta name="description" content="{{ $setting->home_description }}" />
         <meta name="keywords" content="{{ $setting->home_keywork }}" />
-             <meta property="og:image" content="{{ url(Storage::url(App\Models\Setting::first()->home_banner)) }}">
+        <meta property="og:image" content="{{ url(Storage::url(App\Models\Setting::first()->home_banner)) }}">
 
 
     @endif
@@ -20,12 +20,10 @@
     {!! $setting->script_header !!}
     @livewireStyles
     <style>
-         @font-face {
-        font-family: 'Lodestone';
-        src: url('/font/iCielBC-Lodestone.ttf') format('truetype');
-    }
-
-
+        @font-face {
+            font-family: 'Lodestone';
+            src: url('/font/iCielBC-Lodestone.ttf') format('truetype');
+        }
     </style>
 </head>
 
@@ -37,13 +35,17 @@
 
 <style>
     body.index.mm-wrapper {
-    background: #046e47;
-}
-.elementor-kit-998 {
+        background: #046e47;
+    }
 
-    /* --e-global-color-51288f4: #168549; */
-    --e-global-color-51288f4: {{ $setting->consulting_color }};
+    .elementor-kit-998 {
 
-}
+        /* --e-global-color-51288f4: #168549; */
+        --e-global-color-51288f4:
+            {{ $setting->consulting_color }}
+        ;
+
+    }
 </style>
+
 </html>
