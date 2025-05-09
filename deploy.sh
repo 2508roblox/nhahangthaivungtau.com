@@ -3,12 +3,12 @@
 # Đường dẫn thư mục dự án
 USERNAME="2508roblox"
 
-PROJECT_DIR="/var/www/ankhangduoc.com"
-GIT_REPO="https://github.com/${USERNAME}/ankhangduoc.com.git"
-SQL_FILE="${PROJECT_DIR}/ankhangduoc.sql"
-DB_NAME="ankhangduoc"
-DB_USER="ankhangduoc"
-DB_PASSWORD="ankhangduocankhangduoc"  # Thay đổi mật khẩu nếu cần
+PROJECT_DIR="/var/www/nhahangthaivungtau.com"
+GIT_REPO="https://github.com/${USERNAME}/nhahangthaivungtau.com.git"
+SQL_FILE="${PROJECT_DIR}/nhahangthaivungtau.sql"
+DB_NAME="nhahangthaivungtau"
+DB_USER="nhahangthaivungtau"
+DB_PASSWORD="nhahangthaivungtaunhahangthaivungtau"  # Thay đổi mật khẩu nếu cần
 
 # Xóa thư mục dự án
 sudo rm -rf ${PROJECT_DIR}/*
