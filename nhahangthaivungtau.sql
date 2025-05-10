@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 10, 2025 at 02:52 AM
+-- Generation Time: May 10, 2025 at 02:57 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -70,8 +70,8 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:4;', 1746843988),
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746843988;', 1746843988);
+('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1746845905),
+('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746845905;', 1746845905);
 
 -- --------------------------------------------------------
 
@@ -348,7 +348,7 @@ CREATE TABLE `online_users` (
 --
 
 INSERT INTO `online_users` (`id`, `ip_address`, `last_activity`, `created_at`, `updated_at`) VALUES
-(45, '127.0.0.1', '2025-05-09 19:52:04', '2025-05-09 19:17:17', '2025-05-09 19:52:04');
+(46, '127.0.0.1', '2025-05-09 19:57:28', '2025-05-09 19:57:11', '2025-05-09 19:57:28');
 
 -- --------------------------------------------------------
 
@@ -439,7 +439,7 @@ CREATE TABLE `sessions` (
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
 ('fx56eRGcFuKy7ANIIa7HAtjE3zVuDm3hkw9plqXX', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoicENXMTJQbk10WmxqeHEyUWkyS0hWTVdkRnBNWHd2ZGE1YW5iZ05ibSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fX0=', 1746838125),
-('VmXVHEaYJ3tI3S00wrduyHRGfdT8LY1FSDXcyTzP', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiSThBR3c2Z1lFRWxoQ0xXeGFISGYwMWo4eThiQ0hjRHI2UldscFdrNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1746845524),
+('VmXVHEaYJ3tI3S00wrduyHRGfdT8LY1FSDXcyTzP', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiSThBR3c2Z1lFRWxoQ0xXeGFISGYwMWo4eThiQ0hjRHI2UldscFdrNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDM6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9zZXR0aW5ncy8xL2VkaXQiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjM6InVybCI7YTowOnt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJFA2OWNTSk04WlZFWUhESFBsUXFxMi41cWQ0djU3WFh0ZUxtSWtwVFowdVEzbUxoUC5qM3N5IjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1746845848),
 ('vtFD5vpPpxu3bTnBAkTsDp3t1PcoNW6vfk5GjHkp', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNmNvNDh4UVlDQktPZWs1UWNZMW55TnhDUVlUVlh3WnlUYjgyZXJvMyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1746837556);
 
 -- --------------------------------------------------------
@@ -490,7 +490,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `home_title`, `home_keyword`, `home_description`, `home_banner`, `web_logo`, `web_favicon`, `web_name`, `web_keyword`, `web_address`, `web_phone`, `web_email`, `web_instagram`, `web_facebook`, `web_youtube`, `web_tiktok`, `web_zalo`, `web_map_link`, `web_map_iframe`, `script_footer`, `script_header`, `about_title`, `about_content`, `about_image`, `created_at`, `updated_at`, `album_1`, `album_2`, `album_3`, `album_4`, `album_5`, `best_sellers`, `banner_seller`, `link_seller`) VALUES
-(1, 'KHAY PHA THAI', 'ẩm thực Thái Lan, nhà hàng Thái Lan, Khay-Pha Thai, Koh Samui, món Thái, đồ Thái tại Việt Nam, bếp Thái truyền thống, văn hóa ẩm thực Thái, món ăn Thái Lan, nhà hàng Thái gần đây', 'Khám phá văn hóa ẩm thực Thái Lan đặc sắc tại Khay-Pha Thai – kế thừa tinh hoa từ Koh Samui với hơn 100 món ăn và tráng miệng truyền thống Thái, phục vụ người Việt mỗi ngày.\n', 'settings/01JTG93KDNH6C083BEJR3QTM52.png', 'settings/01JTJVFBT41JJ8DDNT7X3RFB0B.png', 'settings/01JTG94FM2Z1H0BC5Y7X8HRP5H.png', 'KHAY PHA THAI', 'KHAY PHA THAI', '43 Lê Phụng Hiểu , phường 8 , Bà Rịa , Vũng Tàu ', '0342097272', 'thaikhaypha@gmail.com', 'Instagram ', 'https://www.facebook.com/nhahangthaivungtau.monanthaitaivungtau', 'YouTube ', 'TikTok ', 'Zalo ', 'https://maps.app.goo.gl/qEePDcAArrzYxKA67', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.801400305833!2d107.0917817!3d10.3577589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756f007d62c0b1%3A0x8672f7d4a7af87e4!2zS0hBWeKAolBIQSBUaMOhaQ!5e0!3m2!1svi!2s!4v1746450701194!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>', NULL, NULL, 'ẨM THỰC KHAY•PHA Thái ', '<p><strong>Được mệnh danh là “xứ sở chùa Vàng”, Thái Lan không chỉ nổi tiếng với những ngôi chùa linh thiêng mà còn hấp dẫn bởi nền văn hóa ẩm thực đặc sắc.</strong> Khay-Pha Thai ra đời như một chiếc cầu nối mang tinh hoa ẩm thực Thái đến gần hơn với thực khách Việt, đặc biệt là tại thành phố biển Vũng Tàu.</p><p>Chúng tôi kế thừa và hoàn thiện từ thương hiệu nổi tiếng <strong>Koh Samui</strong>, mang đến trải nghiệm ẩm thực Thái Lan đích thực với mô hình bếp Thái thân thiện, gần gũi. Tại Khay-Pha Thai, bạn sẽ được thưởng thức <strong>hơn 100 món ăn và tráng miệng truyền thống</strong> được chế biến chuẩn vị Thái – từ Tom Yum cay nồng, Pad Thai đậm đà cho đến xôi xoài ngọt thanh, thơm dẻo.</p><p>Với không gian ấm cúng, phong cách phục vụ chu đáo và nguyên liệu chất lượng cao, Khay-Pha Thai mong muốn trở thành điểm đến quen thuộc của những ai yêu thích hương vị Thái Lan tại Vũng Tàu.</p>', 'settings/01JTG9AQRCK5SM5S74G0TPPKSN.png', '', '2025-05-09 13:36:45', 'settings/01JTNERFJVEJ5Y0JEWTA1ZVMBK.png', 'settings/01JTNES0YG160Z42ASQZGQ9YS6.png', 'settings/01JTNETDMJZXWQG8Z14Z2GWJH1.png', 'settings/01JTNETDMMSQBD6HN14XSV8N3K.png', 'settings/01JTNETDMP9A8JS1ARPDFGM63B.png', '[{\"image\":\"best_sellers\\/01JTTM36CAVDQPFDYGVYR6KHQM.png\",\"name\":\"Menu Buffet L\\u1ea9u Th\\u00e1i 229k\",\"price\":\"1229k\",\"link\":\"\\/mon-an\\/goi-ca-hoi-mam-thai\"},{\"image\":\"best_sellers\\/01JTTM36CF248PR1FV0R4ZZ5GY.png\",\"name\":\"Menu Buffet L\\u1ea9u Th\\u00e1i 229k\",\"price\":\"229k\",\"link\":\"\\/mon-an\\/goi-ca-hoi-mam-thai\"}]', 'settings/01JTTKYNY69DWWMM2R6Y1PMR7T.png', '/mon-an/goi-ca-hoi-mam-thai');
+(1, 'KHAY PHA THAI', 'ẩm thực Thái Lan, nhà hàng Thái Lan, Khay-Pha Thai, Koh Samui, món Thái, đồ Thái tại Việt Nam, bếp Thái truyền thống, văn hóa ẩm thực Thái, món ăn Thái Lan, nhà hàng Thái gần đây', 'Khám phá văn hóa ẩm thực Thái Lan đặc sắc tại Khay-Pha Thai – kế thừa tinh hoa từ Koh Samui với hơn 100 món ăn và tráng miệng truyền thống Thái, phục vụ người Việt mỗi ngày.\n', 'settings/01JTW20M585KETR9VH4ZY6Z1WZ.png', 'settings/01JTJVFBT41JJ8DDNT7X3RFB0B.png', 'settings/01JTG94FM2Z1H0BC5Y7X8HRP5H.png', 'KHAY PHA THAI', 'KHAY PHA THAI', '43 Lê Phụng Hiểu , phường 8 , Bà Rịa , Vũng Tàu ', '0342097272', 'thaikhaypha@gmail.com', 'Instagram ', 'https://www.facebook.com/nhahangthaivungtau.monanthaitaivungtau', 'YouTube ', 'TikTok ', 'Zalo ', 'https://maps.app.goo.gl/qEePDcAArrzYxKA67', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.801400305833!2d107.0917817!3d10.3577589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756f007d62c0b1%3A0x8672f7d4a7af87e4!2zS0hBWeKAolBIQSBUaMOhaQ!5e0!3m2!1svi!2s!4v1746450701194!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>', NULL, NULL, 'ẨM THỰC KHAY•PHA Thái ', '<p><strong>Được mệnh danh là “xứ sở chùa Vàng”, Thái Lan không chỉ nổi tiếng với những ngôi chùa linh thiêng mà còn hấp dẫn bởi nền văn hóa ẩm thực đặc sắc.</strong> Khay-Pha Thai ra đời như một chiếc cầu nối mang tinh hoa ẩm thực Thái đến gần hơn với thực khách Việt, đặc biệt là tại thành phố biển Vũng Tàu.</p><p>Chúng tôi kế thừa và hoàn thiện từ thương hiệu nổi tiếng <strong>Koh Samui</strong>, mang đến trải nghiệm ẩm thực Thái Lan đích thực với mô hình bếp Thái thân thiện, gần gũi. Tại Khay-Pha Thai, bạn sẽ được thưởng thức <strong>hơn 100 món ăn và tráng miệng truyền thống</strong> được chế biến chuẩn vị Thái – từ Tom Yum cay nồng, Pad Thai đậm đà cho đến xôi xoài ngọt thanh, thơm dẻo.</p><p>Với không gian ấm cúng, phong cách phục vụ chu đáo và nguyên liệu chất lượng cao, Khay-Pha Thai mong muốn trở thành điểm đến quen thuộc của những ai yêu thích hương vị Thái Lan tại Vũng Tàu.</p>', 'settings/01JTG9AQRCK5SM5S74G0TPPKSN.png', '', '2025-05-10 02:57:27', 'settings/01JTNERFJVEJ5Y0JEWTA1ZVMBK.png', 'settings/01JTNES0YG160Z42ASQZGQ9YS6.png', 'settings/01JTNETDMJZXWQG8Z14Z2GWJH1.png', 'settings/01JTNETDMMSQBD6HN14XSV8N3K.png', 'settings/01JTNETDMP9A8JS1ARPDFGM63B.png', '[{\"image\":\"best_sellers\\/01JTTM36CAVDQPFDYGVYR6KHQM.png\",\"name\":\"Menu Buffet L\\u1ea9u Th\\u00e1i 229k\",\"price\":\"1229k\",\"link\":\"\\/mon-an\\/goi-ca-hoi-mam-thai\"},{\"image\":\"best_sellers\\/01JTTM36CF248PR1FV0R4ZZ5GY.png\",\"name\":\"Menu Buffet L\\u1ea9u Th\\u00e1i 229k\",\"price\":\"229k\",\"link\":\"\\/mon-an\\/goi-ca-hoi-mam-thai\"}]', 'settings/01JTTKYNY69DWWMM2R6Y1PMR7T.png', '/mon-an/goi-ca-hoi-mam-thai');
 
 -- --------------------------------------------------------
 
@@ -600,7 +600,7 @@ INSERT INTO `visitors` (`id`, `date`, `count`, `created_at`, `updated_at`) VALUE
 (5, '2025-05-07', 1167, '2025-05-06 19:16:37', '2025-05-07 16:57:06'),
 (6, '2025-05-08', 74, '2025-05-07 18:24:15', '2025-05-08 04:22:03'),
 (7, '2025-05-09', 1246, '2025-05-08 19:28:04', '2025-05-09 16:59:34'),
-(8, '2025-05-10', 486, '2025-05-09 17:09:17', '2025-05-09 19:52:04');
+(8, '2025-05-10', 504, '2025-05-09 17:09:17', '2025-05-09 19:57:28');
 
 --
 -- Indexes for dumped tables
@@ -815,7 +815,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `online_users`
 --
 ALTER TABLE `online_users`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `reservations`
