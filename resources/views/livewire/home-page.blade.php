@@ -201,6 +201,7 @@
                             background-color: #fcd34d !important;
                         }
                     </style>
+
                     <div>
                         <div id="viewer" style="     height: 700px; ">
                             <div class="bar-container">
@@ -248,15 +249,20 @@
 
 
                     <script type="text/javascript">
+
                         flipify({
                             id: 1,
                             name: 'Las Vegas',
                             display: 'double',
-                            pages: {{ count($menuImages) > 0 ? count($menuImages) : 12 }},
                             pageWidth: 922 * 4,
                             pageHeight: 600 * 4,
                         });
                     </script>
+                    <style>
+                        div#magazine {
+    overflow-y: hidden;
+}
+                    </style>
 
                     </div>
                 </div>

@@ -22,6 +22,7 @@ class HomePage extends Component
     public $news;
     public $menus;
     public $menuImages;
+
     public function mount()
     {
         $this->slides = Slideshow::all();
