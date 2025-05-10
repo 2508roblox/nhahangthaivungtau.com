@@ -10,7 +10,6 @@ use App\Models\Category;
 use App\Models\Review;
 use App\Models\News;
 use App\Models\Menu;
-use Illuminate\Support\Facades\Cookie;
 
 class HomePage extends Component
 {
@@ -21,7 +20,6 @@ class HomePage extends Component
     public $reviews;
     public $news;
     public $menus;
-    public $menuImages;
 
     public function mount()
     {
@@ -33,7 +31,6 @@ class HomePage extends Component
         $this->news = News::orderBy('views', 'desc')->limit(3)->get();
         $this->menus = Menu::all();
 
-        $this->menuImages  = Menu::first()->link_image;
     }
 
     public function render()

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 10, 2025 at 12:42 AM
+-- Generation Time: May 10, 2025 at 02:05 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -64,16 +64,6 @@ CREATE TABLE `cache` (
   `value` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `expiration` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `cache`
---
-
-INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:11;', 1746837524),
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746837524;', 1746837524),
-('laravel_cache_livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1746834193),
-('laravel_cache_livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1746834193;', 1746834193);
 
 -- --------------------------------------------------------
 
@@ -350,7 +340,7 @@ CREATE TABLE `online_users` (
 --
 
 INSERT INTO `online_users` (`id`, `ip_address`, `last_activity`, `created_at`, `updated_at`) VALUES
-(42, '127.0.0.1', '2025-05-09 17:41:49', '2025-05-09 17:28:35', '2025-05-09 17:41:49');
+(44, '127.0.0.1', '2025-05-09 19:05:25', '2025-05-09 19:00:17', '2025-05-09 19:05:25');
 
 -- --------------------------------------------------------
 
@@ -440,7 +430,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('VmXVHEaYJ3tI3S00wrduyHRGfdT8LY1FSDXcyTzP', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiSThBR3c2Z1lFRWxoQ0xXeGFISGYwMWo4eThiQ0hjRHI2UldscFdrNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1746837709),
+('fx56eRGcFuKy7ANIIa7HAtjE3zVuDm3hkw9plqXX', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoicENXMTJQbk10WmxqeHEyUWkyS0hWTVdkRnBNWHd2ZGE1YW5iZ05ibSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fX0=', 1746838125),
+('VmXVHEaYJ3tI3S00wrduyHRGfdT8LY1FSDXcyTzP', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiSThBR3c2Z1lFRWxoQ0xXeGFISGYwMWo4eThiQ0hjRHI2UldscFdrNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hbGJ1bS1hbmgva2hvbmctZ2lhbi1uaGEtaGFuZyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1746842724),
 ('vtFD5vpPpxu3bTnBAkTsDp3t1PcoNW6vfk5GjHkp', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNmNvNDh4UVlDQktPZWs1UWNZMW55TnhDUVlUVlh3WnlUYjgyZXJvMyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1746837556);
 
 -- --------------------------------------------------------
@@ -601,7 +592,7 @@ INSERT INTO `visitors` (`id`, `date`, `count`, `created_at`, `updated_at`) VALUE
 (5, '2025-05-07', 1167, '2025-05-06 19:16:37', '2025-05-07 16:57:06'),
 (6, '2025-05-08', 74, '2025-05-07 18:24:15', '2025-05-08 04:22:03'),
 (7, '2025-05-09', 1246, '2025-05-08 19:28:04', '2025-05-09 16:59:34'),
-(8, '2025-05-10', 233, '2025-05-09 17:09:17', '2025-05-09 17:41:49');
+(8, '2025-05-10', 285, '2025-05-09 17:09:17', '2025-05-09 19:05:25');
 
 --
 -- Indexes for dumped tables
@@ -816,7 +807,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `online_users`
 --
 ALTER TABLE `online_users`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `reservations`
