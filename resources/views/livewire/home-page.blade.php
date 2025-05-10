@@ -46,6 +46,7 @@
                 @foreach ($slides as $slide)
                     <div>
                         <a href="" target="_blank" title="Slideshow 1"><img
+                                style="    max-height: 55rem;    object-fit: cover;"
                                 onerror="this.src='/thumbs/1366x600x2/assets/images/noimage.png';"
                                 src="{{ Storage::url($slide->image_link) }}" alt="Slideshow 1" title="Slideshow 1" /></a>
                     </div>
@@ -202,7 +203,7 @@
                         }
                     </style>
 
-                @livewire('inc.book')
+                    @livewire('inc.book')
                 </div>
 
             </div>
@@ -331,10 +332,10 @@
                 <div class="row" id="reviewaf">
                     @foreach ($reviews as $review)
                         <div class="col-md-4" style="    margin-bottom: 1rem;">
-                            <div class="card" style="position: relative;  cursor: pointer;"
+                            <div class="card" style="position: relative;  cursor: pointer;     border: initial;"
                                 data-src="{{ $review->video_link }}" data-fancybox="video">
                                 <img src="{{Storage::url($review->image) }}" class="card-img-top" alt="Food Image"
-                                style="border-radius: 20px;height: 35rem;object-fit: cover;">
+                                    style="border-radius: 20px;height: 35rem;object-fit: cover;">
                                 <div class="card-body"
                                     style="    display: flex;    justify-content: space-between;    position: absolute;        width: 100%;">
                                     <div

@@ -98,13 +98,8 @@ class FoodResource extends Resource
                                         Forms\Components\Grid::make(2)
                                             ->schema([
                                                 Forms\Components\FileUpload::make('thumb_img')
-                                                    ->label('Ảnh thumbnail')
+                                                    ->label('Ảnh món ăn')
                                                     ->directory('foods/thumb')
-                                                    ->image()
-                                                    ->required(),
-                                                Forms\Components\FileUpload::make('img')
-                                                    ->label('Ảnh chính')
-                                                    ->directory('foods')
                                                     ->image()
                                                     ->required(),
                                             ]),
