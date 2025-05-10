@@ -60,7 +60,7 @@
                 @foreach ($videos as $video)
                 <div class="box-video text-decoration-none" data-fancybox="video"
                     data-src="{{ $video->video_link }}" title="">
-                    <div class="pic-video scale-img"><img
+                    <div class="pic-video scale-img"><img style="     height: 20rem !important;!i;!;     object-fit: cover;      border-radius: 20px;"
                             onerror="this.src='/thumbs/480x360x2/assets/images/noimage.png';"
                             src="{{ Storage::url($video->image) }}" alt="" /></div>
                     <h3 class="name-video text-split"></h3>

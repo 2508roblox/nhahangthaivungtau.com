@@ -334,7 +334,7 @@
                             <div class="card" style="position: relative;  cursor: pointer;"
                                 data-src="{{ $review->video_link }}" data-fancybox="video">
                                 <img src="{{Storage::url($review->image) }}" class="card-img-top" alt="Food Image"
-                                    style="    border-radius: 20px;">
+                                style="border-radius: 20px;height: 35rem;object-fit: cover;">
                                 <div class="card-body"
                                     style="    display: flex;    justify-content: space-between;    position: absolute;        width: 100%;">
                                     <div

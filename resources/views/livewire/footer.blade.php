@@ -61,7 +61,6 @@
                         <img src="/logo/logo_footer.png" alt="Logo" class="logo mb-3">
                         <!-- Thay link này bằng logo của bạn -->
                         <p>©2025 <strong>Khay–Pha Thai</strong>.</p>
-                        <p>Design by <strong>Vinasoftware (VNS)</strong></p>
                     </div>
 
                     <!-- Column 3: Facebook card -->

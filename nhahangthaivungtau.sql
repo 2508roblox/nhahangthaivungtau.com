@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 10, 2025 at 02:57 AM
+-- Generation Time: May 10, 2025 at 05:53 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -34,8 +34,8 @@ CREATE TABLE `albums` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `order_number` int NOT NULL DEFAULT '0',
-  `images` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `images` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `views` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -44,14 +44,7 @@ CREATE TABLE `albums` (
 --
 
 INSERT INTO `albums` (`id`, `image_link`, `created_at`, `updated_at`, `title`, `order_number`, `images`, `slug`, `views`) VALUES
-(2, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
-(9, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
-(10, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
-(11, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
-(12, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
-(13, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
-(14, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0),
-(15, 'albums_image_link/01JTG3HK42JCS4BFCMSMAX5NY5.jpg', NULL, '2025-05-05 04:33:19', 'Không gian nhà hàng', 1, '[\"albums_images\\/01JTG3HK474QVVP92JEN0TX0V4.jpg\",\"albums_images\\/01JTG3HK49M722X6W039DGNFD9.jpg\",\"albums_images\\/01JTG3HK4BW090C71KN6YRQJX6.jpg\",\"albums_images\\/01JTG3HK4DAM63C5KTCH2P4B3V.jpg\",\"albums_images\\/01JTG3HK4FTVNAKP8WWW9V9M5Y.jpg\",\"albums_images\\/01JTG3HK4JW5TM5AQ3TG3MKGZ5.jpg\",\"albums_images\\/01JTG3HK4MSM5BPZSDV22ZBX79.jpg\",\"albums_images\\/01JTG3HK4QE2NYGZ6NQ6B4W9PT.jpg\",\"albums_images\\/01JTG3HK4SK3F42CZQF70R6PT8.jpg\",\"albums_images\\/01JTG3HK4VA61CSKZGS6NGWTTR.jpg\"]', 'khong-gian-nha-hang', 0);
+(16, 'albums_image_link/01JTW9T87XBAAE3CD74PNQXJGK.jpg', '2025-05-09 22:13:47', '2025-05-09 22:15:18', 'Không Gian Quán Khay Pha Thái', 0, '[\"albums_images\\/01JTW9T887Z9EM50920G60FR4A.jpg\",\"albums_images\\/01JTW9T88CQJMZ1FYN32F1NY3M.jpg\"]', 'khong-gian-quan-khay-pha-thai', 0);
 
 -- --------------------------------------------------------
 
@@ -70,8 +63,10 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1746845905),
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746845905;', 1746845905);
+('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:5;', 1746853422),
+('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746853422;', 1746853422),
+('laravel_cache_livewire-rate-limiter:b32579cea47c35a587f4693108d597292f322a79', 'i:1;', 1746846796),
+('laravel_cache_livewire-rate-limiter:b32579cea47c35a587f4693108d597292f322a79:timer', 'i:1746846796;', 1746846796);
 
 -- --------------------------------------------------------
 
@@ -110,7 +105,8 @@ INSERT INTO `categories` (`id`, `name`, `slug`, `order_number`, `status`, `creat
 (15, 'Món chính', 'mon-chinh', 0, 1, '2025-05-08 19:55:54', '2025-05-08 19:55:54'),
 (16, 'Món hải sản', 'mon-hai-san', 0, 1, '2025-05-08 19:55:57', '2025-05-08 19:55:57'),
 (17, 'Món chay', 'mon-chay', 0, 1, '2025-05-08 19:56:00', '2025-05-08 19:56:00'),
-(18, 'Món tráng miệng', 'mon-trang-mieng', 0, 1, '2025-05-08 19:56:03', '2025-05-08 19:56:03');
+(18, 'Món tráng miệng', 'mon-trang-mieng', 0, 1, '2025-05-08 19:56:03', '2025-05-08 19:56:03'),
+(19, 'Món Lẩu ', 'mon-lau', 0, 1, '2025-05-09 20:29:12', '2025-05-09 20:29:25');
 
 -- --------------------------------------------------------
 
@@ -134,9 +130,8 @@ CREATE TABLE `customer_feedback` (
 
 INSERT INTO `customer_feedback` (`id`, `image`, `name`, `role`, `content`, `created_at`, `updated_at`) VALUES
 (1, '01JTCJ664XK5YG0SS6YT5ZS67Y.png', 'ĐINH VĂN TOÀN', 'CEO', 'Mình đánh giá cao phong cách phục vụ chuyên nghiệp và chu đáo của Đảo Ngọc. Nhân viên luôn niềm nở, sẵn sàng giải đáp mọi thắc mắc của khách hàng. Mình cũng rất thích không gian nhà hàng rộng rãi, thoáng mát, tạo cảm giác thoải mái tự nhiên như ở nhà. Mình sẽ giới thiệu Đảo Ngọc cho các đối tác và bạn bè của mình. Đảo ngọc là một địa điểm đáng để trải nghiệm.', '2025-05-03 19:32:16', '2025-05-03 19:32:16'),
-(2, '01JTCJ664XK5YG0SS6YT5ZS67Y.png', 'ĐINH VĂN TOÀN', 'CEO', 'Mình đánh giá cao phong cách phục vụ chuyên nghiệp và chu đáo của Đảo Ngọc. Nhân viên luôn niềm nở, sẵn sàng giải đáp mọi thắc mắc của khách hàng. Mình cũng rất thích không gian nhà hàng rộng rãi, thoáng mát, tạo cảm giác thoải mái tự nhiên như ở nhà. Mình sẽ giới thiệu Đảo Ngọc cho các đối tác và bạn bè của mình. Đảo ngọc là một địa điểm đáng để trải nghiệm.', '2025-05-03 19:32:16', '2025-05-03 19:32:16'),
-(3, '01JTCJ664XK5YG0SS6YT5ZS67Y.png', 'ĐINH VĂN TOÀN', 'CEO', 'Mình đánh giá cao phong cách phục vụ chuyên nghiệp và chu đáo của Đảo Ngọc. Nhân viên luôn niềm nở, sẵn sàng giải đáp mọi thắc mắc của khách hàng. Mình cũng rất thích không gian nhà hàng rộng rãi, thoáng mát, tạo cảm giác thoải mái tự nhiên như ở nhà. Mình sẽ giới thiệu Đảo Ngọc cho các đối tác và bạn bè của mình. Đảo ngọc là một địa điểm đáng để trải nghiệm.', '2025-05-03 19:32:16', '2025-05-03 19:32:16'),
-(4, '01JTCJ664XK5YG0SS6YT5ZS67Y.png', 'ĐINH VĂN TOÀN', 'CEO', 'Mình đánh giá cao phong cách phục vụ chuyên nghiệp và chu đáo của Đảo Ngọc. Nhân viên luôn niềm nở, sẵn sàng giải đáp mọi thắc mắc của khách hàng. Mình cũng rất thích không gian nhà hàng rộng rãi, thoáng mát, tạo cảm giác thoải mái tự nhiên như ở nhà. Mình sẽ giới thiệu Đảo Ngọc cho các đối tác và bạn bè của mình. Đảo ngọc là một địa điểm đáng để trải nghiệm.', '2025-05-03 19:32:16', '2025-05-03 19:32:16');
+(5, '01JTW7PVPN1RBFXZCNFZKBHPZ3.jpg', 'Huy Phong', 'Khách Du lịch ', 'Quán phục vụ rất chu đáo , món ăn đúng chuẩn vị Thái mà mình từng ăn , anh chủ còn rất nhiệt tình tư vấn cho mình biết về thêm món ăn Thái', '2025-05-09 21:36:59', '2025-05-09 21:36:59'),
+(6, '01JTW7TDH2XHMFQDZXKHS1WK36.jpg', 'Huỳnh Phương ', 'Khách Du lịch ', 'Mọi khi đi Vũng tàu mình hay ghé các quán Hải sản , nhưng từ khi biết đến quán Thái của anh Khoa này , mình nghiện đồ ăn ở đây luôn ', '2025-05-09 21:38:55', '2025-05-09 21:38:55');
 
 -- --------------------------------------------------------
 
@@ -195,12 +190,8 @@ INSERT INTO `foods` (`id`, `category_id`, `sub_category_id`, `name`, `slug`, `th
 (16, 17, NULL, 'Mooping Viên', 'mooping-vien', 'foods/thumb/01JTSG4ZZ6D9FA9Y2BV0HZ1EKA.jpg', 'foods/01JTSG4ZZB2V1WRYZ4QMTZE3V8.jpg', '99000.00', '99000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:06:47', '2025-05-08 20:06:47'),
 (17, 17, NULL, 'Mooping miếng', 'mooping-mieng', 'foods/thumb/01JTSG5CDFRJGA0ZRV50GAE5BN.jpg', 'foods/01JTSG5CDHZBVW7VSMVQGMT3Y5.jpg', '99000.00', '99000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:07:00', '2025-05-08 20:07:00'),
 (18, 15, NULL, 'HEO HONG Ủ SẢ', 'heo-hong-u-sa', 'foods/thumb/01JTSG5XTED1CX3287B9PYS125.jpg', 'foods/01JTSG5XTHGYDQMVRCJ9SYW2MF.jpg', '139000.00', '139000.00', '<p>Deep fried pork with lemongrass</p><p><br><br></p>', 0, 1, 0, NULL, '2025-05-08 20:07:18', '2025-05-08 20:07:18'),
-(19, 18, NULL, 'Thịt viên', 'thit-vien', 'foods/thumb/01JTSG79JVFW11BP01WZTB1TBM.jpg', 'foods/01JTSG79JXC01KZ0NKBDQQ1JAR.jpg', '27000.00', '27000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:08:03', '2025-05-08 20:08:03'),
-(20, 18, NULL, 'Chả cá viên (3 viên)', 'cha-ca-vien-3-vien', 'foods/thumb/01JTSG7XKKTBBKRSR3MGP1MF67.jpg', 'foods/01JTSG7XKNE6E61ET3SAF07GPM.jpg', '27000.00', '27000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:08:23', '2025-05-08 20:08:23'),
-(22, 18, NULL, 'Chả cá viên (3 viên)', '1', 'foods/thumb/01JTSG7XKKTBBKRSR3MGP1MF67.jpg', 'foods/01JTSG7XKNE6E61ET3SAF07GPM.jpg', '27000.00', '27000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:08:23', '2025-05-08 20:08:23'),
-(23, 18, NULL, 'Chả cá viên (3 viên)', '12', 'foods/thumb/01JTSG7XKKTBBKRSR3MGP1MF67.jpg', 'foods/01JTSG7XKNE6E61ET3SAF07GPM.jpg', '27000.00', '27000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:08:23', '2025-05-08 20:08:23'),
-(24, 18, NULL, 'Chả cá viên (3 viên)', '123', 'foods/thumb/01JTSG7XKKTBBKRSR3MGP1MF67.jpg', 'foods/01JTSG7XKNE6E61ET3SAF07GPM.jpg', '27000.00', '27000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:08:23', '2025-05-08 20:08:23'),
-(25, 18, NULL, 'Chả cá viên (3 viên)', '1234', 'foods/thumb/01JTSG7XKKTBBKRSR3MGP1MF67.jpg', 'foods/01JTSG7XKNE6E61ET3SAF07GPM.jpg', '27000.00', '27000.00', NULL, 0, 1, 0, NULL, '2025-05-08 20:08:23', '2025-05-08 20:08:23');
+(26, 15, 10, 'Cơm Trộn xào Dứa ', 'com-tron-xao-dua', 'foods/thumb/01JTW643FZA66YP4QKVBSHD1HH.jpg', 'foods/01JTW643G40EEZJDM6436JN5ZP.jpg', '200000.00', NULL, NULL, 0, 1, 0, NULL, '2025-05-09 21:09:16', '2025-05-09 21:09:16'),
+(27, 19, NULL, 'Lẩu Thái ', 'lau-thai', 'foods/thumb/01JTW6705V49CF8S3ECN6KBZNE.jpg', 'foods/01JTW67061ECC60MM1S2T7327G.jpg', '200000.00', NULL, NULL, 0, 1, 0, NULL, '2025-05-09 21:10:50', '2025-05-09 21:10:50');
 
 -- --------------------------------------------------------
 
@@ -348,7 +339,7 @@ CREATE TABLE `online_users` (
 --
 
 INSERT INTO `online_users` (`id`, `ip_address`, `last_activity`, `created_at`, `updated_at`) VALUES
-(46, '127.0.0.1', '2025-05-09 19:57:28', '2025-05-09 19:57:11', '2025-05-09 19:57:28');
+(58, '127.0.0.1', '2025-05-09 22:53:21', '2025-05-09 22:49:21', '2025-05-09 22:53:21');
 
 -- --------------------------------------------------------
 
@@ -401,7 +392,7 @@ CREATE TABLE `reviews` (
   `is_featured` tinyint(1) NOT NULL DEFAULT '0',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+  `image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -409,14 +400,8 @@ CREATE TABLE `reviews` (
 --
 
 INSERT INTO `reviews` (`id`, `video_link`, `title`, `description`, `order_number`, `status`, `is_featured`, `created_at`, `updated_at`, `image`) VALUES
-(2, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 05:02:25', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
-(5, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
-(6, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
-(7, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
-(8, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
-(9, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
-(10, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png'),
-(11, 'https://youtu.be/BwVfGj5NCgs?si=qsCpRvpbTpW1xe9k', 'Lẩu thái', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-05 04:59:44', 'reviews/01JTG51ZD34BBAQBJ92QZC62HE.png');
+(2, 'https://www.youtube.com/watch?v=78uRq9DW6Eo', '18 món ăn Thái Lan phải thử. Ẩm thực đường phố Vũng Tàu', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-09 21:22:18', 'reviews/01JTW6VZTH14AHK76S8A2S0T23.jpg'),
+(5, 'https://www.youtube.com/watch?v=x7_A_xjviK8', '10 món ăn nhất định phải thử nếu du lịch đến Thái Lan | Khám phá ẩm thực Thái Lan', '10 món ăn nhất định phải thử nếu du lịch đến Thái Lan | Khám phá ẩm thực Thái Lan', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-09 21:32:13', 'reviews/01JTW7DW6ZSRJVRDYMDAWPFECC.jpg');
 
 -- --------------------------------------------------------
 
@@ -438,9 +423,18 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('fx56eRGcFuKy7ANIIa7HAtjE3zVuDm3hkw9plqXX', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoicENXMTJQbk10WmxqeHEyUWkyS0hWTVdkRnBNWHd2ZGE1YW5iZ05ibSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fX0=', 1746838125),
-('VmXVHEaYJ3tI3S00wrduyHRGfdT8LY1FSDXcyTzP', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiSThBR3c2Z1lFRWxoQ0xXeGFISGYwMWo4eThiQ0hjRHI2UldscFdrNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDM6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9zZXR0aW5ncy8xL2VkaXQiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjM6InVybCI7YTowOnt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJFA2OWNTSk04WlZFWUhESFBsUXFxMi41cWQ0djU3WFh0ZUxtSWtwVFowdVEzbUxoUC5qM3N5IjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1746845848),
-('vtFD5vpPpxu3bTnBAkTsDp3t1PcoNW6vfk5GjHkp', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNmNvNDh4UVlDQktPZWs1UWNZMW55TnhDUVlUVlh3WnlUYjgyZXJvMyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1746837556);
+('1hv5H7LWJbFvcnJBVbIF4gUM3GROdogVT5W0yrCJ', NULL, '171.243.48.48', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoic1ZtYnEzMTI0b0k4dHhJMW1qSmJTYm40NVZMU0NzcXpwZXY1NGJYUyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTI6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlL3Rpbi10dWMiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1746846202),
+('5iNgvj6wXD7IxezdMLd0DkiR9LfCH1fYgyZV1gGj', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiZWZUZlpVZnZkTHo2bUVySWtTRk96ODd0aFEzd01jbG9ybDhDNGlWWiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hbGJ1bS1hbmgiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1746856401),
+('82qspQcVXlGfI94EpCyDDDWmBCJTLHCA5JnDsxHs', NULL, '171.240.137.1', 'WhatsApp/2', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiVU9jMGx0ZnJsbURtUndoZTc4Tk4zeG1hWGhPeFdSM1RDazZSV3JjbyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDQ6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1746847454),
+('d6u6MNZKSDR6kRE0bTD3cux33qrYLEs1ichKowy9', NULL, '171.243.48.48', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoib2FrTkZjV3oxTUs3ZlZrdVRNY1BRNkxkQ0J0Yk14RFNIelF4M0p4SCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTA6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlL3ZpZGVvIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1746846195),
+('DezNJ33jRI4ugva3wexjayMW2QAMx7gQgzLxgXju', NULL, '171.243.48.48', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiYXJ2SG0yaEZOQ1ZDcFZRRVNPZ2E0cm1STmFtMG80ZVFQVWh5cTdEViI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDQ6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1746855778),
+('g9uQZBmzn4C55yMJhZZVkKGTtcmIJPcCXgaoMFc5', NULL, '171.243.48.48', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiR3g5T1dBOXZNS1d0NDlHbk9oNjR4WWFleWRnc3RvQ0dnZUZJUFdDWSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NzE6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlL21vbi1hbi9nb2ktY2EtaG9pLW1hbS10aGFpIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1746855501),
+('gM3QN8uxDIRpDlWGegsAwWWEWvOHNRjWrbqwS1oy', NULL, '171.243.48.48', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoia3BaeXEzaWNENVZMT3VIc3VhcVBrQ3hBbHVLTGt2NW5XZlNqUmdSOCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTU6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlL2dpb2ktdGhpZXUiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1746846192),
+('h5hEkxS56JQyXtZhhzhxtpeOIi7hFkt7j1D1Uk0x', NULL, '171.243.48.48', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiVTMwMTdLUzYxRU5ZTFhXZ09WVDc5ZDVFMTlYRlRvaVM2TXNWQUtabiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTQ6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlL2FsYnVtLWFuaCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1746846199),
+('Mjr5ljU43Iwvi4Wa3yzjQOmOcMJKyTuiIuMxBj4k', 1, '171.240.137.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiNHNJeUZVVXVCamhDclRuTW9OOVJFNDVSTkduU3pJT0ZDdGpsNkw5NCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NjU6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlL2FkbWluL2FsYnVtcy8xNi9lZGl0Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRQNjljU0pNOFpWRVlIREhQbFFxcTIuNXFkNHY1N1hYdGVMbUlrcFRaMHVRM21MaFAuajNzeSI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1746854610),
+('SF09z1aK7pUQhR67Up74JA8ndJAHHWJ6pbD8WyBm', NULL, '171.243.48.48', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiaTM5ZVQxdUdNNjB3MzJrNm5jelRqQWpzM0pnQ0NjMTIxWTZkUm55MCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NjU6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlL21vbi1hbi9oZW8taG9uZy11LXNhIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1746846209),
+('w4dDWVUkD99xpZzpNPsh8NtUhlGxgf3XSx5Misk8', NULL, '171.243.48.48', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiZ2pkY1IwcmFsSGJuSFZVZncyTmdHdUxPd01YMWR2TjNUZnZMZmRCWSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTE6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlL21vbi1hbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1746846205),
+('X9rbV7dDVmPXH5VMbirnzgQgHbIuJayjqq2dE0aT', NULL, '171.243.48.48', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoic1ZBb0psNGI4cHhIeHp3cVEwYVVEaENUaXNQckpUSG9sT2J0QzBYRSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NzA6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlL21vbi1hbi9jaGEtY2Etdmllbi0zLXZpZW4iO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1746846212);
 
 -- --------------------------------------------------------
 
@@ -450,39 +444,39 @@ INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, 
 
 CREATE TABLE `settings` (
   `id` bigint UNSIGNED NOT NULL,
-  `home_title` text COLLATE utf8mb4_unicode_ci,
-  `home_keyword` text COLLATE utf8mb4_unicode_ci,
-  `home_description` text COLLATE utf8mb4_unicode_ci,
-  `home_banner` text COLLATE utf8mb4_unicode_ci,
-  `web_logo` text COLLATE utf8mb4_unicode_ci,
-  `web_favicon` text COLLATE utf8mb4_unicode_ci,
-  `web_name` text COLLATE utf8mb4_unicode_ci,
-  `web_keyword` text COLLATE utf8mb4_unicode_ci,
-  `web_address` text COLLATE utf8mb4_unicode_ci,
-  `web_phone` text COLLATE utf8mb4_unicode_ci,
-  `web_email` text COLLATE utf8mb4_unicode_ci,
-  `web_instagram` text COLLATE utf8mb4_unicode_ci,
-  `web_facebook` text COLLATE utf8mb4_unicode_ci,
-  `web_youtube` text COLLATE utf8mb4_unicode_ci,
-  `web_tiktok` text COLLATE utf8mb4_unicode_ci,
-  `web_zalo` text COLLATE utf8mb4_unicode_ci,
-  `web_map_link` text COLLATE utf8mb4_unicode_ci,
-  `web_map_iframe` text COLLATE utf8mb4_unicode_ci,
-  `script_footer` text COLLATE utf8mb4_unicode_ci,
-  `script_header` text COLLATE utf8mb4_unicode_ci,
-  `about_title` text COLLATE utf8mb4_unicode_ci,
-  `about_content` longtext COLLATE utf8mb4_unicode_ci,
-  `about_image` text COLLATE utf8mb4_unicode_ci,
-  `created_at` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `updated_at` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `album_1` text COLLATE utf8mb4_unicode_ci,
-  `album_2` text COLLATE utf8mb4_unicode_ci,
-  `album_3` text COLLATE utf8mb4_unicode_ci,
-  `album_4` text COLLATE utf8mb4_unicode_ci,
-  `album_5` text COLLATE utf8mb4_unicode_ci,
-  `best_sellers` text COLLATE utf8mb4_unicode_ci,
-  `banner_seller` text COLLATE utf8mb4_unicode_ci,
-  `link_seller` text COLLATE utf8mb4_unicode_ci
+  `home_title` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `home_keyword` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `home_description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `home_banner` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_logo` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_favicon` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_name` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_keyword` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_address` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_phone` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_email` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_instagram` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_facebook` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_youtube` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_tiktok` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_zalo` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_map_link` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `web_map_iframe` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `script_footer` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `script_header` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `about_title` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `about_content` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `about_image` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `created_at` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `updated_at` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `album_1` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `album_2` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `album_3` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `album_4` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `album_5` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `best_sellers` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `banner_seller` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `link_seller` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -490,7 +484,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `home_title`, `home_keyword`, `home_description`, `home_banner`, `web_logo`, `web_favicon`, `web_name`, `web_keyword`, `web_address`, `web_phone`, `web_email`, `web_instagram`, `web_facebook`, `web_youtube`, `web_tiktok`, `web_zalo`, `web_map_link`, `web_map_iframe`, `script_footer`, `script_header`, `about_title`, `about_content`, `about_image`, `created_at`, `updated_at`, `album_1`, `album_2`, `album_3`, `album_4`, `album_5`, `best_sellers`, `banner_seller`, `link_seller`) VALUES
-(1, 'KHAY PHA THAI', 'ẩm thực Thái Lan, nhà hàng Thái Lan, Khay-Pha Thai, Koh Samui, món Thái, đồ Thái tại Việt Nam, bếp Thái truyền thống, văn hóa ẩm thực Thái, món ăn Thái Lan, nhà hàng Thái gần đây', 'Khám phá văn hóa ẩm thực Thái Lan đặc sắc tại Khay-Pha Thai – kế thừa tinh hoa từ Koh Samui với hơn 100 món ăn và tráng miệng truyền thống Thái, phục vụ người Việt mỗi ngày.\n', 'settings/01JTW20M585KETR9VH4ZY6Z1WZ.png', 'settings/01JTJVFBT41JJ8DDNT7X3RFB0B.png', 'settings/01JTG94FM2Z1H0BC5Y7X8HRP5H.png', 'KHAY PHA THAI', 'KHAY PHA THAI', '43 Lê Phụng Hiểu , phường 8 , Bà Rịa , Vũng Tàu ', '0342097272', 'thaikhaypha@gmail.com', 'Instagram ', 'https://www.facebook.com/nhahangthaivungtau.monanthaitaivungtau', 'YouTube ', 'TikTok ', 'Zalo ', 'https://maps.app.goo.gl/qEePDcAArrzYxKA67', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.801400305833!2d107.0917817!3d10.3577589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756f007d62c0b1%3A0x8672f7d4a7af87e4!2zS0hBWeKAolBIQSBUaMOhaQ!5e0!3m2!1svi!2s!4v1746450701194!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>', NULL, NULL, 'ẨM THỰC KHAY•PHA Thái ', '<p><strong>Được mệnh danh là “xứ sở chùa Vàng”, Thái Lan không chỉ nổi tiếng với những ngôi chùa linh thiêng mà còn hấp dẫn bởi nền văn hóa ẩm thực đặc sắc.</strong> Khay-Pha Thai ra đời như một chiếc cầu nối mang tinh hoa ẩm thực Thái đến gần hơn với thực khách Việt, đặc biệt là tại thành phố biển Vũng Tàu.</p><p>Chúng tôi kế thừa và hoàn thiện từ thương hiệu nổi tiếng <strong>Koh Samui</strong>, mang đến trải nghiệm ẩm thực Thái Lan đích thực với mô hình bếp Thái thân thiện, gần gũi. Tại Khay-Pha Thai, bạn sẽ được thưởng thức <strong>hơn 100 món ăn và tráng miệng truyền thống</strong> được chế biến chuẩn vị Thái – từ Tom Yum cay nồng, Pad Thai đậm đà cho đến xôi xoài ngọt thanh, thơm dẻo.</p><p>Với không gian ấm cúng, phong cách phục vụ chu đáo và nguyên liệu chất lượng cao, Khay-Pha Thai mong muốn trở thành điểm đến quen thuộc của những ai yêu thích hương vị Thái Lan tại Vũng Tàu.</p>', 'settings/01JTG9AQRCK5SM5S74G0TPPKSN.png', '', '2025-05-10 02:57:27', 'settings/01JTNERFJVEJ5Y0JEWTA1ZVMBK.png', 'settings/01JTNES0YG160Z42ASQZGQ9YS6.png', 'settings/01JTNETDMJZXWQG8Z14Z2GWJH1.png', 'settings/01JTNETDMMSQBD6HN14XSV8N3K.png', 'settings/01JTNETDMP9A8JS1ARPDFGM63B.png', '[{\"image\":\"best_sellers\\/01JTTM36CAVDQPFDYGVYR6KHQM.png\",\"name\":\"Menu Buffet L\\u1ea9u Th\\u00e1i 229k\",\"price\":\"1229k\",\"link\":\"\\/mon-an\\/goi-ca-hoi-mam-thai\"},{\"image\":\"best_sellers\\/01JTTM36CF248PR1FV0R4ZZ5GY.png\",\"name\":\"Menu Buffet L\\u1ea9u Th\\u00e1i 229k\",\"price\":\"229k\",\"link\":\"\\/mon-an\\/goi-ca-hoi-mam-thai\"}]', 'settings/01JTTKYNY69DWWMM2R6Y1PMR7T.png', '/mon-an/goi-ca-hoi-mam-thai');
+(1, 'KHAY PHA THAI', 'ẩm thực Thái Lan, nhà hàng Thái Lan, Khay-Pha Thai, Koh Samui, món Thái, đồ Thái tại Việt Nam, bếp Thái truyền thống, văn hóa ẩm thực Thái, món ăn Thái Lan, nhà hàng Thái gần đây', 'Khám phá văn hóa ẩm thực Thái Lan đặc sắc tại Khay-Pha Thai – kế thừa tinh hoa từ Koh Samui với hơn 100 món ăn và tráng miệng truyền thống Thái, phục vụ người Việt mỗi ngày.\n', 'settings/01JTW20M585KETR9VH4ZY6Z1WZ.png', 'settings/01JTJVFBT41JJ8DDNT7X3RFB0B.png', 'settings/01JTG94FM2Z1H0BC5Y7X8HRP5H.png', 'KHAY PHA THAI', 'KHAY PHA THAI', '43 Lê Phụng Hiểu , phường 8 , Bà Rịa , Vũng Tàu ', '0342097272', 'thaikhaypha@gmail.com', 'Instagram ', 'https://www.facebook.com/nhahangthaivungtau.monanthaitaivungtau', 'YouTube ', 'TikTok ', 'Zalo ', 'https://maps.app.goo.gl/qEePDcAArrzYxKA67', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.801400305833!2d107.0917817!3d10.3577589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756f007d62c0b1%3A0x8672f7d4a7af87e4!2zS0hBWeKAolBIQSBUaMOhaQ!5e0!3m2!1svi!2s!4v1746450701194!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>', NULL, NULL, 'ẨM THỰC KHAY•PHA Thái ', '<p>Nếu bạn muốn thưởng thức các món ăn Thái ngon đúng điệu ngay tại Vũng Tàu,&nbsp; thì nhà hàng Khay Pha Thái chính là lựa chọn lý tưởng dành cho bạn. Với phong cách trang trí hiện đại, thực đơn đa dạng và nguyên liệu tươi ngon, nhà hàng cam kết đem lại trải nghiệm ẩm thực khó quên cho mọi thực khách yêu thích ẩm thực Thái Lan. Ở đây là nơi hội tụ những món ăn Thái đặc trưng, hòa quyện cùng không gian ấm cúng và dịch vụ chuyên nghiệp. Đây chắc chắn sẽ là điểm đến lý tưởng cho những buổi gặp gỡ bạn bè, gia đình hoặc đối tác kinh doanh, mang lại cảm giác thân thiện và hài lòng tuyệt đối.&nbsp;<br><br></p>', 'settings/01JTG9AQRCK5SM5S74G0TPPKSN.png', '', '2025-05-10 05:19:59', 'settings/01JTNERFJVEJ5Y0JEWTA1ZVMBK.png', 'settings/01JTNES0YG160Z42ASQZGQ9YS6.png', 'settings/01JTNETDMJZXWQG8Z14Z2GWJH1.png', 'settings/01JTNETDMMSQBD6HN14XSV8N3K.png', 'settings/01JTNETDMP9A8JS1ARPDFGM63B.png', '[{\"image\":\"best_sellers\\/01JTTM36CAVDQPFDYGVYR6KHQM.png\",\"name\":\"Menu Buffet L\\u1ea9u Th\\u00e1i 229k\",\"price\":\"1229k\",\"link\":\"\\/mon-an\\/goi-ca-hoi-mam-thai\"},{\"image\":\"best_sellers\\/01JTTM36CF248PR1FV0R4ZZ5GY.png\",\"name\":\"Menu Buffet L\\u1ea9u Th\\u00e1i 229k\",\"price\":\"229k\",\"link\":\"\\/mon-an\\/goi-ca-hoi-mam-thai\"}]', 'settings/01JTTKYNY69DWWMM2R6Y1PMR7T.png', '/mon-an/goi-ca-hoi-mam-thai');
 
 -- --------------------------------------------------------
 
@@ -512,9 +506,7 @@ CREATE TABLE `slideshows` (
 --
 
 INSERT INTO `slideshows` (`id`, `image_link`, `status`, `order_number`, `created_at`, `updated_at`) VALUES
-(1, '01JTCFK076S7X9PX957H1ADD86.png', 1, 2, '2025-05-03 18:46:50', '2025-05-03 18:47:18'),
-(2, '01JTCFK076S7X9PX957H1ADD86.png', 1, 1, '2025-05-03 18:46:50', '2025-05-03 18:47:18'),
-(3, '01JTCFK076S7X9PX957H1ADD86.png', 1, 3, '2025-05-03 18:46:50', '2025-05-03 18:47:18');
+(4, '01JTW3NNX0QD6FMDB4FTZJ1FGC.jpg', 1, 0, '2025-05-09 20:26:26', '2025-05-09 20:26:26');
 
 -- --------------------------------------------------------
 
@@ -546,7 +538,8 @@ INSERT INTO `sub_categories` (`id`, `category_id`, `name`, `slug`, `order_number
 (13, 16, 'Cá ', 'ca', 0, 1, '2025-05-08 19:56:57', '2025-05-08 19:56:57'),
 (14, 17, 'Đậu hủ', 'dau-hu', 0, 1, '2025-05-08 19:57:05', '2025-05-08 19:57:05'),
 (15, 17, 'Cà ri', 'ca-ri', 0, 1, '2025-05-08 19:57:11', '2025-05-08 19:57:11'),
-(16, 18, 'Kem ', 'kem', 0, 1, '2025-05-08 19:57:24', '2025-05-08 19:57:24');
+(16, 18, 'Kem ', 'kem', 0, 1, '2025-05-08 19:57:24', '2025-05-08 19:57:24'),
+(17, 19, 'Lẩu Thái ', 'lau-thai', 0, 1, '2025-05-09 21:14:17', '2025-05-09 21:14:22');
 
 -- --------------------------------------------------------
 
@@ -600,7 +593,7 @@ INSERT INTO `visitors` (`id`, `date`, `count`, `created_at`, `updated_at`) VALUE
 (5, '2025-05-07', 1167, '2025-05-06 19:16:37', '2025-05-07 16:57:06'),
 (6, '2025-05-08', 74, '2025-05-07 18:24:15', '2025-05-08 04:22:03'),
 (7, '2025-05-09', 1246, '2025-05-08 19:28:04', '2025-05-09 16:59:34'),
-(8, '2025-05-10', 504, '2025-05-09 17:09:17', '2025-05-09 19:57:28');
+(8, '2025-05-10', 915, '2025-05-09 17:09:17', '2025-05-09 22:53:21');
 
 --
 -- Indexes for dumped tables
@@ -761,19 +754,19 @@ ALTER TABLE `visitors`
 -- AUTO_INCREMENT for table `albums`
 --
 ALTER TABLE `albums`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `customer_feedback`
 --
 ALTER TABLE `customer_feedback`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -785,7 +778,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `foods`
 --
 ALTER TABLE `foods`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `jobs`
@@ -815,7 +808,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `online_users`
 --
 ALTER TABLE `online_users`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `reservations`
@@ -839,13 +832,13 @@ ALTER TABLE `settings`
 -- AUTO_INCREMENT for table `slideshows`
 --
 ALTER TABLE `slideshows`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `sub_categories`
 --
 ALTER TABLE `sub_categories`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `users`
