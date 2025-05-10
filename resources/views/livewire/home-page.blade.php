@@ -47,8 +47,7 @@
                     <div>
                         <a href="" target="_blank" title="Slideshow 1"><img
                                 onerror="this.src='/thumbs/1366x600x2/assets/images/noimage.png';"
-                                src="{{ Storage::url($slide->image_link) }}" alt="Slideshow 1"
-                                title="Slideshow 1" /></a>
+                                src="{{ Storage::url($slide->image_link) }}" alt="Slideshow 1" title="Slideshow 1" /></a>
                     </div>
                 @endforeach
             </div>
@@ -58,30 +57,35 @@
             <style>
                 @media (max-width: 768px) {
                     #lldfdfd {
-    font-size: 3rem !important;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 2rem;
-}
-.sdfsdfsdf {
-margin-bottom: 2rem;
-}
-.album-title {
-    font-size: 7rem !important;
-    text-align: center !important;
-    margin-bottom: initial !important;
-}
+                        font-size: 3rem !important;
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: 2rem;
+                    }
+
+                    .sdfsdfsdf {
+                        margin-bottom: 2rem;
+                    }
+
+                    .album-title {
+                        font-size: 7rem !important;
+                        text-align: center !important;
+                        margin-bottom: initial !important;
+                    }
                 }
             </style>
             <div class="center d-flex flex-wrap justify-content-between">
                 <div class="intro-right animate__animated animate__fadeInRight wow">
-                    <h1 id="lldfdfd" style="color:#ffca00 ; font-size: 5.5rem;   font-family: 'Lodestone', sans-serif; ">KHAY-PHA THAI</h1>
-                    <div class="intro-image intro-image1 scale-img sdfsdfsdf" >
+                    <h1 id="lldfdfd"
+                        style="color:#ffca00 ; font-size: 5.5rem;   font-family: 'Lodestone', sans-serif; ">KHAY-PHA
+                        THAI</h1>
+                    <div class="intro-image intro-image1 scale-img sdfsdfsdf">
                         <img onerror="this.src='/thumbs/331x420x2/assets/images/noimage.png';"
                             src="{{ asset('/logo/image 9.png') }}" />
                     </div>
                 </div>
-                <div class="intro-left animate__animated animate__fadeInLeft wow" style="padding: 2rem; border: 1px solid #ffca00; border-radius: 23px;">
+                <div class="intro-left animate__animated animate__fadeInLeft wow"
+                    style="padding: 2rem; border: 1px solid #ffca00; border-radius: 23px;">
                     <h2 style="color: #fff; font-family: 'Lodestone', sans-serif; ">VỀ CHÚNG TÔI</h2>
                     <div class="intro-info" style="color: #fff;">
                         <p>Được mệnh danh <strong>“xứ sở chùa Vàng”</strong>, không chỉ có chùa chiền mà văn hóa ẩm thực
@@ -96,8 +100,7 @@ margin-bottom: 2rem;
                         <p>Được mệnh danh <strong>“xứ sở chùa Vàng”</strong>, không chỉ có chùa chiền mà văn hóa ẩm thực
                             Thái Lan cũng rất độc đáo.</p>
                     </div>
-                    <div
-                        style="
+                    <div style="
                     width: 100%;
                     display: flex;
                     justify-content: end;
@@ -109,13 +112,14 @@ margin-bottom: 2rem;
                             .intro-btn {
                                 border: inherit;
                             }
+
                             .intro-left>h2 {
-    font-size: 3.5rem;
-    background: rgb(255 255 255);
-    /* background: linear-gradient(90deg, rgba(255, 204, 102, 1) 0%, rgba(186, 138, 31, 1) 100%, rgba(204, 153, 0, 1) 100%); */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+                                font-size: 3.5rem;
+                                background: rgb(255 255 255);
+                                /* background: linear-gradient(90deg, rgba(255, 204, 102, 1) 0%, rgba(186, 138, 31, 1) 100%, rgba(204, 153, 0, 1) 100%); */
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            }
                         </style>
                     </div>
                 </div>
@@ -128,7 +132,9 @@ margin-bottom: 2rem;
     ">
             <div class="center d-flex flex-wrap justify-content-between">
                 <div class="intro-right animate__animated animate__fadeInRight wow">
-                    <h1 id="lldfdfddfdf" style="color:#ffca00;font-size: 4rem;font-family: 'Lodestone', sans-serif;text-align: center;margin-bottom: 4rem; width: 100%;">MÓN NGON
+                    <h1 id="lldfdfddfdf"
+                        style="color:#ffca00;font-size: 4rem;font-family: 'Lodestone', sans-serif;text-align: center;margin-bottom: 4rem; width: 100%;">
+                        MÓN NGON
                         <br> NHẤT ĐỊNH PHẢI THỬ
                     </h1>
                     <div
@@ -141,19 +147,24 @@ margin-bottom: 2rem;
                             </h2>
                         </div>
                         @foreach ($setting->best_sellers as $best_seller)
-                        <div style="margin-bottom: 30px; cursor: pointer;" onclick="window.location.href='{{ $best_seller['link'] }}'">
-                            <img src="{{ Storage::url($best_seller['image']) }}" alt="Món Thái 1" style="width: 100%; border-radius: 8px;">
-                            <h3 style="margin-top: 15px;">{{ $best_seller['name'] }}</h3>
-                            <p style="color: #f8e08e; font-weight: bold;">Giá: {{ $best_seller['price'] }}</p>
-                        </div>
+                            <div style="margin-bottom: 30px; cursor: pointer;"
+                                onclick="window.location.href='{{ $best_seller['link'] }}'">
+                                <img src="{{ Storage::url($best_seller['image']) }}" alt="Món Thái 1"
+                                    style="width: 100%; border-radius: 8px;">
+                                <h3 style="margin-top: 15px;">{{ $best_seller['name'] }}</h3>
+                                <p style="color: #f8e08e; font-weight: bold;">Giá: {{ $best_seller['price'] }}</p>
+                            </div>
                         @endforeach
 
                     </div>
 
                 </div>
                 <div class="intro-left animate__animated animate__fadeInLeft wow">
-                    <img src="/logo/image_2025-05-09_201438147-removebg-preview.png" style=" padding: 0px 4rem;    width: 100%;            " alt="">
-                    <h1 style="color: #fcd34d; font-size: 3rem; letter-spacing: 1px; margin-bottom: 30px; font-family: 'Lodestone', sans-serif; text-align: center;">"BEST
+                    <img src="/logo/image_2025-05-09_201438147-removebg-preview.png"
+                        style=" padding: 0px 4rem;    width: 100%;            " alt="">
+                    <h1
+                        style="color: #fcd34d; font-size: 3rem; letter-spacing: 1px; margin-bottom: 30px; font-family: 'Lodestone', sans-serif; text-align: center;">
+                        "BEST
                         SELLER"</h1>
                     <div style="cursor: pointer;" onclick="window.location.href='{{ $setting->link_seller }}'">
                         <img src="{{ Storage::url($setting->banner_seller) }}" alt="Món Thái 1"
@@ -179,17 +190,20 @@ margin-bottom: 2rem;
                     <!-- Thanh menu các món -->
                     <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
                         @foreach ($menus as $menu)
-                        <div class="category-items"
-                            style="background-color: transparent; color: #fff; padding: 10px 25px; border: 1px solid #fcd34d; border-radius: 30px; font-weight: bold; cursor: pointer;">
-                            {{ $menu->name }}
-                        </div>
+                            <div class="category-items"
+                                style="background-color: transparent; color: #fff; padding: 10px 25px; border: 1px solid #fcd34d; border-radius: 30px; font-weight: bold; cursor: pointer;">
+                                {{ $menu->name }}
+                            </div>
                         @endforeach
                     </div>
                     <style>
-                        .category-items:hover{
+                        .category-items:hover {
                             background-color: #fcd34d !important;
                         }
                     </style>
+                       @php
+                       $menuImages = Cookie::get('menu_images') ? json_decode(Cookie::get('menu_images'), true) : [];
+                   @endphp
                     <div>
                         <div id="viewer" style="     height: 700px; ">
                             <div class="bar-container">
@@ -211,6 +225,11 @@ margin-bottom: 2rem;
 
                             <div class="magazine-viewport" style="width:100%; height:100%;">
                                 <div class="magazine turn-magazine" id="magazine">
+                                    @foreach ($menuImages as $image)
+                                    <div class="page">
+                                        <img src="{{ asset('storage/' . $image) }}" style="width:100%; height:auto;" />
+                                    </div>
+                                @endforeach
                                     <div ignore="1" class="control control-previous-page">
                                         <div><i></i></div>
                                     </div>
@@ -229,17 +248,19 @@ margin-bottom: 2rem;
                             </div>
                         </div>
                         <script type="text/javascript" src="/assets/scripts/all.min.js"></script>
-                        <script type="text/javascript">
-                            flipify({
-                                id: 1,
-                                name: 'Las Vegas',
-                                display: 'double',
-                                pages: 12,
-                                pageWidth: 922 * 4,
-                                pageHeight: 600 * 4,
-                                path: 'statics/issue/'
-                            });
-                        </script>
+
+
+                    <script type="text/javascript">
+                        flipify({
+                            id: 1,
+                            name: 'Las Vegas',
+                            display: 'double',
+                            pages: imagePaths.length > 0 ? imagePaths.length : 12,
+                            pageWidth: 922 * 4,
+                            pageHeight: 600 * 4,
+                        });
+                    </script>
+
                     </div>
                 </div>
 
@@ -291,6 +312,7 @@ margin-bottom: 2rem;
                             #reviews {
                                 gap: 20px;
                             }
+
                             #lldfdfddfdf {
                                 font-size: 3rem !important;
                                 text-align: center;
@@ -302,10 +324,11 @@ margin-bottom: 2rem;
                     <!-- Thanh menu các món -->
                     <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
                         @foreach ($categories as $category)
-                        <div class="category-items"
-                            style="background-color: transparent; color: #fff; padding: 10px 25px; border: 1px solid #fcd34d; border-radius: 30px; font-weight: bold; cursor: pointer;" onclick="window.location.href='/mon-an?category={{ $category->id }}'">
-                            {{ $category->name }}
-                        </div>
+                            <div class="category-items"
+                                style="background-color: transparent; color: #fff; padding: 10px 25px; border: 1px solid #fcd34d; border-radius: 30px; font-weight: bold; cursor: pointer;"
+                                onclick="window.location.href='/mon-an?category={{ $category->id }}'">
+                                {{ $category->name }}
+                            </div>
                         @endforeach
 
                     </div>
@@ -315,19 +338,22 @@ margin-bottom: 2rem;
 
                             <!-- Thẻ nổi bật -->
                             @foreach ($foods as $food)
-                            <div class="col-md-3 cart_pd" style="background-color: transparent; margin-bottom: 2rem; cursor: pointer;" onclick="window.location.href='/mon-an/{{ $food->slug  }}'">
-                                <div class="card card-custom highlight lslsl">
-                                    <img style="     border-radius: 15px;     height: 200px;     object-fit: cover; "
-                                        src="{{ Storage::url($food->thumb_img) }}" class="card-img-top"
-                                        alt="{{ $food->name }}">
-                                    <div class="card-body">
-                                        <div class="asdf title">{{ $food->name }}</div>
-                                        <div class="asdf price"
-                                            style="    font-size: 20px;">
-                                            Giá: <strong style="color: #fbbf24;">{{ number_format($food->price, 0, ',', '.') }}đ</strong></div>
+                                <div class="col-md-3 cart_pd"
+                                    style="background-color: transparent; margin-bottom: 2rem; cursor: pointer;"
+                                    onclick="window.location.href='/mon-an/{{ $food->slug  }}'">
+                                    <div class="card card-custom highlight lslsl">
+                                        <img style="     border-radius: 15px;     height: 200px;     object-fit: cover; "
+                                            src="{{ Storage::url($food->thumb_img) }}" class="card-img-top"
+                                            alt="{{ $food->name }}">
+                                        <div class="card-body">
+                                            <div class="asdf title">{{ $food->name }}</div>
+                                            <div class="asdf price" style="    font-size: 20px;">
+                                                Giá: <strong
+                                                    style="color: #fbbf24;">{{ number_format($food->price, 0, ',', '.') }}đ</strong>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             @endforeach
 
 
@@ -351,6 +377,7 @@ margin-bottom: 2rem;
                 #reviewaf {
                     gap: 20px;
                 }
+
                 /* .ljaksfdsss{
                     flex-direction: column !important;
                 } */
@@ -358,127 +385,158 @@ margin-bottom: 2rem;
         </style>
         <div style="background: #015134;">
 
-        <div class="container" style="     background: white;     padding: 20px;     border-radius: 20px; ">
-            <h1 class="review-title" style="font-family: 'Lodestone', sans-serif;">REVIEW ẨM THỰC</h1>
-            <div class="row" id="reviewaf">
-                @foreach ($reviews as $review)
-                <div class="col-md-4" style="    margin-bottom: 1rem;">
-                    <div class="card" style="position: relative;  cursor: pointer;" data-src="{{ $review->video_link }}" data-fancybox="video" >
-                        <img src="{{Storage::url($review->image) }}" class="card-img-top" alt="Food Image"        style="    border-radius: 20px;">
-                        <div class="card-body"        style="    display: flex;    justify-content: space-between;    position: absolute;        width: 100%;">
-                            <div
-                                style="     display: flex;     justify-content: center;     align-items: center;     text-align: center; ">
-                                <img src="{{ Storage::url($setting->web_favicon) }}" alt=""     style=" width: 30px; height: 30px; border-radius: 50%; ">
-                                <h5 class="card-title"         style="     margin: inherit;     margin-left: 10px;     color: #ffffff;     font-size: 1.2rem;     font-weight: bold; ">
-                                    KHAY-PHA THAI</h5>
+            <div class="container" style="     background: white;     padding: 20px;     border-radius: 20px; ">
+                <h1 class="review-title" style="font-family: 'Lodestone', sans-serif;">REVIEW ẨM THỰC</h1>
+                <div class="row" id="reviewaf">
+                    @foreach ($reviews as $review)
+                        <div class="col-md-4" style="    margin-bottom: 1rem;">
+                            <div class="card" style="position: relative;  cursor: pointer;"
+                                data-src="{{ $review->video_link }}" data-fancybox="video">
+                                <img src="{{Storage::url($review->image) }}" class="card-img-top" alt="Food Image"
+                                    style="    border-radius: 20px;">
+                                <div class="card-body"
+                                    style="    display: flex;    justify-content: space-between;    position: absolute;        width: 100%;">
+                                    <div
+                                        style="     display: flex;     justify-content: center;     align-items: center;     text-align: center; ">
+                                        <img src="{{ Storage::url($setting->web_favicon) }}" alt=""
+                                            style=" width: 30px; height: 30px; border-radius: 50%; ">
+                                        <h5 class="card-title"
+                                            style="     margin: inherit;     margin-left: 10px;     color: #ffffff;     font-size: 1.2rem;     font-weight: bold; ">
+                                            KHAY-PHA THAI</h5>
 
+                                    </div>
+                                    <a href="{{ $review->video_link }}" class="share-link" style="color: #ffffff;">►
+                                        Share</a>
+                                </div>
                             </div>
-                            <a href="{{ $review->video_link }}" class="share-link" style="color: #ffffff;">► Share</a>
                         </div>
-                    </div>
+                    @endforeach
+
+
+
                 </div>
-                @endforeach
-
-
-
             </div>
         </div>
-    </div>
-<div style="background: #015134;">
+        <div style="background: #015134;">
 
-        <div class="container" style="    padding-top: 100px;">
-            <div class=" bg-transparent text-white" style="    margin: 50px 0;">
-                <div class="row ljaksfdsss">
-                    <div class="col-md-5 col-12" style="    justify-content: center;    display: flex;    flex-direction: column;">
-                        <h1 class="display-4"
-                        style="font-size: 3.7rem;font-family: 'Lodestone', sans-serif;color: #fcd34d;margin-bottom: 3rem;">CẨM NANG <br> TẠI
-                            KHAY-PHA THAI</h1>
-                        <p style="
+            <div class="container" style="    padding-top: 100px;">
+                <div class=" bg-transparent text-white" style="    margin: 50px 0;">
+                    <div class="row ljaksfdsss">
+                        <div class="col-md-5 col-12"
+                            style="    justify-content: center;    display: flex;    flex-direction: column;">
+                            <h1 class="display-4"
+                                style="font-size: 3.7rem;font-family: 'Lodestone', sans-serif;color: #fcd34d;margin-bottom: 3rem;">
+                                CẨM NANG <br> TẠI
+                                KHAY-PHA THAI</h1>
+                            <p style="
                         font-size: 1.27rem;
-                    ">Được mệnh danh  <strong style="">"xứ sở chùa Vàng"</strong>, không chỉ có chùa chiền mà văn hóa ẩm thực Thái Lan cũng
-                            rất độc đáo.
+                    ">Được mệnh danh <strong style="">"xứ sở chùa Vàng"</strong>, không chỉ có chùa chiền mà văn hóa ẩm
+                                thực Thái Lan cũng
+                                rất độc đáo.
 
-                        </p>
-                    </div>
-                    <div class="col-md-7 col-12">
-                        <div
-                            style="    border: 1px solid #fbbf24;    border-radius: 20px;">
-
-                            <img style="    border-radius: 20px;"
-                                src="/logo/Screenshot 2025-05-07 181424.png" alt="">
+                            </p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <style>
-            .card:hover .owowo {
-                    color: #fbbf24 !important;
-                }
-                @media (max-width: 768px) {
-                    .lasdf {
-                        left: 0px !important;
-                    }
-                    .ljaksfd{
-                        gap: 20px !important;
-                    }
-                }
-            </style>
-            <div class="row ljaksfd">
+                        <div class="col-md-7 col-12">
+                            <div style="    border: 1px solid #fbbf24;    border-radius: 20px;">
 
-                @foreach ($news as $new)
-                <div class="col-md-4">
-                    <div class="card bg-light" style="background: #085c3c !important;border: 1px solid #fbbf24;border-radius: 20px;color: #fbbf24; padding: 20px;">
-                        <img class="lasdf" style="    border-radius: 20px; left: -46px;" src="{{Storage::url($new->thumb_img) }}"
-                            class="card-img-top" alt="Thai Food 1">
-                        <div class="card-body">
-                            <h5 class="card-title owowo" style="color: white;">{{ $new->title }}</h5>
-                            <div style="    display: flex;    justify-content: end;    ">
-
-                                <a href="/tin-tuc/{{ $new->slug }}" style="color: white; text-decoration: underline;" class="owowo">Xem chi tiết »</a>
+                                <img style="    border-radius: 20px;" src="/logo/Screenshot 2025-05-07 181424.png"
+                                    alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                @endforeach
+                <style>
+                    .card:hover .owowo {
+                        color: #fbbf24 !important;
+                    }
+
+                    @media (max-width: 768px) {
+                        .lasdf {
+                            left: 0px !important;
+                        }
+
+                        .ljaksfd {
+                            gap: 20px !important;
+                        }
+                    }
+                </style>
+                <div class="row ljaksfd">
+
+                    @foreach ($news as $new)
+                        <div class="col-md-4">
+                            <div class="card bg-light"
+                                style="background: #085c3c !important;border: 1px solid #fbbf24;border-radius: 20px;color: #fbbf24; padding: 20px;">
+                                <img class="lasdf" style="    border-radius: 20px; left: -46px;"
+                                    src="{{Storage::url($new->thumb_img) }}" class="card-img-top" alt="Thai Food 1">
+                                <div class="card-body">
+                                    <h5 class="card-title owowo" style="color: white;">{{ $new->title }}</h5>
+                                    <div style="    display: flex;    justify-content: end;    ">
+
+                                        <a href="/tin-tuc/{{ $new->slug }}"
+                                            style="color: white; text-decoration: underline;" class="owowo">Xem chi tiết
+                                            »</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
 
 
+                </div>
             </div>
         </div>
-</div>
 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap"
+            rel="stylesheet">
 
         <div style="  background: linear-gradient(to bottom, #015134, #046e47);     padding-top: 9rem;">
 
-        <div class="container">
-            <style>
-                .album-title { font-family: 'Lodestone', sans-serif;  margin-bottom: -119px;;  font-size: 20rem;  color: transparent; -webkit-text-stroke: 1px #FFD700;   text-stroke: 2px #FFD700;   text-align: center; letter-spacing: 10px;}
-            </style>
-            <h1 class="album-title text-center" style="font-family: 'Lodestone', sans-serif;">ALBUM</h1>
+            <div class="container">
+                <style>
+                    .album-title {
+                        font-family: 'Lodestone', sans-serif;
+                        margin-bottom: -119px;
+                        ;
+                        font-size: 20rem;
+                        color: transparent;
+                        -webkit-text-stroke: 1px #FFD700;
+                        text-stroke: 2px #FFD700;
+                        text-align: center;
+                        letter-spacing: 10px;
+                    }
+                </style>
+                <h1 class="album-title text-center" style="font-family: 'Lodestone', sans-serif;">ALBUM</h1>
 
-            <div class="row">
-              <div class="col-md-4" style="display: flex;flex-direction: column;justify-content: end;margin-bottom: 1rem;">
-                <img style="       border: 6px solid #fbbf24 !important;" src="{{ Storage::url($setting->album_1) }}" class="img-fluid mb-3" alt="Food 1">
-                <img style="       border: 6px solid #fbbf24 !important;" src="{{ Storage::url($setting->album_2) }}" class="img-fluid" alt="Food 2">
-              </div>
-              <div class="col-md-4" style="     gap: 20px;     display: flex;     flex-direction: column; ">
-                <img style="    height: 100%;    border: 6px solid #fbbf24 !important;" src="{{ Storage::url($setting->album_3) }}" class="img-fluid" alt="Food 3">
-                <img style="    height: 100%;    border: 6px solid #fbbf24 !important;" src="{{ Storage::url($setting->album_4) }}" class="img-fluid" alt="Food 3">
-                <img src="/logo/logo_footer.png" alt="">
+                <div class="row">
+                    <div class="col-md-4"
+                        style="display: flex;flex-direction: column;justify-content: end;margin-bottom: 1rem;">
+                        <img style="       border: 6px solid #fbbf24 !important;"
+                            src="{{ Storage::url($setting->album_1) }}" class="img-fluid mb-3" alt="Food 1">
+                        <img style="       border: 6px solid #fbbf24 !important;"
+                            src="{{ Storage::url($setting->album_2) }}" class="img-fluid" alt="Food 2">
+                    </div>
+                    <div class="col-md-4" style="     gap: 20px;     display: flex;     flex-direction: column; ">
+                        <img style="    height: 100%;    border: 6px solid #fbbf24 !important;"
+                            src="{{ Storage::url($setting->album_3) }}" class="img-fluid" alt="Food 3">
+                        <img style="    height: 100%;    border: 6px solid #fbbf24 !important;"
+                            src="{{ Storage::url($setting->album_4) }}" class="img-fluid" alt="Food 3">
+                        <img src="/logo/logo_footer.png" alt="">
 
-              </div>
-              <div class="col-md-4" style="padding-top: 100px;">
-                <img style="    height: 100%;    border: 6px solid #fbbf24 !important;"src="{{ Storage::url($setting->album_5) }}" class="img-fluid mb-3" alt="Food 4">
-              </div>
-            </div>
-            <div class="text-center mt-3" style="
+                    </div>
+                    <div class="col-md-4" style="padding-top: 100px;">
+                        <img style="    height: 100%;    border: 6px solid #fbbf24 !important;"
+                            src="{{ Storage::url($setting->album_5) }}" class="img-fluid mb-3" alt="Food 4">
+                    </div>
+                </div>
+                <div class="text-center mt-3" style="
             width: 100%;
             display: flex;
             justify-content: center;
         ">
-                <a style="background: url('/logo/Frame 7.png') no-repeat center center; background-size: 100% 100%; color: #fff;" href="/album-anh" class="intro-btn">XEM TẤT CẢ</a>
+                    <a style="background: url('/logo/Frame 7.png') no-repeat center center; background-size: 100% 100%; color: #fff;"
+                        href="/album-anh" class="intro-btn">XEM TẤT CẢ</a>
+                </div>
             </div>
-          </div>
         </div>
 
         @livewire('footer')
@@ -540,21 +598,25 @@ margin-bottom: 2rem;
         <script type="text/javascript" src="{{ asset('assets/bootstrap/bootstrap.js?v=Qj4Nv9JS8p') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/wow.min.js?v=cgWM89TmyN') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/mmenu/mmenu.js?v=A76q9wu0L9') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/simplyscroll/jquery.simplyscroll.js?v=GXCWdNFQQC') }}"></script>
+        <script type="text/javascript"
+            src="{{ asset('assets/simplyscroll/jquery.simplyscroll.js?v=GXCWdNFQQC') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/fotorama/fotorama.js?v=Ybnx4mBXWj') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/owlcarousel2/owl.carousel.js?v=dpdVqZM9D2') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/magiczoomplus/magiczoomplus.js?v=a9mirnTLp') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/slick/slick.js?v=yb4rxWWjn5') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/fancybox3/jquery.fancybox.js?v=WaSKy8wH0M') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/photobox/photobox.js?v=gDWvIirdq3') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/datetimepicker/php-date-formatter.min.js?v=TZR6koLwZy') }}">
-        </script>
-        <script type="text/javascript" src="{{ asset('assets/datetimepicker/jquery.mousewheel.js?v=vSIQqTeIOY') }}"></script>
+        <script type="text/javascript"
+            src="{{ asset('assets/datetimepicker/php-date-formatter.min.js?v=TZR6koLwZy') }}">
+            </script>
+        <script type="text/javascript"
+            src="{{ asset('assets/datetimepicker/jquery.mousewheel.js?v=vSIQqTeIOY') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/datetimepicker/jquery.datetimepicker.js?v=eGWWucYYKW') }}">
         </script>
         <script type="text/javascript" src="{{ asset('assets/toc/toc.js?v=GLFzz84q6k') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/functions.js?v=6EhZQVtYwT') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/js/jquery.pixelentity.shiner.min.js?v=FVRx0pJ7Bi') }}"></script>
+        <script type="text/javascript"
+            src="{{ asset('assets/js/jquery.pixelentity.shiner.min.js?v=FVRx0pJ7Bi') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/swiperjs/swiper-bundle.min.js?v=SOtTj4Ullh') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/apps.js?v=OkUgulXN6') }}"></script>
 
