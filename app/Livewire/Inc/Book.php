@@ -18,6 +18,7 @@ class Book extends Component
         $this->menus = Menu::all();
 
         $this->menuImages  = Menu::first()->link_image;
+
     }
 
     public function render()

@@ -19,11 +19,11 @@
 
         <div class="magazine-viewport" style="width:100%; height:100%;">
             <div class="magazine turn-magazine" id="magazine">
-                @foreach ($menuImages as $image)
+                {{-- @foreach ($menuImages as $image)
                 <div class="page">
                     <img src="{{ asset('storage/' . $image) }}" style="width:100%; height:auto;" />
                 </div>
-            @endforeach
+            @endforeach --}}
                 <div ignore="1" class="control control-previous-page">
                     <div><i></i></div>
                 </div>
@@ -46,14 +46,29 @@
 
 <script type="text/javascript">
 
-    flipify({
-        id: 1,
-        name: 'Las Vegas',
-        display: 'double',
-        pages: {{ count($menuImages) > 0 ? count($menuImages) : 12 }},
-        pageWidth: 922 * 4,
-        pageHeight: 600 * 4,
-    });
+    // flipify({
+    //     id: 1,
+    //     name: 'Las Vegas',
+    //     display: 'double',
+    //     pages: {{ count($menuImages) > 0 ? count($menuImages) : 12 }},
+    //     pageWidth: 922 * 4,
+    //     pageHeight: 600 * 4,
+    // });
+
+                            flipify({
+                                id: 1,
+                                name: 'Las Vegas',
+                                display: 'double',
+                                pages: 4,
+                                pageWidth: 922 * 4,
+                                pageHeight: 600 * 4,
+                                images: [
+                                    @foreach ($menuImages as $image)
+                                    "{{ url('storage/' . $image) }}",
+                                    @endforeach
+                                ],
+                                path: 'storage/menu/'
+                            });
 </script>
 <style>
     div#magazine {

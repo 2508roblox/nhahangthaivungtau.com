@@ -70,7 +70,7 @@ class MenuResource extends Resource
                             ]),
                         Forms\Components\FileUpload::make('link_image')
                             ->label('Ảnh thực đơn')
-                            ->directory('menu')
+                            ->directory('statics/issue')
                             ->image()
                             ->imageEditor()
                             ->multiple()
