@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 10, 2025 at 05:59 AM
+-- Generation Time: May 10, 2025 at 06:18 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -341,7 +341,7 @@ CREATE TABLE `online_users` (
 --
 
 INSERT INTO `online_users` (`id`, `ip_address`, `last_activity`, `created_at`, `updated_at`) VALUES
-(58, '127.0.0.1', '2025-05-09 22:59:03', '2025-05-09 22:49:21', '2025-05-09 22:59:03');
+(58, '127.0.0.1', '2025-05-09 23:18:05', '2025-05-09 22:49:21', '2025-05-09 23:18:05');
 
 -- --------------------------------------------------------
 
@@ -403,7 +403,9 @@ CREATE TABLE `reviews` (
 
 INSERT INTO `reviews` (`id`, `video_link`, `title`, `description`, `order_number`, `status`, `is_featured`, `created_at`, `updated_at`, `image`) VALUES
 (2, 'https://www.youtube.com/watch?v=78uRq9DW6Eo', '18 món ăn Thái Lan phải thử. Ẩm thực đường phố Vũng Tàu', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-09 21:22:18', 'reviews/01JTW6VZTH14AHK76S8A2S0T23.jpg'),
-(5, 'https://www.youtube.com/watch?v=x7_A_xjviK8', '10 món ăn nhất định phải thử nếu du lịch đến Thái Lan | Khám phá ẩm thực Thái Lan', '10 món ăn nhất định phải thử nếu du lịch đến Thái Lan | Khám phá ẩm thực Thái Lan', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-09 21:32:13', 'reviews/01JTW7DW6ZSRJVRDYMDAWPFECC.jpg');
+(5, 'https://www.youtube.com/watch?v=x7_A_xjviK8', '10 món ăn nhất định phải thử nếu du lịch đến Thái Lan | Khám phá ẩm thực Thái Lan', '10 món ăn nhất định phải thử nếu du lịch đến Thái Lan | Khám phá ẩm thực Thái Lan', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-09 21:32:13', 'reviews/01JTW7DW6ZSRJVRDYMDAWPFECC.jpg'),
+(23, 'https://www.youtube.com/watch?v=78uRq9DW6Eo', '18 món ăn Thái Lan phải thử. Ẩm thực đường phố Vũng Tàu', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-09 21:22:18', 'reviews/01JTW6VZTH14AHK76S8A2S0T23.jpg'),
+(24, 'https://www.youtube.com/watch?v=78uRq9DW6Eo', '18 món ăn Thái Lan phải thử. Ẩm thực đường phố Vũng Tàu', 'Lẩu thái video', 1, 1, 1, '2025-05-03 06:05:52', '2025-05-09 21:22:18', 'reviews/01JTW6VZTH14AHK76S8A2S0T23.jpg');
 
 -- --------------------------------------------------------
 
@@ -428,7 +430,7 @@ INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, 
 ('DezNJ33jRI4ugva3wexjayMW2QAMx7gQgzLxgXju', NULL, '171.243.48.48', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiYXJ2SG0yaEZOQ1ZDcFZRRVNPZ2E0cm1STmFtMG80ZVFQVWh5cTdEViI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDQ6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1746855778),
 ('g9uQZBmzn4C55yMJhZZVkKGTtcmIJPcCXgaoMFc5', NULL, '171.243.48.48', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiR3g5T1dBOXZNS1d0NDlHbk9oNjR4WWFleWRnc3RvQ0dnZUZJUFdDWSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NzE6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlL21vbi1hbi9nb2ktY2EtaG9pLW1hbS10aGFpIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1746855501),
 ('Mjr5ljU43Iwvi4Wa3yzjQOmOcMJKyTuiIuMxBj4k', 1, '171.240.137.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiNHNJeUZVVXVCamhDclRuTW9OOVJFNDVSTkduU3pJT0ZDdGpsNkw5NCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NjU6Imh0dHBzOi8vbmhhaGFuZ3RoYWl2dW5ndGF1LmRlbW8tbGFyYXZlbC5zaXRlL2FkbWluL2FsYnVtcy8xNi9lZGl0Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRQNjljU0pNOFpWRVlIREhQbFFxcTIuNXFkNHY1N1hYdGVMbUlrcFRaMHVRM21MaFAuajNzeSI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1746854610),
-('YdFUsfrwRkWf65nISOqxXUianbWph1rWwtsnNE7U', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiaTN6NU5OakY2eDRoeXlPeEhZUVNGVE9aNkFxRFNqWEE1ZUE2Nmh5NyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1746856743);
+('YdFUsfrwRkWf65nISOqxXUianbWph1rWwtsnNE7U', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiaTN6NU5OakY2eDRoeXlPeEhZUVNGVE9aNkFxRFNqWEE1ZUE2Nmh5NyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1746857886);
 
 -- --------------------------------------------------------
 
@@ -587,7 +589,7 @@ INSERT INTO `visitors` (`id`, `date`, `count`, `created_at`, `updated_at`) VALUE
 (5, '2025-05-07', 1167, '2025-05-06 19:16:37', '2025-05-07 16:57:06'),
 (6, '2025-05-08', 74, '2025-05-07 18:24:15', '2025-05-08 04:22:03'),
 (7, '2025-05-09', 1246, '2025-05-08 19:28:04', '2025-05-09 16:59:34'),
-(8, '2025-05-10', 975, '2025-05-09 17:09:17', '2025-05-09 22:59:03');
+(8, '2025-05-10', 1035, '2025-05-09 17:09:17', '2025-05-09 23:18:05');
 
 --
 -- Indexes for dumped tables
@@ -814,7 +816,7 @@ ALTER TABLE `reservations`
 -- AUTO_INCREMENT for table `reviews`
 --
 ALTER TABLE `reviews`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `settings`

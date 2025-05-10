@@ -261,10 +261,23 @@
                                 width: 100%;
                                 margin-bottom: 2rem;
                             }
+                            #lkllk{
+                                flex-wrap: nowrap !important;
+                                  overflow-x: scroll !important;
+                                  width: 100%;
+                                justify-content: flex-start !important;
+                                padding: 20px 0;
+                            }
+                            #lkllk .category-items{
+                                white-space: nowrap !important;
+                            }
+                            img.card-img-top {
+    height: 20rem !important;
+}
                         }
                     </style>
                     <!-- Thanh menu các món -->
-                    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;" id="lkllk">
                         @foreach ($categories as $category)
                             <div class="category-items"
                                 style="background-color: transparent; color: #fff; padding: 10px 25px; border: 1px solid #fcd34d; border-radius: 30px; font-weight: bold; cursor: pointer;"
@@ -277,30 +290,37 @@
                     <div>
 
                         <div class="row g-4" id="reviews" style="margin-top: 20px;">
-
-                            <!-- Thẻ nổi bật -->
-                            @foreach ($foods as $food)
-                                <div class="col-md-3 cart_pd"
-                                    style="background-color: transparent; margin-bottom: 2rem; cursor: pointer;"
-                                    onclick="window.location.href='/mon-an/{{ $food->slug  }}'">
+                            @foreach ($foods as $index => $food)
+                                <div class="col-md-3 cart_pd product-item"
+                                    style="background-color: transparent; margin-bottom: 2rem; cursor: pointer; {{ $index >= 8 ? 'display:none;' : '' }}"
+                                    onclick="window.location.href='/mon-an/{{ $food->slug }}'">
                                     <div class="card card-custom highlight lslsl">
-                                        <img style="     border-radius: 15px;     height: 200px;     object-fit: cover; "
-                                            src="{{ Storage::url($food->thumb_img) }}" class="card-img-top"
-                                            alt="{{ $food->name }}">
+                                        <img style="border-radius: 15px; height: 200px; object-fit: cover;"
+                                            src="{{ Storage::url($food->thumb_img) }}" class="card-img-top" alt="{{ $food->name }}">
                                         <div class="card-body">
                                             <div class="asdf title">{{ $food->name }}</div>
-                                            <div class="asdf price" style="    font-size: 20px;">
-                                                Giá: <strong
-                                                    style="color: #fbbf24;">{{ number_format($food->price, 0, ',', '.') }}đ</strong>
+                                            <div class="asdf price" style="font-size: 20px;">
+                                                Giá: <strong style="color: #fbbf24;">{{ number_format($food->price, 0, ',', '.') }}đ</strong>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             @endforeach
-
-
-
                         </div>
+
+                        <div style="text-align: center;margin-bottom: 8rem ; justify-content: center;display: flex;">
+
+                            <a id="load-more-btn" style="background: url('/logo/Frame 7.png') no-repeat center center; background-size: 100% 100%; color: #fff;" class="intro-btn">XEM THÊM</a>
+                        </div>
+                        <script>
+                            document.getElementById('load-more-btn').addEventListener('click', function () {
+                                document.querySelectorAll('.product-item').forEach(function (el) {
+                                    el.style.display = 'block';
+                                });
+                                this.style.display = 'none'; // Ẩn nút sau khi hiển thị xong
+                            });
+                        </script>
+
                     </div>
                 </div>
 
@@ -329,7 +349,45 @@
 
             <div class="container" style="     background: white;     padding: 20px;     border-radius: 20px; ">
                 <h1 class="review-title" style="font-family: 'Lodestone', sans-serif;">REVIEW ẨM THỰC</h1>
-                <div class="row" id="reviewaf">
+                {{-- <div class="row" id="reviewaf">
+                    @foreach ($reviews as $review)
+                        <div class="col-md-4" style="    margin-bottom: 1rem;">
+                            <div class="card" style="position: relative;  cursor: pointer;     border: initial;"
+                                data-src="{{ $review->video_link }}" data-fancybox="video">
+                                <img src="{{Storage::url($review->image) }}" class="card-img-top" alt="Food Image"
+                                    style="border-radius: 20px;height: 35rem;object-fit: cover;">
+                                <div class="card-body"
+                                    style="    display: flex;    justify-content: space-between;    position: absolute;        width: 100%;">
+                                    <div
+                                        style="     display: flex;     justify-content: center;     align-items: center;     text-align: center; ">
+                                        <img src="{{ Storage::url($setting->web_favicon) }}" alt=""
+                                            style=" width: 30px; height: 30px; border-radius: 50%; ">
+                                        <h5 class="card-title"
+                                            style="     margin: inherit;     margin-left: 10px;     color: #ffffff;     font-size: 1.2rem;     font-weight: bold; ">
+                                            KHAY-PHA THAI</h5>
+
+                                    </div>
+                                    <a href="{{ $review->video_link }}" class="share-link" style="color: #ffffff;">►
+                                        Share</a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+
+
+                </div> --}}
+                <style>
+                    @media (max-width: 768px) {
+                        #reviewaf {
+                            display: block !important;
+                        }
+                        .ljkdlkj{
+                            margin-bottom: 3rem;
+                        }
+                    }
+                </style>
+                <div class="row" id="reviewaf"  style="  {{ $reviews->count() > 3 ? 'display: flex;    flex-wrap: nowrap;    overflow-x: scroll;' : '' }}">
                     @foreach ($reviews as $review)
                         <div class="col-md-4" style="    margin-bottom: 1rem;">
                             <div class="card" style="position: relative;  cursor: pointer;     border: initial;"
@@ -370,7 +428,7 @@
                                 style="font-size: 3.7rem;font-family: 'Lodestone', sans-serif;color: #fcd34d;margin-bottom: 3rem;">
                                 CẨM NANG <br> TẠI
                                 KHAY-PHA THAI</h1>
-                            <p style="
+                            <p class="ljkdlkj" style="
                         font-size: 1.27rem;
                     ">Được mệnh danh <strong style="">"xứ sở chùa Vàng"</strong>, không chỉ có chùa chiền mà văn hóa ẩm
                                 thực Thái Lan cũng
