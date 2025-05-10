@@ -201,9 +201,6 @@
                             background-color: #fcd34d !important;
                         }
                     </style>
-                       @php
-                       $menuImages = Cookie::get('menu_images') ? json_decode(Cookie::get('menu_images'), true) : [];
-                   @endphp
                     <div>
                         <div id="viewer" style="     height: 700px; ">
                             <div class="bar-container">
@@ -255,7 +252,7 @@
                             id: 1,
                             name: 'Las Vegas',
                             display: 'double',
-                            pages: imagePaths.length > 0 ? imagePaths.length : 12,
+                            pages: {{ count($menuImages) > 0 ? count($menuImages) : 12 }},
                             pageWidth: 922 * 4,
                             pageHeight: 600 * 4,
                         });

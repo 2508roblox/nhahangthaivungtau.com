@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 10, 2025 at 12:00 AM
+-- Generation Time: May 10, 2025 at 12:42 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -70,8 +70,8 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:2;', 1746797735),
-('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746797735;', 1746797735),
+('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab', 'i:11;', 1746837524),
+('laravel_cache_356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1746837524;', 1746837524),
 ('laravel_cache_livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1746834193),
 ('laravel_cache_livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1746834193;', 1746834193);
 
@@ -251,7 +251,7 @@ CREATE TABLE `menus` (
   `slug` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `order_number` int NOT NULL DEFAULT '0',
   `status` tinyint(1) NOT NULL DEFAULT '1',
-  `link_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `link_image` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `is_bestseller` tinyint(1) NOT NULL DEFAULT '0',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -262,9 +262,7 @@ CREATE TABLE `menus` (
 --
 
 INSERT INTO `menus` (`id`, `name`, `slug`, `order_number`, `status`, `link_image`, `is_bestseller`, `created_at`, `updated_at`) VALUES
-(1, 'Món đặc biệt', 'mon-dac-biet', 1, 1, '[\"01JTCG69QSN71F1TN46B7PZVSS.png\",\"01JTCG69QVMJ7YPJA25F9S6KCB.png\",\"01JTCGEN6T3NAT3HHPWC0E3AFT.png\",\"01JTCGEN6YAHR46BD254TK2TNY.png\",\"01JTCGEN6Z3C0KV3GZ596CFNJH.png\",\"01JTCGEN70TWMEJ35ENGGEFCM9.png\"]', 1, '2025-05-03 18:57:22', '2025-05-03 19:01:56'),
-(2, 'Món đặc biệt', 'mon-dac-biet1', 1, 1, '[\"01JTCG69QSN71F1TN46B7PZVSS.png\",\"01JTCG69QVMJ7YPJA25F9S6KCB.png\",\"01JTCGEN6T3NAT3HHPWC0E3AFT.png\",\"01JTCGEN6YAHR46BD254TK2TNY.png\",\"01JTCGEN6Z3C0KV3GZ596CFNJH.png\",\"01JTCGEN70TWMEJ35ENGGEFCM9.png\"]', 1, '2025-05-03 18:57:22', '2025-05-03 19:01:56'),
-(3, 'Món đặc biệt', 'mon-dac-biet11', 1, 1, '[\"01JTCG69QSN71F1TN46B7PZVSS.png\",\"01JTCG69QVMJ7YPJA25F9S6KCB.png\",\"01JTCGEN6T3NAT3HHPWC0E3AFT.png\",\"01JTCGEN6YAHR46BD254TK2TNY.png\",\"01JTCGEN6Z3C0KV3GZ596CFNJH.png\",\"01JTCGEN70TWMEJ35ENGGEFCM9.png\"]', 1, '2025-05-03 18:57:22', '2025-05-03 19:01:56');
+(4, 'Món đặc biệt', 'mon-dac-biet11123123', 0, 1, '[\"menu\\/01JTVT0VE6ENMKHAP671RJ12CT.jpg\",\"menu\\/01JTVT2MNCCTF5RTATPNGTR0R0.jpg\",\"menu\\/01JTVT2MNGQZ2ZWRNE5XJ5QDHY.jpg\",\"menu\\/01JTVT2MNJN218RJ4SJDSE5CRT.jpg\",\"menu\\/01JTVT2MNMKATNGPR956GEKX5A.jpg\",\"menu\\/01JTVT2MNP5VX06MCJ2M9C0KSZ.jpg\",\"menu\\/01JTVT2MNRJAJRCCG0G7V9H4E0.jpg\",\"menu\\/01JTVT2MNTWNVDZRG1KGKQF3Y4.jpg\",\"menu\\/01JTVT2MNW7NM1MPKSAYA49P50.jpg\",\"menu\\/01JTVT2MNY4Q34T5VRSYJ62B36.jpg\",\"menu\\/01JTVT2MP07WY4ZD8541D4KAFC.jpg\"]', 1, '2025-05-09 17:30:32', '2025-05-09 17:38:45');
 
 -- --------------------------------------------------------
 
@@ -352,7 +350,7 @@ CREATE TABLE `online_users` (
 --
 
 INSERT INTO `online_users` (`id`, `ip_address`, `last_activity`, `created_at`, `updated_at`) VALUES
-(40, '127.0.0.1', '2025-05-09 16:59:34', '2025-05-09 16:38:31', '2025-05-09 16:59:34');
+(42, '127.0.0.1', '2025-05-09 17:41:49', '2025-05-09 17:28:35', '2025-05-09 17:41:49');
 
 -- --------------------------------------------------------
 
@@ -442,7 +440,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('VmXVHEaYJ3tI3S00wrduyHRGfdT8LY1FSDXcyTzP', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiSThBR3c2Z1lFRWxoQ0xXeGFISGYwMWo4eThiQ0hjRHI2UldscFdrNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO30=', 1746835172);
+('VmXVHEaYJ3tI3S00wrduyHRGfdT8LY1FSDXcyTzP', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiSThBR3c2Z1lFRWxoQ0xXeGFISGYwMWo4eThiQ0hjRHI2UldscFdrNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkUDY5Y1NKTThaVkVZSERIUGxRcXEyLjVxZDR2NTdYWHRlTG1Ja3BUWjB1UTNtTGhQLmozc3kiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1746837709),
+('vtFD5vpPpxu3bTnBAkTsDp3t1PcoNW6vfk5GjHkp', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNmNvNDh4UVlDQktPZWs1UWNZMW55TnhDUVlUVlh3WnlUYjgyZXJvMyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1746837556);
 
 -- --------------------------------------------------------
 
@@ -601,7 +600,8 @@ INSERT INTO `visitors` (`id`, `date`, `count`, `created_at`, `updated_at`) VALUE
 (4, '2025-05-06', 493, '2025-05-06 05:59:03', '2025-05-06 06:53:23'),
 (5, '2025-05-07', 1167, '2025-05-06 19:16:37', '2025-05-07 16:57:06'),
 (6, '2025-05-08', 74, '2025-05-07 18:24:15', '2025-05-08 04:22:03'),
-(7, '2025-05-09', 1246, '2025-05-08 19:28:04', '2025-05-09 16:59:34');
+(7, '2025-05-09', 1246, '2025-05-08 19:28:04', '2025-05-09 16:59:34'),
+(8, '2025-05-10', 233, '2025-05-09 17:09:17', '2025-05-09 17:41:49');
 
 --
 -- Indexes for dumped tables
@@ -798,7 +798,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `menus`
 --
 ALTER TABLE `menus`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -816,7 +816,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `online_users`
 --
 ALTER TABLE `online_users`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `reservations`
@@ -858,7 +858,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `visitors`
 --
 ALTER TABLE `visitors`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables

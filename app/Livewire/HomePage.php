@@ -21,7 +21,7 @@ class HomePage extends Component
     public $reviews;
     public $news;
     public $menus;
-
+    public $menuImages;
     public function mount()
     {
         $this->slides = Slideshow::all();
@@ -32,14 +32,7 @@ class HomePage extends Component
         $this->news = News::orderBy('views', 'desc')->limit(3)->get();
         $this->menus = Menu::all();
 
-        // Lưu cookie PHP nếu có menu
-        if ($this->menus->isNotEmpty() && is_array($this->menus[0]->link_image)) {
-            $json = json_encode($this->menus[0]->link_image);
-            Cookie::queue('menu_images', $json, 60 * 24 * 7); // lưu 7 ngày (đơn vị: phút)
-        }
-        $cookie = Cookie::get('menu_images');
-        $this->menuImages = json_decode($cookie, true);
-        // dd($this->menuImages);
+        $this->menuImages  = Menu::first()->link_image;
     }
 
     public function render()
